@@ -138,7 +138,7 @@ function Home() {
               style={{ animation: "fade-up 0.9s ease-out 0.4s both" }}
             >
               <StoreBadges dark />
-              <div className="mt-6 flex items-center gap-4 text-sm text-white/60">
+              {/* <div className="mt-6 flex items-center gap-4 text-sm text-white/60">
                 <div className="flex -space-x-2">
                   {[0, 1, 2, 3].map((i) => (
                     <div
@@ -153,7 +153,7 @@ function Home() {
                   ))}
                   <span className="ml-2">Trusted by 10,000+ riders</span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 

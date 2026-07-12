@@ -18,11 +18,16 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
         <Link to="/" className="flex items-center gap-2.5" onClick={() => setOpen(false)}>
-          <img src={logo} alt="CRUIZR" width={40} height={40} className="h-10 w-10 rounded-lg bg-white object-contain p-1" />
-          <span className="font-heading text-xl font-extrabold tracking-tight">
-            CRU<span className="relative inline-block">I<span className="absolute left-1/2 top-[-2px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[var(--orange)]" aria-hidden /></span>ZR
-          </span>
-        </Link>
+  <img src={logo} alt="CRUIZR" width={40} height={40} className="h-10 w-10 rounded-lg bg-white object-contain p-1" />
+  <span className="flex flex-col leading-none">
+    <span className="font-heading text-xl font-extrabold tracking-tight">
+      CRU<span className="relative inline-block">I<span className="absolute left-1/2 top-[-2px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[var(--orange)]" aria-hidden /></span>ZR
+    </span>
+    <span className="text-[10px] font-medium tracking-wide text-muted-foreground">
+      never cruise alone
+    </span>
+  </span>
+</Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {NAV.map((n) => (
