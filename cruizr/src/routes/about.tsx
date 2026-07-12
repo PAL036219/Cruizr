@@ -49,7 +49,7 @@ const STORY_MILESTONES = [
   {
     icon: Zap,
     title: "The Future",
-    body: "Today, thousands of riders use CRUIZR to find their crew. But we're just getting started. Offline mesh communication, AI route generation, group ride analytics — we're building the ultimate riding companion. Because no rider should ever have to cruise alone.",
+    body: "Today,We're just getting started, and every rider who joins shapes what comes next. Offline mesh communication, AI route generation, group ride analytics — we're building the ultimate riding companion. Because no rider should ever have to cruise alone.",
   },
 ];
 

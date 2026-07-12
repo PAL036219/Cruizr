@@ -9,10 +9,19 @@ import {
   ArrowRight,
   Star,
   Quote,
+  Video,
 } from "lucide-react";
 import heroImg from "../assets/hero-riders.jpg";
 import heroVideo from "../assets/hero-video.mp4";
-import appMockup from "../assets/app-mockup.jpg";
+import appMockup from "../assets/app-mockup.png";
+import common from "../assets/commongallery.png";
+
+import live from "../assets/live.png";
+import women from "../assets/womens.png";
+import clubs from "../assets/Clubs.png";
+import intercom from "../assets/liveintercom.png"
+
+import mapMockup from "../assets/Map.png";
 import { StoreBadges } from "../components/StoreBadges";
 import { SectionHeading } from "../components/SectionHeading";
 import { Reveal } from "../components/Reveal";
@@ -67,9 +76,9 @@ const STEPS = [
 ];
 
 const TESTIMONIALS = [
-  { quote: "CRUIZR transformed my weekend rides. I finally found my crew.", name: "Marco R.", role: "Sport touring" },
+  { quote: "CRUIZR transformed my weekend rides. I finally found my crew.", name: "Aryan", role: "Sport touring" },
   { quote: "Finally found riders who match my pace. No more hanging back or catching up.", name: "Priya S.", role: "Adventure" },
-  { quote: "The in built intercom feature is a game-changer. Saved us $400 on intercoms.", name: "Diego M.", role: "Cruiser" },
+  { quote: "The in built intercom feature is a game-changer. Saved us $400 on intercoms.", name: "Abhishek", role: "Cruiser" },
 ];
 
 function Home() {
@@ -186,6 +195,21 @@ function Home() {
       {/* SOLUTION */}
       <section className="bg-muted/30 py-24 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+          <Reveal delay={150} className="flex justify-center">
+            <div className="relative flex gap-6 items-center">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              <img
+                src={appMockup}
+                alt="CRUIZR matching interface"
+                loading="lazy"
+                width={300}
+                height={300}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+              />
+
+            </div>
+          </Reveal>
+
           <Reveal>
             <div>
               <SectionHeading
@@ -201,7 +225,7 @@ function Home() {
               <ul className="mt-8 space-y-3">
                 {[
                   "Filter by bike type, pace, and experience",
-                  "Verified riders only — OTP-checked at meetup",
+                  "Live interactive map with real-time updates",
                   "Chat, plan, and coordinate in-app",
                 ].map((t) => (
                   <li key={t} className="flex items-start gap-3 text-foreground">
@@ -214,21 +238,323 @@ function Home() {
               </ul>
             </div>
           </Reveal>
-          <Reveal delay={150}>
-            <div className="relative">
+
+        </div>
+      </section>
+
+      <section className="bg-muted/30 py-24 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+          <Reveal className="order-2 lg:order-1">
+            <div>
+              <SectionHeading
+                center={false}
+                eyebrow="Interact"
+                title={
+                  <>
+                    Interact With <span className="text-gradient">Live Interactive Map</span>.
+                  </>
+                }
+                subtitle="Track your entire crew in real-time — CRUIZR's live group map shows every rider's exact location the moment they join a ride, so no one gets left behind or lost on unfamiliar roads. Whether you're leading a 5-bike weekend run or a 50-rider club convoy, watch each member's position update live on a single shared map, keep tabs on speed and distance from the pack, and instantly spot if someone's fallen behind or taken a wrong turn. Built for Indian riders who ride in groups, not alone"
+              />
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Live GPS tracking for every rider in your group",
+                  "Real-time speed & distance monitoring from the pack",
+                  "Instant route sharing with one tap",
+                  "Emergency SOS alerts with location sharing"
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-foreground">
+                    <span className="mt-1 grid h-5 w-5 place-items-center rounded-full bg-[var(--orange)] text-white">
+                      <ArrowRight size={12} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+          <Reveal delay={150} className="order-1 lg:order-2 flex justify-center">
+            <div className="relative flex gap-6 items-center">
               <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              {/*  */}
               <img
-                src={appMockup}
-                alt="CRUIZR matching interface"
+                src={mapMockup}
+                alt="CRUIZR map interface"
                 loading="lazy"
-                width={1200}
-                height={1200}
-                className="relative rounded-3xl shadow-[var(--shadow-elegant)]"
+                width={300}
+                height={300}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
               />
             </div>
           </Reveal>
         </div>
       </section>
+
+      <section className="bg-muted/30 py-24 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+          <Reveal delay={150} className="flex justify-center">
+            <div className="relative flex gap-6 items-center">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              <img
+                src={clubs}
+                alt="CRUIZR matching interface"
+                loading="lazy"
+                width={300}
+                height={400}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+              />
+
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div>
+              <SectionHeading
+                center={false}
+                eyebrow="The solution"
+                title={
+                  <>
+                    CRUIZR connects you with <span className="text-gradient">Club & Fellow riders</span>.
+                  </>
+                }
+                subtitle="Find your riding tribe with CRUIZR's Clubs — create your own club or join one that matches your vibe, from cruiser crews to sportbike squads to weekend explorers. Every club gets its own dedicated chat, so you can plan the next ride, share route ideas, post breakdown alerts, or just talk bikes with people who get it. No more scattered WhatsApp groups — everything from club discussions to ride announcements lives in one place, built specifically for riders."
+              />
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Create Your Own Club",
+                  "Find your riding tribe",
+                  "Dedicated club chat",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-foreground">
+                    <span className="mt-1 grid h-5 w-5 place-items-center rounded-full bg-[var(--orange)] text-white">
+                      <ArrowRight size={12} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+
+        </div>
+      </section>
+
+      <section className="bg-muted/30 py-24 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+
+
+          <Reveal className="order-2 lg:order-1">
+            <div>
+              <SectionHeading
+                center={false}
+                eyebrow="Talk to your crew, hands-free"
+                title={
+                  <>
+                    Built-in intercom, <span className="text-gradient">no hardware needed</span>.
+                  </>
+                }
+                subtitle="Skip the expensive Bluetooth intercom kits — CRUIZR has group voice communication built right in. Push and lock with your entire crew over the internet in cities, and stay connected through mesh networking even in dead zones with zero network coverage. One tap, and your whole group hears you, wherever the ride takes you."
+              />
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Push and lock with your entire riding group, instantly",
+                  "Works over internet in cities, mesh network in dead zones",
+                  "No pairing, no extra hardware, just tap and talk",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-foreground">
+                    <span className="mt-1 grid h-5 w-5 place-items-center rounded-full bg-[var(--orange)] text-white">
+                      <ArrowRight size={12} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+
+          <Reveal delay={150} className="order-1 lg:order-2 flex justify-center">
+            <div className="relative flex gap-6 items-center">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              <img
+                src={intercom}
+                alt="CRUIZR matching interface"
+                loading="lazy"
+                width={300}
+                height={400}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+              />
+
+            </div>
+          </Reveal>
+
+        </div>
+      </section>
+
+      <section className="bg-muted/30 py-24 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+
+
+          <Reveal delay={150} className="flex justify-center">
+            <div className="relative flex gap-6 items-center">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              <img
+                src={live}
+                alt="CRUIZR matching interface"
+                loading="lazy"
+                width={300}
+                height={400}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+              />
+
+            </div>
+          </Reveal>
+
+          <Reveal>
+            <div>
+              <SectionHeading
+                center={false}
+                eyebrow="Ride live, share live"
+                title={
+                  <>
+                    Go live from the saddle, <span className="text-gradient">let them ride with you</span>.
+                  </>
+                }
+                subtitle="Turn every ride into a live show — stream your ride straight from CRUIZR with real-time chat, likes, and reactions from your followers, just like Instagram Live. Connect an external camera like a GoPro or DJI for pro-quality footage, or go live straight from your phone. Your crew back home gets the full ride, live, as it happens."
+              />
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Live stream your ride with chat, likes, and reactions",
+                  "Connect GoPro, DJI, and other external action cameras",
+                  "Followers watch and comment in real time, just like Instagram",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-foreground">
+                    <span className="mt-1 grid h-5 w-5 place-items-center rounded-full bg-[var(--orange)] text-white">
+                      <ArrowRight size={12} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+
+
+
+        </div>
+      </section>
+
+      <section className="bg-muted/30 py-24 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+
+
+
+
+          <Reveal className="order-2 lg:order-1">
+            <div>
+              <SectionHeading
+                center={false}
+                eyebrow="Built for her safety"
+                title={
+                  <>
+                    Queens-only rides, <span className="text-gradient">verified and protected</span>.
+                  </>
+                }
+                subtitle="Every rider deserves to feel safe on the road. With CRUIZR, women can create rides open only to women — no men can join, request to join, or even see the ride's live location. Ride with a trusted circle of women riders, share routes freely, and build your own community without compromise."
+              />
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Create women-only rides, invisible to male riders",
+                  "Only verified women can request to join",
+                  "Live location shared only within the group",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-foreground">
+                    <span className="mt-1 grid h-5 w-5 place-items-center rounded-full bg-[var(--orange)] text-white">
+                      <ArrowRight size={12} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+
+          <Reveal delay={150} className="order-1 lg:order-2 flex justify-center">
+            <div className="relative flex gap-6 items-center">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              <img
+                src={women}
+                alt="CRUIZR matching interface"
+                loading="lazy"
+                width={300}
+                height={400}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+              />
+
+            </div>
+          </Reveal>
+
+
+
+        </div>
+      </section>
+
+
+ <section className="bg-muted/30 py-24 md:py-32">
+        <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
+
+
+          <Reveal delay={150} className="flex justify-center">
+            <div className="relative flex gap-6 items-center">
+              <div className="absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" />
+              <img
+                src={common}
+                alt="CRUIZR matching interface"
+                loading="lazy"
+                width={300}
+                height={400}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+              />
+
+            </div>
+          </Reveal>
+
+          <Reveal>
+           <div>
+              <SectionHeading
+                center={false}
+                eyebrow="Discover new routes"
+                title={
+                  <>
+                    A shared gallery of every <span className="text-gradient">scenic spot riders find</span>.
+                  </>
+                }
+                subtitle="Found a breathtaking viewpoint, a hidden pit stop, or the perfect sunset spot on your ride? Upload it to CRUIZR's community gallery so other riders can discover it too. Browse photos from riders across the country, tap any spot to see where it is, and turn your next ride into an adventure someone else already mapped out."
+              />
+              <ul className="mt-8 space-y-3">
+                {[
+                  "Upload photos from your rides to the community gallery",
+                  "Browse scenic spots shared by riders near you",
+                  "Tap a photo to see the exact location and route",
+                ].map((t) => (
+                  <li key={t} className="flex items-start gap-3 text-foreground">
+                    <span className="mt-1 grid h-5 w-5 place-items-center rounded-full bg-[var(--orange)] text-white">
+                      <ArrowRight size={12} />
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Reveal>
+
+
+
+        </div>
+      </section>
+      
+
+ 
+
 
       {/* FEATURES */}
       <section className="bg-background py-24 md:py-32">
@@ -237,7 +563,7 @@ function Home() {
             <SectionHeading
               eyebrow="Everything you need"
               title={<>Built for riders, by riders.</>}
-              subtitle="Six core features that turn strangers into your riding crew."
+              subtitle="Seven core features that turn strangers into your riding crew."
             />
           </Reveal>
           <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
