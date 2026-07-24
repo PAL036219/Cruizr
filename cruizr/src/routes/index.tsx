@@ -1,4 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { motion } from "framer-motion";
 import {
   Users,
   MapPin,
@@ -23,6 +24,7 @@ import intercom from "../assets/liveintercom.png"
 
 import mapMockup from "../assets/Map.png";
 import { StoreBadges } from "../components/StoreBadges";
+import { WaitlistForm } from "../components/WaitlistForm";
 import { SectionHeading } from "../components/SectionHeading";
 import { Reveal } from "../components/Reveal";
 
@@ -137,7 +139,7 @@ function Home() {
               className="mt-10"
               style={{ animation: "fade-up 0.9s ease-out 0.4s both" }}
             >
-              <StoreBadges dark />
+              <WaitlistForm />
               {/* <div className="mt-6 flex items-center gap-4 text-sm text-white/60">
                 <div className="flex -space-x-2">
                   {[0, 1, 2, 3].map((i) => (
@@ -603,18 +605,22 @@ function Home() {
           <div className="mt-16 grid gap-8 md:grid-cols-3">
             {STEPS.map((s, i) => (
               <Reveal key={s.n} delay={i * 150}>
-                <div className="relative rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+                <motion.div 
+                  whileHover={{ y: -8 }}
+                  transition={{ type: "spring", stiffness: 300 }}
+                  className="relative h-full rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur"
+                >
                   <div className="font-heading text-6xl font-black text-gradient opacity-80">{s.n}</div>
                   <h3 className="mt-4 font-heading text-xl font-bold text-white">{s.title}</h3>
                   <p className="mt-2 text-white/60">{s.desc}</p>
-                </div>
+                </motion.div>
               </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      {/* SOCIAL PROOF */}
+      {/* SOCIAL PROOF 
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal>
@@ -641,6 +647,7 @@ function Home() {
           </div>
         </div>
       </section>
+      */}
 
       {/* FINAL CTA */}
       <section className="relative overflow-hidden bg-dark py-24 md:py-32">
@@ -655,10 +662,10 @@ function Home() {
               Ready to stop <span className="text-gradient">riding alone?</span>
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg text-white/70">
-              Join thousands of riders finding their crew every week. Download CRUIZR and never cruise alone again.
+              Join thousands of riders finding their crew every week. CRUIZR is coming soon, get ready to never cruise alone again.
             </p>
             <div className="mt-10 flex justify-center">
-              <StoreBadges dark />
+              <WaitlistForm />
             </div>
           </Reveal>
         </div>

@@ -42,7 +42,7 @@ function ContactPage() {
     const body = encodeURIComponent(
       `Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`
     );
-    window.location.href = `mailto:pal036219@gmail.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:abhishek@cruizr.in?subject=${subject}&body=${body}`;
   }
 
   return (
@@ -144,17 +144,17 @@ function ContactPage() {
               <h3 className="font-heading text-xl font-bold">Direct channels</h3>
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a href="mailto:pal036219@gmail.com" className="flex items-center gap-3 text-foreground hover:text-[var(--orange)]">
-                    <Mail size={18} /> pal036219@gmail.com
+                  <a href="mailto:abhishek@cruizr.in" className="flex items-center gap-3 text-foreground hover:text-[var(--orange)]">
+                    <Mail size={18} /> abhishek@cruizr.in
                   </a>
                 </li>
+                {/* 
                 <li>
                   <a href="https://instagram.com/cruizr" className="flex items-center gap-3 text-foreground hover:text-[var(--orange)]">
                     <Instagram size={18} /> @cruizr on Instagram
                   </a>
                 </li>
-                
-             
+                */}
               </ul>
               <p className="mt-8 text-xs text-muted-foreground">
                 We reply within 1–2 business days.

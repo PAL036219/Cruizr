@@ -1,8 +1,7 @@
-import { n as __toESM } from "../_runtime.mjs";
-import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { C as Apple, d as Play } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/StoreBadges-DJpzADmx.js
-var import_react = /* @__PURE__ */ __toESM(require_react());
+import { t as motion } from "../_libs/framer-motion.mjs";
+import { r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { T as Apple, f as Play } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/StoreBadges-CihJqyKP.js
 var import_jsx_runtime = require_jsx_runtime();
 function SectionHeading({ eyebrow, title, subtitle, center = true, invert = false }) {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -23,33 +22,48 @@ function SectionHeading({ eyebrow, title, subtitle, center = true, invert = fals
 		]
 	});
 }
-function Reveal({ children, delay = 0, className = "" }) {
-	const ref = (0, import_react.useRef)(null);
-	const [shown, setShown] = (0, import_react.useState)(false);
-	(0, import_react.useEffect)(() => {
-		const el = ref.current;
-		if (!el) return;
-		const io = new IntersectionObserver((entries) => {
-			entries.forEach((e) => {
-				if (e.isIntersecting) {
-					setShown(true);
-					io.disconnect();
-				}
-			});
-		}, {
-			threshold: .12,
-			rootMargin: "0px 0px -60px 0px"
-		});
-		io.observe(el);
-		return () => io.disconnect();
-	}, []);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-		ref,
+function Reveal({ children, delay = 0, className = "", direction = "up" }) {
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(motion.div, {
 		className,
-		style: {
-			opacity: shown ? 1 : 0,
-			transform: shown ? "translateY(0)" : "translateY(24px)",
-			transition: `opacity 0.7s ease-out ${delay}ms, transform 0.7s ease-out ${delay}ms`
+		initial: {
+			opacity: 0,
+			...{
+				up: {
+					y: 24,
+					x: 0
+				},
+				down: {
+					y: -24,
+					x: 0
+				},
+				left: {
+					x: 24,
+					y: 0
+				},
+				right: {
+					x: -24,
+					y: 0
+				},
+				none: {
+					x: 0,
+					y: 0
+				}
+			}[direction]
+		},
+		whileInView: {
+			opacity: 1,
+			x: 0,
+			y: 0
+		},
+		viewport: {
+			once: true,
+			margin: "0px 0px -60px 0px",
+			amount: .12
+		},
+		transition: {
+			duration: .7,
+			ease: "easeOut",
+			delay: delay / 1e3
 		},
 		children
 	});
@@ -57,28 +71,32 @@ function Reveal({ children, delay = 0, className = "" }) {
 var APP_STORE = "https://apps.apple.com/app/cruizr";
 var PLAY_STORE = "https://play.google.com/store/apps/details?id=com.cruizr";
 function StoreBadges({ dark = false }) {
-	const cls = `inline-flex items-center gap-3 rounded-xl px-5 py-3 font-medium transition-all hover:scale-[1.03] hover:shadow-lg ${dark ? "bg-white text-black hover:bg-white/90" : "bg-black text-white hover:bg-black/90"}`;
+	const cls = `inline-flex items-center gap-3 rounded-xl px-5 py-3 font-medium shadow-sm ${dark ? "bg-white text-black hover:bg-white/90" : "bg-black text-white hover:bg-black/90"}`;
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		id: "download",
 		className: "flex flex-wrap gap-3",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.a, {
 			href: APP_STORE,
 			className: cls,
 			"aria-label": "Download on the App Store",
+			whileHover: { scale: 1.05 },
+			whileTap: { scale: .95 },
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Apple, { size: 24 }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 				className: "flex flex-col leading-tight text-left",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "text-[10px] uppercase opacity-80",
-					children: "Download on the"
+					children: "Coming soon to the"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "font-heading text-base font-bold",
 					children: "App Store"
 				})]
 			})]
-		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(motion.a, {
 			href: PLAY_STORE,
 			className: cls,
 			"aria-label": "Get it on Google Play",
+			whileHover: { scale: 1.05 },
+			whileTap: { scale: .95 },
 			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Play, {
 				size: 24,
 				fill: "currentColor"
@@ -86,7 +104,7 @@ function StoreBadges({ dark = false }) {
 				className: "flex flex-col leading-tight text-left",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "text-[10px] uppercase opacity-80",
-					children: "Get it on"
+					children: "Coming soon to"
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 					className: "font-heading text-base font-bold",
 					children: "Google Play"

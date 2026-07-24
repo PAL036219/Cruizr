@@ -1,7 +1,7 @@
-import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-import { _ as Lock, a as Trophy, h as MapPin, l as Radio, p as MessageSquare, r as Users, s as ShieldCheck, x as ChartColumn, y as HeartHandshake } from "../_libs/lucide-react.mjs";
-import { n as SectionHeading, r as StoreBadges, t as Reveal } from "./StoreBadges-DJpzADmx.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/feature-D6-f8HId.js
+import { r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { C as ChartColumn, _ as MapPin, a as Trophy, b as HeartHandshake, c as ShieldCheck, d as Radio, h as MessageCircle, i as Users, m as MessageSquare, o as Target, r as Video, y as Lock } from "../_libs/lucide-react.mjs";
+import { n as SectionHeading, r as StoreBadges, t as Reveal } from "./StoreBadges-CihJqyKP.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/features-CdqEO6li.js
 var import_jsx_runtime = require_jsx_runtime();
 var ALL = [
 	{
@@ -48,6 +48,21 @@ var ALL = [
 		icon: HeartHandshake,
 		title: "Safety & Trust",
 		body: "Verified profiles, rider ratings, emergency SOS, and check-in reminders. Built with rider safety at the core."
+	},
+	{
+		icon: MessageCircle,
+		title: "Direct & Group Chat",
+		body: "Connect with other riders through direct messaging, or coordinate your next trip in dedicated ride and club group chats."
+	},
+	{
+		icon: Video,
+		title: "Live Ride Broadcasting",
+		body: "Stream your ride live to your followers or club members. Let viewers join your journey in real-time, right from their screens."
+	},
+	{
+		icon: Target,
+		title: "Daily Rider Challenges",
+		body: "Push your limits and keep the rubber on the road. Complete daily riding challenges, earn badges, and compete with the community."
 	}
 ];
 function FeaturesPage() {
@@ -83,35 +98,38 @@ function FeaturesPage() {
 			className: "bg-background py-24 md:py-32",
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 				className: "mx-auto max-w-6xl space-y-16 px-4 md:px-8 md:space-y-24",
-				children: ALL.map((f, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
-					className: `grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`,
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "mb-5 grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--orange)] to-[var(--cyan)] text-white",
-							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(f.icon, { size: 26 })
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-							className: "font-heading text-3xl font-extrabold md:text-4xl",
-							children: f.title
-						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-							className: "mt-4 text-lg text-muted-foreground",
-							children: f.body
-						})
-					] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-						className: "relative",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-							className: "aspect-[4/3] rounded-3xl border border-border bg-gradient-to-br from-[var(--orange)]/10 via-background to-[var(--cyan)]/10 p-8",
+				children: ALL.map((f, i) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Reveal, {
+					direction: i % 2 === 0 ? "left" : "right",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
+						className: `grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`,
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+								className: "mb-5 grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--orange)] to-[var(--cyan)] text-white",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(f.icon, { size: 26 })
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
+								className: "font-heading text-3xl font-extrabold md:text-4xl",
+								children: f.title
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+								className: "mt-4 text-lg text-muted-foreground",
+								children: f.body
+							})
+						] }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+							className: "relative",
 							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-								className: "grid h-full place-items-center",
-								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(f.icon, {
-									size: 96,
-									className: "text-[var(--orange)] opacity-60"
+								className: "aspect-[4/3] rounded-3xl border border-border bg-gradient-to-br from-[var(--orange)]/10 via-background to-[var(--cyan)]/10 p-8",
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+									className: "grid h-full place-items-center",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(f.icon, {
+										size: 96,
+										className: "text-[var(--orange)] opacity-60"
+									})
 								})
 							})
-						})
-					})]
-				}) }, f.title))
+						})]
+					})
+				}, f.title))
 			})
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
@@ -126,7 +144,7 @@ function FeaturesPage() {
 					}),
 					subtitle: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
 						className: "text-white/70",
-						children: "Download CRUIZR and start riding with your crew today."
+						children: "CRUIZR is coming soon. Get ready to start riding with your crew."
 					})
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 					className: "mt-10 flex justify-center",

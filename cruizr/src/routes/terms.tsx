@@ -86,12 +86,7 @@ function TermsPage() {
         <p>These Terms are governed by the laws of the jurisdiction where CRUIZR is established.</p>
 
         <h2>Contact</h2>
-        <p>Questions? Email <a href="mailto:support@cruizr.app" className="text-[var(--orange)] underline">support@cruizr.app</a>.</p>
-
-        <p className="mt-10 text-xs italic">
-          This placeholder is provided for informational purposes only and is not legal advice.
-          Have counsel review before launch.
-        </p>
+        <p>Questions? Email <a href="mailto:abhishek@cruizr.in" className="text-[var(--orange)] underline">abhishek@cruizr.in</a>.</p>
       </div>
     </article>
   );

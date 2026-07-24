@@ -48,7 +48,7 @@ export function SiteHeader() {
             href="#download"
             className="inline-flex items-center rounded-full bg-[var(--orange)] px-5 py-2 text-sm font-semibold text-white transition-transform hover:scale-105 btn-glow"
           >
-            Download App
+            Coming Soon
           </a>
         </div>
 
@@ -79,7 +79,7 @@ export function SiteHeader() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-full bg-[var(--orange)] px-5 py-3 text-center text-sm font-semibold text-white"
             >
-              Download App
+              Coming Soon
             </a>
           </div>
         </div>

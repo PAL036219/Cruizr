@@ -15,20 +15,6 @@ globalThis.__nitro_vite_envs__ = services;
 //#endregion
 //#region #nitro/virtual/public-assets-data
 var public_assets_data_default = {
-	"/icons.svg": {
-		"type": "image/svg+xml",
-		"etag": "\"13a7-+Yl6wl4T3p6mAdLxrF2TU9++/No\"",
-		"mtime": "2026-07-12T07:45:50.775Z",
-		"size": 5031,
-		"path": "../public/icons.svg"
-	},
-	"/assets/about-CX_g-R4C.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"10e6-AoUogcEPbyrQruJxMO5IDCy37zc\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 4326,
-		"path": "../public/assets/about-CX_g-R4C.js"
-	},
 	"/favicon.svg": {
 		"type": "image/svg+xml",
 		"etag": "\"2532-P1u486agW3ymimJYHS3VvIiBLK8\"",
@@ -36,108 +22,157 @@ var public_assets_data_default = {
 		"size": 9522,
 		"path": "../public/favicon.svg"
 	},
-	"/assets/contact-CUzS6eTR.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"13e4-rs1GC/j7bGffqG/MEMKG8QXGmkg\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 5092,
-		"path": "../public/assets/contact-CUzS6eTR.js"
+	"/icons.svg": {
+		"type": "image/svg+xml",
+		"etag": "\"13a7-+Yl6wl4T3p6mAdLxrF2TU9++/No\"",
+		"mtime": "2026-07-12T07:45:50.775Z",
+		"size": 5031,
+		"path": "../public/icons.svg"
 	},
-	"/assets/app-mockup-CgR8S9CB.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"f965-ddUpkqQLjcuvofc7+hGlDar27aA\"",
-		"mtime": "2026-07-12T09:58:35.061Z",
-		"size": 63845,
-		"path": "../public/assets/app-mockup-CgR8S9CB.jpg"
-	},
-	"/assets/heart-handshake-G27RigKY.js": {
+	"/assets/contact-B-v_73xY.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"1bf-dLoVhvl5UbwsoarM1fTZYTvttZs\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 447,
-		"path": "../public/assets/heart-handshake-G27RigKY.js"
+		"etag": "\"12e3-87ordu3KQ1ywyzh9mKrpYLasKWs\"",
+		"mtime": "2026-07-24T20:50:23.743Z",
+		"size": 4835,
+		"path": "../public/assets/contact-B-v_73xY.js"
 	},
 	"/assets/cruizr-logo-Cnpshv2y.png": {
 		"type": "image/png",
 		"etag": "\"13853-p+hZMGkGWtna5ApUjYMnt1qSABk\"",
-		"mtime": "2026-07-12T09:58:35.061Z",
+		"mtime": "2026-07-24T20:50:23.749Z",
 		"size": 79955,
 		"path": "../public/assets/cruizr-logo-Cnpshv2y.png"
 	},
-	"/assets/feature-Jat9OzM0.js": {
+	"/assets/about-CnIttAiR.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"1219-9UZaQ9NYhukat8WPSMWwIvTQQtc\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 4633,
-		"path": "../public/assets/feature-Jat9OzM0.js"
+		"etag": "\"1bc0-FprgY4CT8gEfDVgPWClNrCnV7RE\"",
+		"mtime": "2026-07-24T20:50:23.743Z",
+		"size": 7104,
+		"path": "../public/assets/about-CnIttAiR.js"
 	},
-	"/assets/about-community-BHHeFakd.jpg": {
-		"type": "image/jpeg",
-		"etag": "\"300cd-Ko+myuwHPeokoaQtqKV9bXZAoIk\"",
-		"mtime": "2026-07-12T09:58:35.060Z",
-		"size": 196813,
-		"path": "../public/assets/about-community-BHHeFakd.jpg"
-	},
-	"/assets/privacy-Dw8Un2pS.js": {
+	"/assets/features-PQDh4qK4.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"f5a-jlcCB/PASE9lOvH5+aIVM141yuM\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 3930,
-		"path": "../public/assets/privacy-Dw8Un2pS.js"
+		"etag": "\"1653-mdMfedKmS7w/G/55LRrX0MpItgY\"",
+		"mtime": "2026-07-24T20:50:23.743Z",
+		"size": 5715,
+		"path": "../public/assets/features-PQDh4qK4.js"
 	},
-	"/assets/routes-BpO9KPoY.js": {
+	"/assets/heart-handshake-CwtDkywd.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"2bb1-r2QZqR293tUJRZRssERcEMBKjag\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 11185,
-		"path": "../public/assets/routes-BpO9KPoY.js"
+		"etag": "\"1bf-6tfeVWRYV5B4v4/DZ0W7RHuEHBU\"",
+		"mtime": "2026-07-24T20:50:23.744Z",
+		"size": 447,
+		"path": "../public/assets/heart-handshake-CwtDkywd.js"
 	},
-	"/assets/StoreBadges-t4m5CmmP.js": {
-		"type": "text/javascript; charset=utf-8",
-		"etag": "\"d1d-lYcPloBwYbqQYcWlHriEbv7GB2U\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 3357,
-		"path": "../public/assets/StoreBadges-t4m5CmmP.js"
+	"/assets/Clubs-BJk3eDLC.png": {
+		"type": "image/png",
+		"etag": "\"3a1c9-/v4F2Eef9BGH/LJaeYo7MMzNL3g\"",
+		"mtime": "2026-07-24T20:50:23.745Z",
+		"size": 238025,
+		"path": "../public/assets/Clubs-BJk3eDLC.png"
 	},
 	"/assets/hero-riders-DSSPWlN1.jpg": {
 		"type": "image/jpeg",
 		"etag": "\"26bbc-EI7qy6JnqRXeY+9yggb3+e6rQ68\"",
-		"mtime": "2026-07-12T09:58:35.061Z",
+		"mtime": "2026-07-24T20:50:23.751Z",
 		"size": 158652,
 		"path": "../public/assets/hero-riders-DSSPWlN1.jpg"
 	},
-	"/assets/terms-BEw0_Hpa.js": {
+	"/assets/index-D8KVPVM7.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"faa-N1OcJV6hVapZEdbsCbS3VSdwdBg\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 4010,
-		"path": "../public/assets/terms-BEw0_Hpa.js"
+		"etag": "\"56fbc-YYicpjkMU0IguR8AQCvyy4i6MoI\"",
+		"mtime": "2026-07-24T20:50:23.742Z",
+		"size": 356284,
+		"path": "../public/assets/index-D8KVPVM7.js"
 	},
-	"/assets/index-D2zQJaCR.js": {
+	"/assets/liveintercom-ieO3Bnrs.png": {
+		"type": "image/png",
+		"etag": "\"51361-KrzRSq0arAP2zWpy7Tk8BzALi0k\"",
+		"mtime": "2026-07-24T20:50:23.756Z",
+		"size": 332641,
+		"path": "../public/assets/liveintercom-ieO3Bnrs.png"
+	},
+	"/assets/privacy-BHcLTFj7.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"57361-AXNhobN7K2WTdmWQwwry+5q12dw\"",
-		"mtime": "2026-07-12T09:58:35.052Z",
-		"size": 357217,
-		"path": "../public/assets/index-D2zQJaCR.js"
+		"etag": "\"445b-tyzoNvr5V4DwyTRU4vN8NDwb7bc\"",
+		"mtime": "2026-07-24T20:50:23.744Z",
+		"size": 17499,
+		"path": "../public/assets/privacy-BHcLTFj7.js"
 	},
-	"/assets/styles-BHassXBs.css": {
-		"type": "text/css; charset=utf-8",
-		"etag": "\"15519-oeQOf3rxc4pMUYaJACbZnrTM4C4\"",
-		"mtime": "2026-07-12T09:58:35.064Z",
-		"size": 87321,
-		"path": "../public/assets/styles-BHassXBs.css"
-	},
-	"/assets/trophy-BHTSdTRy.js": {
+	"/assets/StoreBadges-QXy1X1gM.js": {
 		"type": "text/javascript; charset=utf-8",
-		"etag": "\"46f-PJanH5xPJ3rX4FwPZJG56XQDb+Q\"",
-		"mtime": "2026-07-12T09:58:35.060Z",
+		"etag": "\"1e495-do4qPM5g4MDOu4P5aLNhKfohvfo\"",
+		"mtime": "2026-07-24T20:50:23.742Z",
+		"size": 124053,
+		"path": "../public/assets/StoreBadges-QXy1X1gM.js"
+	},
+	"/assets/routes-5fclRC3Y.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"4c29-XadxWKnw4QTzB0vu32vgJec5PJc\"",
+		"mtime": "2026-07-24T20:50:23.744Z",
+		"size": 19497,
+		"path": "../public/assets/routes-5fclRC3Y.js"
+	},
+	"/assets/terms-CnQyPIfq.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"ef4-BTZW47TFv18Je2yCOHZTJvCKUBY\"",
+		"mtime": "2026-07-24T20:50:23.744Z",
+		"size": 3828,
+		"path": "../public/assets/terms-CnQyPIfq.js"
+	},
+	"/assets/trophy-ZCPwV1i_.js": {
+		"type": "text/javascript; charset=utf-8",
+		"etag": "\"46f-KQ8s+q7G3RQO6G1i59A+3NOpElo\"",
+		"mtime": "2026-07-24T20:50:23.745Z",
 		"size": 1135,
-		"path": "../public/assets/trophy-BHTSdTRy.js"
+		"path": "../public/assets/trophy-ZCPwV1i_.js"
+	},
+	"/assets/styles-CEyPFByB.css": {
+		"type": "text/css; charset=utf-8",
+		"etag": "\"15d3e-KMo9b10wZK2GKb/GaORxTKIt0uo\"",
+		"mtime": "2026-07-24T20:50:23.758Z",
+		"size": 89406,
+		"path": "../public/assets/styles-CEyPFByB.css"
+	},
+	"/assets/Map-DKIfwk5P.png": {
+		"type": "image/png",
+		"etag": "\"a39c2-h0FegRp0zBrqEhEUXtDEiIRDZBE\"",
+		"mtime": "2026-07-24T20:50:23.746Z",
+		"size": 670146,
+		"path": "../public/assets/Map-DKIfwk5P.png"
+	},
+	"/assets/commongallery-BEv2UmDm.png": {
+		"type": "image/png",
+		"etag": "\"197fc5-zjK5VL9z5/9FhVqJLY8fF6kqUSg\"",
+		"mtime": "2026-07-24T20:50:23.749Z",
+		"size": 1671109,
+		"path": "../public/assets/commongallery-BEv2UmDm.png"
+	},
+	"/assets/live-C76_ApqC.png": {
+		"type": "image/png",
+		"etag": "\"24483a-QJGu1FSnWpH0RGxLbi1rNM0Hl/Q\"",
+		"mtime": "2026-07-24T20:50:23.756Z",
+		"size": 2377786,
+		"path": "../public/assets/live-C76_ApqC.png"
+	},
+	"/assets/womens-DsPBskBa.png": {
+		"type": "image/png",
+		"etag": "\"2bca77-7O4VER4c9sBOkrxDMpPPgWj842s\"",
+		"mtime": "2026-07-24T20:50:23.759Z",
+		"size": 2869879,
+		"path": "../public/assets/womens-DsPBskBa.png"
+	},
+	"/assets/app-mockup-0fQfpPJ5.png": {
+		"type": "image/png",
+		"etag": "\"5b166d-Pbruoui7mUOAnqYB94pDyR5Mgco\"",
+		"mtime": "2026-07-24T20:50:23.748Z",
+		"size": 5969517,
+		"path": "../public/assets/app-mockup-0fQfpPJ5.png"
 	},
 	"/assets/hero-video-BhkfceSo.mp4": {
 		"type": "video/mp4",
 		"etag": "\"a5635a-o87oBHTVeZMr4sDJ+8EZswcu0fc\"",
-		"mtime": "2026-07-12T09:58:35.064Z",
+		"mtime": "2026-07-24T20:50:23.755Z",
 		"size": 10838874,
 		"path": "../public/assets/hero-video-BhkfceSo.mp4"
 	}

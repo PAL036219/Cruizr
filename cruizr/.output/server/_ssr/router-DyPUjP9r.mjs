@@ -1,12 +1,12 @@
-import { n as __toESM } from "../_runtime.mjs";
-import { n as require_jsx_runtime, r as require_react, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
-import { g as Mail, i as Twitter, m as Menu, n as X, t as Youtube, v as Instagram } from "../_libs/lucide-react.mjs";
+import { a as __toESM } from "../_runtime.mjs";
+import { n as require_react, r as require_jsx_runtime, t as QueryClientProvider } from "../_libs/react+tanstack__react-query.mjs";
+import { g as Menu, n as X, v as Mail } from "../_libs/lucide-react.mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-CoPw5cb7.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-DyPUjP9r.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var styles_default = "/assets/styles-BHassXBs.css";
+var styles_default = "/assets/styles-CEyPFByB.css";
 var cruizr_logo_default = "/assets/cruizr-logo-Cnpshv2y.png";
 var NAV = [
 	{
@@ -38,24 +38,30 @@ function SiteHeader() {
 					className: "flex items-center gap-2.5",
 					onClick: () => setOpen(false),
 					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-						src: cruizr_logo_default.url,
+						src: cruizr_logo_default,
 						alt: "CRUIZR",
 						width: 40,
 						height: 40,
 						className: "h-10 w-10 rounded-lg bg-white object-contain p-1"
 					}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-						className: "font-heading text-xl font-extrabold tracking-tight",
-						children: [
-							"CRU",
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-								className: "relative inline-block",
-								children: ["I", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "absolute left-1/2 top-[-2px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[var(--orange)]",
-									"aria-hidden": true
-								})]
-							}),
-							"ZR"
-						]
+						className: "flex flex-col leading-none",
+						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+							className: "font-heading text-xl font-extrabold tracking-tight",
+							children: [
+								"CRU",
+								/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+									className: "relative inline-block",
+									children: ["I", /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+										className: "absolute left-1/2 top-[-2px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[var(--orange)]",
+										"aria-hidden": true
+									})]
+								}),
+								"ZR"
+							]
+						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+							className: "text-[10px] font-medium tracking-wide text-muted-foreground",
+							children: "never cruise alone"
+						})]
 					})]
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
@@ -73,7 +79,7 @@ function SiteHeader() {
 					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 						href: "#download",
 						className: "inline-flex items-center rounded-full bg-[var(--orange)] px-5 py-2 text-sm font-semibold text-white transition-transform hover:scale-105 btn-glow",
-						children: "Download App"
+						children: "Coming Soon"
 					})
 				}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
@@ -96,7 +102,7 @@ function SiteHeader() {
 					href: "#download",
 					onClick: () => setOpen(false),
 					className: "mt-2 rounded-full bg-[var(--orange)] px-5 py-3 text-center text-sm font-semibold text-white",
-					children: "Download App"
+					children: "Coming Soon"
 				})]
 			})
 		})]
@@ -117,7 +123,7 @@ function SiteFooter() {
 								to: "/",
 								className: "flex items-center gap-2.5",
 								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
-									src: cruizr_logo_default.url,
+									src: cruizr_logo_default,
 									alt: "CRUIZR",
 									width: 40,
 									height: 40,
@@ -141,34 +147,14 @@ function SiteFooter() {
 								className: "mt-4 max-w-sm text-sm text-white/60",
 								children: "Never Cruise Alone. Find your perfect riding partner, ride together, and stay connected."
 							}),
-							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 								className: "mt-6 flex gap-3",
-								children: [
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										href: "https://instagram.com/cruizr",
-										"aria-label": "Instagram",
-										className: "grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, { size: 18 })
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										href: "https://twitter.com/cruizr",
-										"aria-label": "Twitter",
-										className: "grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Twitter, { size: 18 })
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										href: "https://youtube.com/@cruizr",
-										"aria-label": "YouTube",
-										className: "grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Youtube, { size: 18 })
-									}),
-									/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-										href: "mailto:support@cruizr.app",
-										"aria-label": "Email",
-										className: "grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white",
-										children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 18 })
-									})
-								]
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+									href: "mailto:abhishek@cruizr.in",
+									"aria-label": "Email",
+									className: "grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white",
+									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 18 })
+								})
 							})
 						]
 					}),
@@ -212,9 +198,9 @@ function SiteFooter() {
 								children: "Terms of Service"
 							}) }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-								href: "mailto:support@cruizr.app",
+								href: "mailto:abhishek@cruizr.in",
 								className: "hover:text-[var(--orange)]",
-								children: "support@cruizr.app"
+								children: "abhishek@cruizr.in"
 							}) })
 						]
 					})] })
@@ -425,7 +411,7 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$5 = () => import("./terms-Co0GYRKP.mjs");
+var $$splitComponentImporter$5 = () => import("./terms-BXpkMZL4.mjs");
 var Route$5 = createFileRoute("/terms")({
 	head: () => ({
 		meta: [
@@ -454,14 +440,14 @@ var Route$5 = createFileRoute("/terms")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$4 = () => import("./privacy-DJqaOVlQ.mjs");
+var $$splitComponentImporter$4 = () => import("./privacy-CGLYAxYK.mjs");
 var Route$4 = createFileRoute("/privacy")({
 	head: () => ({
 		meta: [
 			{ title: "Privacy Policy — CRUIZR" },
 			{
 				name: "description",
-				content: "How CRUIZR collects, uses, and protects your data."
+				content: "Read CRUIZR's privacy policy to understand how we collect, use, and protect your personal data."
 			},
 			{
 				property: "og:title",
@@ -469,15 +455,11 @@ var Route$4 = createFileRoute("/privacy")({
 			},
 			{
 				property: "og:description",
-				content: "How CRUIZR handles your data."
+				content: "Your privacy matters. Learn how CRUIZR handles your data."
 			},
 			{
 				property: "og:url",
 				content: "/privacy"
-			},
-			{
-				name: "robots",
-				content: "index,follow"
 			}
 		],
 		links: [{
@@ -487,8 +469,8 @@ var Route$4 = createFileRoute("/privacy")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
 });
-var $$splitComponentImporter$3 = () => import("./feature-D6-f8HId.mjs");
-var Route$3 = createFileRoute("/feature")({
+var $$splitComponentImporter$3 = () => import("./features-CdqEO6li.mjs");
+var Route$3 = createFileRoute("/features")({
 	head: () => ({
 		meta: [
 			{ title: "Features — CRUIZR" },
@@ -516,7 +498,7 @@ var Route$3 = createFileRoute("/feature")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
 });
-var $$splitComponentImporter$2 = () => import("./contact-DyTKn5PO.mjs");
+var $$splitComponentImporter$2 = () => import("./contact-DyvWx2uS.mjs");
 var Route$2 = createFileRoute("/contact")({
 	head: () => ({
 		meta: [
@@ -545,7 +527,7 @@ var Route$2 = createFileRoute("/contact")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
 });
-var $$splitComponentImporter$1 = () => import("./about-CQsVfw3-.mjs");
+var $$splitComponentImporter$1 = () => import("./about-DGVSgtXZ.mjs");
 var Route$1 = createFileRoute("/about")({
 	head: () => ({
 		meta: [
@@ -574,7 +556,7 @@ var Route$1 = createFileRoute("/about")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-D9cvxvHF.mjs");
+var $$splitComponentImporter = () => import("./routes-BPmR9wTe.mjs");
 var Route = createFileRoute("/")({
 	head: () => ({
 		meta: [
@@ -628,9 +610,9 @@ var PrivacyRoute = Route$4.update({
 	path: "/privacy",
 	getParentRoute: () => Route$6
 });
-var FeatureRoute = Route$3.update({
-	id: "/feature",
-	path: "/feature",
+var FeaturesRoute = Route$3.update({
+	id: "/features",
+	path: "/features",
 	getParentRoute: () => Route$6
 });
 var ContactRoute = Route$2.update({
@@ -651,7 +633,7 @@ var rootRouteChildren = {
 	}),
 	AboutRoute,
 	ContactRoute,
-	FeatureRoute,
+	FeaturesRoute,
 	PrivacyRoute,
 	TermsRoute
 };

@@ -18,10 +18,12 @@ export function SiteFooter() {
               Never Cruise Alone. Find your perfect riding partner, ride together, and stay connected.
             </p>
             <div className="mt-6 flex gap-3">
+              {/* 
               <a href="https://instagram.com/cruizr" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white">
                 <Instagram size={18} />
               </a>
-              <a href="mailto:pal036219@gmail.com" aria-label="Email" className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white">
+              */}
+              <a href="mailto:abhishek@cruizr.in" aria-label="Email" className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white">
                 <Mail size={18} />
               </a>
             </div>
@@ -41,7 +43,7 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm text-white/60">
               <li><Link to="/privacy" className="hover:text-[var(--orange)]">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-[var(--orange)]">Terms of Service</Link></li>
-              <li><a href="mailto:pal036219@gmail.com" className="hover:text-[var(--orange)]">pal036219@gmail.com</a></li>
+              <li><a href="mailto:abhishek@cruizr.in" className="hover:text-[var(--orange)]">abhishek@cruizr.in</a></li>
             </ul>
           </div>
         </div>

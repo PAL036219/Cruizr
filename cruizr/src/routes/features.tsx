@@ -13,6 +13,9 @@ import {
   Coffee,
   Compass,
   Zap,
+  Video,
+  MessageCircle,
+  Target,
 } from "lucide-react";
 import { StoreBadges } from "../components/StoreBadges";
 import { SectionHeading } from "../components/SectionHeading";
@@ -82,6 +85,21 @@ const ALL = [
     title: "Safety & Trust", 
     body: "Verified profiles, rider ratings, emergency SOS, and check-in reminders. Built with rider safety at the core." 
   },
+  {
+    icon: MessageCircle,
+    title: "Direct & Group Chat",
+    body: "Connect with other riders through direct messaging, or coordinate your next trip in dedicated ride and club group chats."
+  },
+  {
+    icon: Video,
+    title: "Live Ride Broadcasting",
+    body: "Stream your ride live to your followers or club members. Let viewers join your journey in real-time, right from their screens."
+  },
+  {
+    icon: Target,
+    title: "Daily Rider Challenges",
+    body: "Push your limits and keep the rubber on the road. Complete daily riding challenges, earn badges, and compete with the community."
+  },
 ];
 
 // ⭐ NEW: Quick Stats Section
@@ -122,7 +140,7 @@ function FeaturesPage() {
         </div>
       </section>
 
-      {/* ⭐ STATS SECTION - NEW */}
+      {/* ⭐ STATS SECTION - NEW 
       <section className="bg-background border-b border-border py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-8">
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
@@ -139,12 +157,13 @@ function FeaturesPage() {
           </div>
         </div>
       </section>
+      */}
 
       {/* FEATURES LIST */}
       <section className="bg-background py-24 md:py-32">
         <div className="mx-auto max-w-6xl space-y-16 px-4 md:px-8 md:space-y-24">
           {ALL.map((f, i) => (
-            <Reveal key={f.title}>
+            <Reveal key={f.title} direction={i % 2 === 0 ? "left" : "right"}>
               <article
                 className={`grid gap-10 md:grid-cols-2 md:items-center ${
                   i % 2 ? "md:[&>*:first-child]:order-2" : ""
@@ -170,7 +189,7 @@ function FeaturesPage() {
         </div>
       </section>
 
-      {/* ⭐ TESTIMONIAL SECTION - NEW */}
+      {/* ⭐ TESTIMONIAL SECTION - NEW 
       <section className="bg-muted/30 py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center md:px-8">
           <Reveal>
@@ -187,6 +206,7 @@ function FeaturesPage() {
           </Reveal>
         </div>
       </section>
+      */}
 
       {/* CTA SECTION */}
       <section className="bg-dark py-24 md:py-32">
@@ -194,7 +214,7 @@ function FeaturesPage() {
           <SectionHeading 
             invert 
             title={<span className="text-white">Try every feature free.</span>} 
-            subtitle={<span className="text-white/70">Download CRUIZR and start riding with your crew today.</span>} 
+            subtitle={<span className="text-white/70">CRUIZR is coming soon. Get ready to start riding with your crew.</span>} 
           />
           <div className="mt-10 flex justify-center">
             <StoreBadges dark />

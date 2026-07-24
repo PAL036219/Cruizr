@@ -1,7 +1,7 @@
-import { n as __toESM } from "../_runtime.mjs";
-import { n as require_jsx_runtime, r as require_react } from "../_libs/react+tanstack__react-query.mjs";
-import { b as Check, c as Send, g as Mail, i as Twitter, t as Youtube, v as Instagram } from "../_libs/lucide-react.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/contact-DyTKn5PO.js
+import { a as __toESM } from "../_runtime.mjs";
+import { n as require_react, r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+import { S as Check, l as Send, v as Mail } from "../_libs/lucide-react.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/contact-DyvWx2uS.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 function ContactPage() {
@@ -24,6 +24,9 @@ function ContactPage() {
 		}
 		setErr("");
 		setSent(true);
+		const subject = encodeURIComponent(`Contact from ${form.name}`);
+		const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+		window.location.href = `mailto:abhishek@cruizr.in?subject=${subject}&body=${body}`;
 	}
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("section", {
 		className: "bg-dark py-20 md:py-28",
@@ -73,6 +76,18 @@ function ContactPage() {
 									form.email,
 									" soon."
 								]
+							}),
+							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", {
+								onClick: () => {
+									setSent(false);
+									setForm({
+										name: "",
+										email: "",
+										message: ""
+									});
+								},
+								className: "mt-4 text-sm text-[var(--orange)] hover:underline",
+								children: "Send another message"
 							})
 						]
 					}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("form", {
@@ -91,7 +106,8 @@ function ContactPage() {
 									name: e.target.value
 								}),
 								className: "w-full rounded-xl border border-input bg-background px-4 py-3 outline-none transition-colors focus:border-[var(--orange)]",
-								placeholder: "Your name"
+								placeholder: "Your name",
+								required: true
 							})] }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
 								className: "mb-2 block text-sm font-semibold",
@@ -106,7 +122,8 @@ function ContactPage() {
 									email: e.target.value
 								}),
 								className: "w-full rounded-xl border border-input bg-background px-4 py-3 outline-none transition-colors focus:border-[var(--orange)]",
-								placeholder: "you@example.com"
+								placeholder: "you@example.com",
+								required: true
 							})] }),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("label", {
 								className: "mb-2 block text-sm font-semibold",
@@ -121,7 +138,8 @@ function ContactPage() {
 									message: e.target.value
 								}),
 								className: "w-full rounded-xl border border-input bg-background px-4 py-3 outline-none transition-colors focus:border-[var(--orange)]",
-								placeholder: "Tell us what's on your mind..."
+								placeholder: "Tell us what's on your mind...",
+								required: true
 							})] }),
 							err && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 								className: "text-sm text-destructive",
@@ -144,30 +162,13 @@ function ContactPage() {
 							className: "font-heading text-xl font-bold",
 							children: "Direct channels"
 						}),
-						/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("ul", {
+						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("ul", {
 							className: "mt-6 space-y-4 text-sm",
-							children: [
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-									href: "mailto:support@cruizr.app",
-									className: "flex items-center gap-3 text-foreground hover:text-[var(--orange)]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 18 }), " support@cruizr.app"]
-								}) }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-									href: "https://instagram.com/cruizr",
-									className: "flex items-center gap-3 text-foreground hover:text-[var(--orange)]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Instagram, { size: 18 }), " @cruizr on Instagram"]
-								}) }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-									href: "https://twitter.com/cruizr",
-									className: "flex items-center gap-3 text-foreground hover:text-[var(--orange)]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Twitter, { size: 18 }), " @cruizr on Twitter"]
-								}) }),
-								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-									href: "https://youtube.com/@cruizr",
-									className: "flex items-center gap-3 text-foreground hover:text-[var(--orange)]",
-									children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Youtube, { size: 18 }), " CRUIZR on YouTube"]
-								}) })
-							]
+							children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+								href: "mailto:abhishek@cruizr.in",
+								className: "flex items-center gap-3 text-foreground hover:text-[var(--orange)]",
+								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 18 }), " abhishek@cruizr.in"]
+							}) })
 						}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 							className: "mt-8 text-xs text-muted-foreground",

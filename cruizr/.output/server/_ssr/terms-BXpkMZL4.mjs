@@ -1,5 +1,5 @@
-import { n as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/terms-Co0GYRKP.js
+import { r as require_jsx_runtime } from "../_libs/react+tanstack__react-query.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/terms-BXpkMZL4.js
 var import_jsx_runtime = require_jsx_runtime();
 function TermsPage() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("article", {
@@ -50,16 +50,12 @@ function TermsPage() {
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
 						"Questions? Email ",
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "mailto:support@cruizr.app",
+							href: "mailto:abhishek@cruizr.in",
 							className: "text-[var(--orange)] underline",
-							children: "support@cruizr.app"
+							children: "abhishek@cruizr.in"
 						}),
 						"."
-					] }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-						className: "mt-10 text-xs italic",
-						children: "This placeholder is provided for informational purposes only and is not legal advice. Have counsel review before launch."
-					})
+					] })
 				]
 			})
 		]

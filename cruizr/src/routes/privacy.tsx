@@ -31,7 +31,7 @@ function PrivacyPage() {
         </ul>
 
         <p>
-          <strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:pal036219@gmail.com" className="text-[var(--orange)] underline">pal036219@gmail.com</a>.
+          <strong>Questions or concerns?</strong> Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at <a href="mailto:abhishek@cruizr.in" className="text-[var(--orange)] underline">abhishek@cruizr.in</a>.
         </p>
 
         <h2>Summary of Key Points</h2>
@@ -186,7 +186,7 @@ function PrivacyPage() {
         <p>
           Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.
         </p>
-        <p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:pal036219@gmail.com" className="text-[var(--orange)] underline">pal036219@gmail.com</a>.</p>
+        <p>If you have questions or comments about your privacy rights, you may email us at <a href="mailto:abhishek@cruizr.in" className="text-[var(--orange)] underline">abhishek@cruizr.in</a>.</p>
 
         <h2>10. Controls for Do-Not-Track Features</h2>
         <p>
@@ -211,11 +211,11 @@ function PrivacyPage() {
           New Delhi, Delhi 110081<br />
           India
         </p>
-        <p>Or email us at <a href="mailto:pal036219@gmail.com" className="text-[var(--orange)] underline">pal036219@gmail.com</a>.</p>
+        <p>Or email us at <a href="mailto:abhishek@cruizr.in" className="text-[var(--orange)] underline">abhishek@cruizr.in</a>.</p>
 
         <h2>13. How Can You Review, Update, or Delete the Data We Collect From You?</h2>
         <p>
-          Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please contact us at <a href="mailto:pal036219@gmail.com" className="text-[var(--orange)] underline">pal036219@gmail.com</a>.
+          Based on the applicable laws of your country, you may have the right to request access to the personal information we collect from you, details about how we have processed it, correct inaccuracies, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. To request to review, update, or delete your personal information, please contact us at <a href="mailto:abhishek@cruizr.in" className="text-[var(--orange)] underline">abhishek@cruizr.in</a>.
         </p>
       </div>
     </article>

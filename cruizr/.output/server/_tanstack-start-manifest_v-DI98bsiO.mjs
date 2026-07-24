@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-Do3P3d-B.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DI98bsiO.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "E:/Cruizr/cruizr/src/routes/__root.tsx",
@@ -6,59 +6,59 @@ var tsrStartManifest = () => ({ routes: {
 			"/",
 			"/about",
 			"/contact",
-			"/feature",
+			"/features",
 			"/privacy",
 			"/terms"
 		],
-		preloads: ["/assets/index-D2zQJaCR.js"],
+		preloads: ["/assets/index-D8KVPVM7.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-D2zQJaCR.js"
+			src: "/assets/index-D8KVPVM7.js"
 		} }]
 	},
 	"/": {
 		filePath: "E:/Cruizr/cruizr/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-BpO9KPoY.js",
-			"/assets/StoreBadges-t4m5CmmP.js",
-			"/assets/trophy-BHTSdTRy.js"
+			"/assets/routes-5fclRC3Y.js",
+			"/assets/StoreBadges-QXy1X1gM.js",
+			"/assets/trophy-ZCPwV1i_.js"
 		]
 	},
 	"/about": {
 		filePath: "E:/Cruizr/cruizr/src/routes/about.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/about-CX_g-R4C.js",
-			"/assets/StoreBadges-t4m5CmmP.js",
-			"/assets/heart-handshake-G27RigKY.js"
+			"/assets/about-CnIttAiR.js",
+			"/assets/StoreBadges-QXy1X1gM.js",
+			"/assets/heart-handshake-CwtDkywd.js"
 		]
 	},
 	"/contact": {
 		filePath: "E:/Cruizr/cruizr/src/routes/contact.tsx",
 		children: void 0,
-		preloads: ["/assets/contact-CUzS6eTR.js"]
+		preloads: ["/assets/contact-B-v_73xY.js"]
 	},
-	"/feature": {
-		filePath: "E:/Cruizr/cruizr/src/routes/feature.tsx",
+	"/features": {
+		filePath: "E:/Cruizr/cruizr/src/routes/features.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/feature-Jat9OzM0.js",
-			"/assets/StoreBadges-t4m5CmmP.js",
-			"/assets/heart-handshake-G27RigKY.js",
-			"/assets/trophy-BHTSdTRy.js"
+			"/assets/features-PQDh4qK4.js",
+			"/assets/StoreBadges-QXy1X1gM.js",
+			"/assets/heart-handshake-CwtDkywd.js",
+			"/assets/trophy-ZCPwV1i_.js"
 		]
 	},
 	"/privacy": {
 		filePath: "E:/Cruizr/cruizr/src/routes/privacy.tsx",
 		children: void 0,
-		preloads: ["/assets/privacy-Dw8Un2pS.js"]
+		preloads: ["/assets/privacy-BHcLTFj7.js"]
 	},
 	"/terms": {
 		filePath: "E:/Cruizr/cruizr/src/routes/terms.tsx",
 		children: void 0,
-		preloads: ["/assets/terms-BEw0_Hpa.js"]
+		preloads: ["/assets/terms-CnQyPIfq.js"]
 	}
 } });
 //#endregion
