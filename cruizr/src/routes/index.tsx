@@ -14,7 +14,7 @@ import {
 } from "lucide-react";
 import heroImg from "../assets/hero-riders.jpg";
 import heroVideo from "../assets/hero-video.mp4";
-import appMockup from "../assets/app-mockup.png";
+import appMockup from "../assets/app-mockup.jpg";
 import common from "../assets/commongallery.png";
 
 import live from "../assets/live.png";
