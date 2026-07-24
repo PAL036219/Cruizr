@@ -12,9 +12,15 @@ export const Route = createFileRoute("/contact")({
       },
       { property: "og:title", content: "Contact — CRUIZR" },
       { property: "og:description", content: "Reach the CRUIZR team." },
-      { property: "og:url", content: "/contact" },
+      { property: "og:url", content: "https://cruizr.in/contact" },
+      { property: "og:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Contact — CRUIZR" },
+      { name: "twitter:description", content: "Reach the CRUIZR team." },
+      { name: "twitter:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/contact" }],
+    links: [{ rel: "canonical", href: "https://cruizr.in/contact" }],
   }),
   component: ContactPage,
 });
@@ -148,13 +154,11 @@ function ContactPage() {
                     <Mail size={18} /> abhishek@cruizr.in
                   </a>
                 </li>
-                {/* 
                 <li>
-                  <a href="https://instagram.com/cruizr" className="flex items-center gap-3 text-foreground hover:text-[var(--orange)]">
-                    <Instagram size={18} /> @cruizr on Instagram
+                  <a href="https://www.instagram.com/cruizrapp?igsh=d2ttMDRjbmU1YWhk" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-foreground hover:text-[var(--orange)]">
+                    <Instagram size={18} /> @cruizrapp on Instagram
                   </a>
                 </li>
-                */}
               </ul>
               <p className="mt-8 text-xs text-muted-foreground">
                 We reply within 1–2 business days.

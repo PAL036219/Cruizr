@@ -18,11 +18,9 @@ export function SiteFooter() {
               Never Cruise Alone. Find your perfect riding partner, ride together, and stay connected.
             </p>
             <div className="mt-6 flex gap-3">
-              {/* 
-              <a href="https://instagram.com/cruizr" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white">
+              <a href="https://www.instagram.com/cruizrapp?igsh=d2ttMDRjbmU1YWhk" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white">
                 <Instagram size={18} />
               </a>
-              */}
               <a href="mailto:abhishek@cruizr.in" aria-label="Email" className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-white/80 transition-colors hover:bg-[var(--orange)] hover:text-white">
                 <Mail size={18} />
               </a>
