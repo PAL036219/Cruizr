@@ -8,19 +8,24 @@ import { StoreBadges } from "../components/StoreBadges";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — CRUIZR" },
+      { title: "About — CRUIZR: The Free Motorcycle Riding Community App" },
       {
         name: "description",
-        content: "Why we built CRUIZR — a ride-partner app made by riders for riders. Our mission, story, and values.",
+        content: "Discover why we built CRUIZR. We are building the ultimate Indian motorcycle community app and rider networking platform. Join us to find weekend bike rides near you.",
       },
-      { property: "og:title", content: "About — CRUIZR" },
-      { property: "og:description", content: "The story behind CRUIZR and the values that drive us." },
+      {
+        name: "keywords",
+        content:
+          "free motorcycle riding community app, motorcycle rider networking app, best app to meet motorcycle riders, Indian motorcycle community app, motorcycle club app India, bike riders app Delhi",
+      },
+      { property: "og:title", content: "About CRUIZR — Indian Motorcycle Community & Biker Network" },
+      { property: "og:description", content: "Discover why we built CRUIZR. We are building the ultimate Indian motorcycle community app and rider networking platform." },
       { property: "og:url", content: "https://cruizr.in/about" },
       { property: "og:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "About — CRUIZR" },
-      { name: "twitter:description", content: "The story behind CRUIZR and the values that drive us." },
+      { name: "twitter:title", content: "About CRUIZR — Biker Social Network" },
+      { name: "twitter:description", content: "Connecting motorcycle riders across India. Join the ultimate biker community." },
       { name: "twitter:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://cruizr.in/about" }],

@@ -27,40 +27,101 @@ import { StoreBadges } from "../components/StoreBadges";
 import { WaitlistForm } from "../components/WaitlistForm";
 import { SectionHeading } from "../components/SectionHeading";
 import { Reveal } from "../components/Reveal";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "../components/ui/accordion";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CRUIZR — Never Cruise Alone. Find Your Riding Partner." },
+      { title: "CRUIZR — Best App for Motorbike Clubs, Offriding Rides & Bike Community" },
       {
         name: "description",
         content:
-          "CRUIZR matches solo riders with compatible partners by bike, pace, and style. Live tracking, in built intercom, private rides, and clubs.",
+          "Looking for the best app for motorbike clubs, offriding rides, or group motorcycle rides? CRUIZR offers live GPS tracking, hands-free intercom, crash safety alerts, and a vibrant riding community in Bangalore, Mumbai, Pune, and India.",
       },
-      { property: "og:title", content: "CRUIZR — Never Cruise Alone. Find Your Riding Partner." },
+      {
+        name: "keywords",
+        content:
+          "best app for motorbike club, best app for offriding rides, best app for group motorcycle rides, best app for bike riders, best app for motorcycle enthusiasts, best app for offroad riding, best motorcycle app India, bike riding app Bangalore, Pune, Mumbai, Hyderabad, Chennai, Delhi NCR, women motorcycle riders app India, women only bike rides, monsoon bike rides India, offroad rides monsoon, winter motorcycle rides India, motorcycle intercom app, motorcycle crash alert app, motorcycle GPS tracker",
+      },
+      { property: "og:title", content: "CRUIZR — Best App for Motorbike Clubs & Group Rides" },
       {
         property: "og:description",
-        content: "CRUIZR matches solo riders with compatible partners by bike, pace, and style. Live tracking, in built intercom, private rides, and clubs.",
+        content: "CRUIZR is the ultimate motorcycle companion app. Join motorbike clubs, plan offroad/monsoon rides, track groups live with built-in intercom, safety crash alerts, and female-only rides in India.",
       },
       { property: "og:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
       { property: "og:url", content: "https://cruizr.in/" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "CRUIZR — Never Cruise Alone." },
-      { name: "twitter:description", content: "Find your perfect riding partner. Match on bike, pace, and style." },
+      { name: "twitter:title", content: "CRUIZR — Best App for Motorbike Clubs & Offriding" },
+      { name: "twitter:description", content: "Join motorbike clubs, plan offroad/monsoon rides, track groups live with built-in intercom, safety crash alerts, and female-only rides in India." },
       { name: "twitter:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: "https://cruizr.in/" }],
     scripts: [
       {
         type: "application/ld+json",
         children: JSON.stringify({
           "@context": "https://schema.org",
-          "@type": "MobileApplication",
-          name: "CRUIZR",
-          applicationCategory: "LifestyleApplication",
-          operatingSystem: "iOS, Android",
-          offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+          "@graph": [
+            {
+              "@type": "MobileApplication",
+              "name": "CRUIZR",
+              "applicationCategory": "LifestyleApplication",
+              "operatingSystem": "iOS, Android",
+              "description": "The best app for motorbike clubs and offriding rides. Find local riding partners, use live tracking, and communicate hands-free.",
+              "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" }
+            },
+            {
+              "@type": "FAQPage",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "What is the best app for motorbike clubs and organizing group motorcycle rides?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CRUIZR is the best app for motorbike clubs and group motorcycle rides. It replaces scattered WhatsApp groups with a unified platform offering built-in intercom voice communication, live GPS tracking for every member, and safety features like rider accountability."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How can riders find offriding rides, offroad trails, and adventure rides?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CRUIZR makes finding offriding rides and offroad trials simple. The app lets you filter rides by terrain, bike type (adventure, dirt, sport, cruiser), and pace. Whether you are searching for offroad trails in Pune, monsoon bike rides in Mumbai, or weekend trips in Bangalore, CRUIZR connects you with local riders."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "What makes CRUIZR the best app for rider safety and group communication?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CRUIZR focuses on safety with real-time GPS tracking so no one gets left behind, intercom voice communication, crash alerts, and one-tap emergency SOS features. Its OTP verification confirms rider presence at meetups, creating an accountable community."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is there a dedicated app for women motorcycle riders in India?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, CRUIZR supports the female riding community. Women motorcycle riders in India can create and join women-only bike rides, connect with a dedicated female riders network, and plan secure trips in Bangalore, Mumbai, Pune, Chennai, Delhi NCR, and Hyderabad."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "How does CRUIZR support seasonal rides like monsoon, winter, and summer trips?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CRUIZR organizes seasonal ride highlights, making it the perfect app for planning monsoon bike rides, winter motorcycle expeditions, and summer highway cruises. The community provides weather alerts, road reports, and safety updates."
+                  }
+                }
+              ]
+            }
+          ]
         }),
       },
     ],
@@ -654,6 +715,83 @@ function Home() {
         </div>
       </section>
       */}
+
+      {/* FAQ SECTION */}
+      <section className="bg-background py-24 md:py-32">
+        <div className="mx-auto max-w-4xl px-4 md:px-8">
+          <Reveal>
+            <SectionHeading
+              eyebrow="Frequently Asked Questions"
+              title={
+                <>
+                  Find Answers to <span className="text-gradient">Your Questions</span>
+                </>
+              }
+              subtitle="Everything you need to know about the best companion app for motorbike clubs, offriding, safety, and rider networking."
+            />
+          </Reveal>
+          
+          <Reveal delay={150}>
+            <div className="mt-16 rounded-2xl border border-border bg-card p-6 md:p-8">
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                <AccordionItem value="item-1" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    What is the best app for motorbike clubs and group motorcycle rides?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    CRUIZR is built to be the ultimate app for motorbike clubs and group rides. By replacing scattered WhatsApp chats, CRUIZR acts as a unified platform where communities can schedule events, monitor rider safety, enforce accountability, and use hands-free intercom communication on the go.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-2" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    How do riders find offriding rides, offroad trails, and adventure rides?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    CRUIZR makes finding offriding rides and offroad trials simple. You can easily filter upcoming rides by terrain, pace, and bike type. Whether you are looking for dirt trails in Pune, weekend adventure trips in Bangalore, or monsoon bike rides in Mumbai, CRUIZR connects you to local enthusiasts who match your vibe.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-3" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    How does CRUIZR ensure rider safety and group tracking?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    Rider safety and accountability are core to CRUIZR. The app features a live group GPS tracker to ensure no one gets lost, automatic crash alerts, emergency SOS triggers, and a unique meetup verification system. These tools help groups ride safely on highways, off-road trails, and city streets.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-4" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    Is there an app feature specifically for women motorcycle riders in India?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    Yes. CRUIZR is dedicated to fostering a safe, inclusive environment. Female bikers can create and discover women-only bike rides, connect with local networks, and access enhanced safety features. It is the premier platform to meet and coordinate with women motorcycle rider communities in cities like Delhi NCR, Bangalore, Pune, Chennai, and Hyderabad.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-5" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    How does the app support seasonal trips like monsoon or winter rides?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    CRUIZR is built for all seasons. Riders can list monsoon bike rides in India, find off-road runs in the rain, or organize winter tour routes. The community-sourced route planner alerts you to road hazards, water-logged tracks, and safe shelters, making seasonal exploration seamless.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-6" className="border-b-0">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    Which major cities in India are supported by CRUIZR?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    CRUIZR supports riding communities nationwide, with active hubs in Bangalore, Mumbai, Pune, Hyderabad, Chennai, Delhi NCR, and Kolkata. Whether you want to plan weekend trips, discover urban biker hangouts, or run group safety audits, CRUIZR connects local riders near you.
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          </Reveal>
+        </div>
+      </section>
 
       {/* FINAL CTA */}
       <section className="relative overflow-hidden bg-dark py-24 md:py-32">

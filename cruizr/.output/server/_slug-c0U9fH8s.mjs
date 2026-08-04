@@ -1,0 +1,647 @@
+import { A as notFound, f as lazyRouteComponent, p as createFileRoute } from "./_libs/@tanstack/react-router+[...].mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/_slug-c0U9fH8s.js
+var $$splitComponentImporter = () => import("./_slug-BqHCdfSP.mjs");
+var SLUG_CONTENT_MAP = {
+	"motorcycle-app-delhi": {
+		title: "Delhi NCR Biker Community",
+		metaTitle: "Best Motorcycle App in Delhi NCR — CRUIZR Biker Network",
+		metaDesc: "Discover the best motorcycle app in Delhi NCR. Coordinate weekend rides to Murthal, tracks near Gurgaon, or off-road runs. Stay connected with local Delhi bikers.",
+		metaKeywords: "motorcycle riders app Delhi NCR, bike riders app Delhi, motorcycle rides Delhi",
+		heroBadge: "Delhi NCR Biker Hub",
+		headline: "The Ultimate Companion App for Delhi Biker Clubs",
+		subheadline: "Whether cruising to Murthal or navigating Gurgaon trail runs, keep your group connected.",
+		introText: "From Noida to Gurgaon, CRUIZR is the preferred platform for motorcyclists in Delhi NCR. Organize weekend club rides, track your crew in real-time, and talk hands-free using our integrated intercom.",
+		features: [
+			{
+				title: "Delhi Biker Clubs",
+				desc: "Join local groups from South Delhi, Noida, and Gurugram.",
+				icon: "users"
+			},
+			{
+				title: "Weekend Routes",
+				desc: "Share popular rides like Leopard Trail or highway runs.",
+				icon: "compass"
+			},
+			{
+				title: "Delhi NCR Trackers",
+				desc: "Real-time live map updates for safe group coordination.",
+				icon: "mappin"
+			}
+		],
+		ctaTitle: "Ready to stop riding alone in Delhi?",
+		cityContext: true
+	},
+	"motorcycle-app-bangalore": {
+		title: "Bangalore Motorcycle Community",
+		metaTitle: "Best Biker App in Bangalore — CRUIZR Ride Sharing & Companion",
+		metaDesc: "Join Bangalore's premier bike riding community. Perfect app for weekend breakfast rides to Nandi Hills, Kolar, or offroad trails. Live GPS & intercom.",
+		metaKeywords: "motorcycle riders app Bangalore, bike community Bangalore, Nandi Hills bike rides",
+		heroBadge: "Bengaluru Biker Network",
+		headline: "The Best Motorcycle App in Bangalore",
+		subheadline: "Coordinate breakfast runs to Nandi Hills or plan off-road adventures with ease.",
+		introText: "Bangalore has one of India's richest riding cultures. CRUIZR connects you with fellow Bangalore motorcyclists who match your pace and style. Never worry about losing the pack on highway curves again.",
+		features: [
+			{
+				title: "Nandi & Kolar Runs",
+				desc: "Organize breakfast rides with simple meetup coordination.",
+				icon: "calendar"
+			},
+			{
+				title: "Offline Mesh Network",
+				desc: "Stay connected even through dense green trails around Bangalore.",
+				icon: "radio"
+			},
+			{
+				title: "Local Clubs",
+				desc: "Connect with cruiser, adventure, or sportbike communities.",
+				icon: "users"
+			}
+		],
+		ctaTitle: "Join the top Bangalore riding network",
+		cityContext: true
+	},
+	"motorcycle-app-mumbai": {
+		title: "Mumbai Motorcycle Rides & Clubs",
+		metaTitle: "Best Motorcycle App in Mumbai — CRUIZR Riding Club",
+		metaDesc: "Explore Mumbai motorcycle rides and clubs. Plan monsoon bike rides in Lonavala or coastal cruises along Marine Drive. Safe tracking & intercom.",
+		metaKeywords: "motorcycle community Mumbai, monsoon bike rides Mumbai, Lonavala rides",
+		heroBadge: "Mumbai Biker Central",
+		headline: "The Safest App for Mumbai Motorcycle Clubs",
+		subheadline: "Navigate Western Ghats curves or cruise Marine Drive safely in group formations.",
+		introText: "Whether you ride through city traffic or climb towards Lonavala and Igatpuri, CRUIZR ensures your group stays accountable. Track positions in real-time, get crash safety warnings, and manage your club in one place.",
+		features: [
+			{
+				title: "Monsoon Group Runs",
+				desc: "Coordinate safely in heavy monsoon downpours with live tracking.",
+				icon: "mappin"
+			},
+			{
+				title: "Ghat Navigation",
+				desc: "Detailed group route sharing for challenging mountain routes.",
+				icon: "compass"
+			},
+			{
+				title: "Mumbai Riding Circles",
+				desc: "Join established urban communities and local riding clubs.",
+				icon: "users"
+			}
+		],
+		ctaTitle: "Ride safely across Mumbai",
+		cityContext: true
+	},
+	"motorcycle-app-pune": {
+		title: "Pune Biker Community & Offroad Trails",
+		metaTitle: "Best Bike Riding App in Pune — CRUIZR Offroad & Adventure",
+		metaDesc: "Discover Pune's top bike riding community app. Coordinate offroad monsoon rides to Lavasa, Mahabaleshwar, or Tamhini Ghat. Integrated GPS tracker.",
+		metaKeywords: "bike riders app Pune, offroad rides Pune, Tamhini Ghat motorcycle rides",
+		heroBadge: "Pune Adventure Club",
+		headline: "The Preferred App for Pune Offroad Rides",
+		subheadline: "Conquer Tamhini Ghat or plan Lavasa cruises with Pune's top adventure platform.",
+		introText: "Pune is surrounded by some of India's best riding roads and off-road trails. CRUIZR is optimized for Pune adventure seekers and daily tourers, featuring real-time group tracking, intercom access, and safety check-ins.",
+		features: [
+			{
+				title: "Offroad & Trail Mapping",
+				desc: "Filter by terrain and discover dirt or gravel routes near Pune.",
+				icon: "compass"
+			},
+			{
+				title: "Tamhini & Lavasa Rides",
+				desc: "Simple group organization templates with live ETA shares.",
+				icon: "calendar"
+			},
+			{
+				title: "Safety Crash Alerts",
+				desc: "Crash notifications keep riders safe on slick monsoonal twisties.",
+				icon: "shieldalert"
+			}
+		],
+		ctaTitle: "Ready for your next Pune adventure?",
+		cityContext: true
+	},
+	"motorcycle-app-hyderabad": {
+		title: "Hyderabad Biker Network",
+		metaTitle: "Best Motorcycle App in Hyderabad — CRUIZR Biker Groups",
+		metaDesc: "Connect with Hyderabad bike riders. Plan group highway rides, weekend trips, and join active motorbike clubs in Telangana. Safe GPS tracker.",
+		metaKeywords: "motorcycle rides Hyderabad, Hyderabad bike clubs, Telangana biker app",
+		heroBadge: "Hyderabad Rider Network",
+		headline: "Connect with Hyderabad Biker Clubs",
+		subheadline: "Schedule long-distance highway cruises or local weekend meetups in Telangana.",
+		introText: "From cruising the ORR to planning long tours to Srisailam, CRUIZR connects solo riders with established Hyderabad clubs. Enjoy built-in intercom and real-time location mapping on every ride.",
+		features: [
+			{
+				title: "Highway Coordination",
+				desc: "Keep groups aligned on long-distance high-speed runs.",
+				icon: "mappin"
+			},
+			{
+				title: "Deccan Explorer Runs",
+				desc: "Plan weekend rides to historic ruins and forest routes.",
+				icon: "compass"
+			},
+			{
+				title: "Rider Accountability",
+				desc: "Meetup verification makes coordinating club check-ins simple.",
+				icon: "users"
+			}
+		],
+		ctaTitle: "Stop riding alone in Hyderabad",
+		cityContext: true
+	},
+	"motorcycle-app-chennai": {
+		title: "Chennai Bike Riding Community",
+		metaTitle: "Best Biker App in Chennai — CRUIZR Biker Network",
+		metaDesc: "Join Chennai's top bike community. Coordinate weekend rides along ECR to Pondicherry or track group rides safely. Live intercom & GPS.",
+		metaKeywords: "bike community Chennai, ECR bike rides, Pondicherry motorcycle rides",
+		heroBadge: "Chennai Riding Central",
+		headline: "The Ultimate App for ECR Highway Rides",
+		subheadline: "Coordinate beachside runs to Pondicherry with the best group riding platform.",
+		introText: "East Coast Road (ECR) is a rider's paradise. CRUIZR brings together Chennai's passionate biking community, providing the ultimate tracking, chat, and communication tools for safe seaside runs.",
+		features: [
+			{
+				title: "ECR Seaside Cruises",
+				desc: "Easily plan coastal runs with set waypoints and break alerts.",
+				icon: "calendar"
+			},
+			{
+				title: "Chennai Riding Clubs",
+				desc: "Find sportbike, cafe racer, and touring groups nearby.",
+				icon: "users"
+			},
+			{
+				title: "Live Intercom Comms",
+				desc: "Talk with the pack hands-free over the internet or offline mesh.",
+				icon: "radio"
+			}
+		],
+		ctaTitle: "Start riding along Chennai's ECR",
+		cityContext: true
+	},
+	"motorcycle-app-kolkata": {
+		title: "Kolkata Biker Network & Clubs",
+		metaTitle: "Best Motorcycle App in Kolkata — CRUIZR Biker Groups",
+		metaDesc: "Discover the best motorcycle club app in Kolkata. Plan weekend rides to Digha or explore highway runs. Real-time tracking and intercom.",
+		metaKeywords: "motorcycle club Kolkata, Kolkata bike rides, West Bengal biker app",
+		heroBadge: "Kolkata Rider Hub",
+		headline: "The Premier App for Kolkata Biker Clubs",
+		subheadline: "Coordinate rides to Digha or explore rural Bengal with absolute tracking peace of mind.",
+		introText: "CRUIZR brings modern group-riding technology to the Kolkata biker scene. Plan weekend getaways, communicate on the fly with built-in voice intercom, and keep track of every rider in your formation.",
+		features: [
+			{
+				title: "Weekend Getaways",
+				desc: "Plan tours to Digha, Mandarmani, or the hills with ease.",
+				icon: "compass"
+			},
+			{
+				title: "Live Group GPS",
+				desc: "Never lose sight of your group members in dense traffic.",
+				icon: "mappin"
+			},
+			{
+				title: "Kolkata Riding Clubs",
+				desc: "Create or join permanent clubs with dedicated chat boards.",
+				icon: "users"
+			}
+		],
+		ctaTitle: "Explore Kolkata and Bengal with CRUIZR",
+		cityContext: true
+	},
+	"group-motorcycle-rides": {
+		title: "Group Motorcycle Rides",
+		metaTitle: "Organize Group Motorcycle Rides Safely — CRUIZR App",
+		metaDesc: "Discover how to organize safe group motorcycle rides. Use CRUIZR's live tracking, meeting point check-ins, and group voice intercom to stay aligned.",
+		metaKeywords: "group motorcycle rides, organize group rides, track group rides, ride organizer app",
+		heroBadge: "Group Ride Planner",
+		headline: "Organize Group Rides Like a Pro",
+		subheadline: "No more scattered chats, lost riders, or misaligned paces. Meet CRUIZR.",
+		introText: "CRUIZR is designed from the ground up for group motorcycle rides. We replace messy group chats and confusing spreadsheets with a clean, unified planner that coordinates meetups, tracks location, and streams voice communication.",
+		features: [
+			{
+				title: "Interactive Group Maps",
+				desc: "See everyone's exact speed, distance, and direction in real-time.",
+				icon: "mappin"
+			},
+			{
+				title: "Integrated Group Chats",
+				desc: "Discuss routes, weather, and break points in dedicated ride channels.",
+				icon: "users"
+			},
+			{
+				title: "Rider Accountability",
+				desc: "Unique OTP codes verify check-ins at meeting points automatically.",
+				icon: "shieldalert"
+			}
+		],
+		ctaTitle: "Make your group rides safer"
+	},
+	"motorcycle-ride-planning": {
+		title: "Motorcycle Ride Planning",
+		metaTitle: "Best Motorcycle Ride Planning App — CRUIZR Routes",
+		metaDesc: "Plan your next motorcycle trip with precision. Share custom routes, set safety checkpoints, track group status, and find local riding partners.",
+		metaKeywords: "motorcycle ride planning app, route planner app, plan bike ride, group route creator",
+		heroBadge: "Route Coordinator",
+		headline: "Simplify Your Motorcycle Ride Planning",
+		subheadline: "Design routes, schedule stops, and share detailed maps with one tap.",
+		introText: "A successful ride starts with careful planning. CRUIZR helps you build detailed trip itineraries, select preferred terrains, set meeting times, and automatically sync routes to all participating riders.",
+		features: [
+			{
+				title: "Interactive Waypoints",
+				desc: "Mark fuel stations, scenic spots, and rest stops on a shared map.",
+				icon: "compass"
+			},
+			{
+				title: "Terrain Filtering",
+				desc: "Classify routes as highway, winding, offroad, or mixed trail.",
+				icon: "bike"
+			},
+			{
+				title: "Automatic Syncing",
+				desc: "Updates to the route sync instantly with all group members.",
+				icon: "radio"
+			}
+		],
+		ctaTitle: "Plan your next route today"
+	},
+	"offroad-motorcycle-rides": {
+		title: "Offroad Motorcycle Rides",
+		metaTitle: "Best App for Offroad Riding & Adventure Trails — CRUIZR",
+		metaDesc: "Conquer offroad trails and adventure paths. Get real-time offline tracking, mesh communication, and terrain-specific ride matching. Perfect for dirt bikes.",
+		metaKeywords: "best app for offroad riding, offriding rides, dirt bike trails, adventure riding app",
+		heroBadge: "Offroad & Adventure",
+		headline: "Unchain Your Offroad Biking Passion",
+		subheadline: "Find offroad trails, organize adventure rides, and stay tracked even offline.",
+		introText: "Offroad riding demands focus, capability, and robust safety tools. CRUIZR offers dedicated offline map tracking and mesh networking to keep adventure and dirt bike riders connected in regions with zero mobile coverage.",
+		features: [
+			{
+				title: "Offroad Matchmaking",
+				desc: "Find companion riders who share your dirt, gravel, or trail style.",
+				icon: "users"
+			},
+			{
+				title: "Mesh Communication",
+				desc: "Built-in voice sync that operates over offline mesh in dead zones.",
+				icon: "radio"
+			},
+			{
+				title: "Emergency Tracking",
+				desc: "Send coordinates to emergency contacts with one tap if stranded.",
+				icon: "shieldalert"
+			}
+		],
+		ctaTitle: "Explore the dirt with CRUIZR"
+	},
+	"motorcycle-clubs": {
+		title: "Motorcycle Clubs App",
+		metaTitle: "Best App for Motorbike Clubs & Biker Communities",
+		metaDesc: "Build your legacy. Discover the ultimate app for motorbike clubs. Manage members, coordinate recurring rides, and host private chat feeds.",
+		metaKeywords: "best app for motorbike club, motorcycle club app, coordinate club rides, biker club portal",
+		heroBadge: "Club Management",
+		headline: "The Central App for Your Motorbike Club",
+		subheadline: "Manage club members, plan private runs, and build your community legacy.",
+		introText: "Whether you run an adventure squad, a classic cruiser circle, or a local riding group, CRUIZR provides permanent club hubs. Manage active rosters, schedule recurring rides, and keep discussions in one ad-free space.",
+		features: [
+			{
+				title: "Permanent Club Chats",
+				desc: "Dedicated spaces to discuss parts, maintenance, and routes.",
+				icon: "users"
+			},
+			{
+				title: "Private Runs",
+				desc: "Host invite-only rides visible exclusively to verified club members.",
+				icon: "calendar"
+			},
+			{
+				title: "Legacy Stats",
+				desc: "Track aggregate club miles, popular routes, and attendance over time.",
+				icon: "compass"
+			}
+		],
+		ctaTitle: "Bring your motorbike club to CRUIZR"
+	},
+	"motorcycle-tracking": {
+		title: "Live Group GPS Tracking",
+		metaTitle: "Motorcycle GPS Tracker & Live Group Map — CRUIZR",
+		metaDesc: "Track your entire crew in real-time. CRUIZR's interactive live group map shows every rider's position, speed, and status to prevent splits.",
+		metaKeywords: "motorcycle GPS tracker, live group tracking app, track motorcycle location, group map",
+		heroBadge: "Real-time Tracking",
+		headline: "Live Group GPS Tracking Built for Riders",
+		subheadline: "Watch every member's position update live on a shared interactive map.",
+		introText: "No one gets left behind. CRUIZR shows you exactly where your pack is, their speed, and their distance from you. Whether leading 5 bikes or a 50-rider club convoy, stay in visual control.",
+		features: [
+			{
+				title: "Real-time Positions",
+				desc: "Low-latency location streaming designed specifically for moving bikes.",
+				icon: "mappin"
+			},
+			{
+				title: "Split-convoy Alerts",
+				desc: "Get visual alerts if a rider takes a wrong turn or falls behind.",
+				icon: "shieldalert"
+			},
+			{
+				title: "Battery Optimization",
+				desc: "Smart location polling minimizes battery drain on long tour days.",
+				icon: "bike"
+			}
+		],
+		ctaTitle: "Start tracking your rides live"
+	},
+	"motorcycle-intercom": {
+		title: "Motorcycle Intercom App",
+		metaTitle: "Free Motorcycle Intercom & Push-to-Talk App — CRUIZR",
+		metaDesc: "Replace expensive Bluetooth intercoms. CRUIZR provides free push-to-talk group voice communication using your phone and standard headset.",
+		metaKeywords: "motorcycle intercom app, bike rider communication app, free walkie-talkie app",
+		heroBadge: "Hands-Free Comms",
+		headline: "Hands-Free Voice Intercom — No Hardware Required",
+		subheadline: "Skip the expensive headsets. Talk to your crew directly using your phone.",
+		introText: "Coordinate lane changes, alert the pack to potholes, or chat with friends easily. CRUIZR offers low-bandwidth voice intercom that connects your entire group with one tap.",
+		features: [
+			{
+				title: "Push & Lock Voice",
+				desc: "Lock your mic open for constant communication or use push-to-talk.",
+				icon: "radio"
+			},
+			{
+				title: "Low-Bandwidth Audio",
+				desc: "Engineered to deliver clear audio even in weak 3G/4G coverage areas.",
+				icon: "compass"
+			},
+			{
+				title: "Universal Bluetooth Support",
+				desc: "Works seamlessly with generic earbuds, helmet liners, or OEM kits.",
+				icon: "bike"
+			}
+		],
+		ctaTitle: "Experience free group voice comms"
+	},
+	"motorcycle-safety": {
+		title: "Rider Safety & SOS App",
+		metaTitle: "Motorcycle Safety App with SOS & Crash Alerts — CRUIZR",
+		metaDesc: "Ride with peace of mind. CRUIZR features real-time tracking, rider check-ins, crash notifications, and emergency location sharing.",
+		metaKeywords: "motorcycle riders safety app, motorcycle crash alert app, motorcycle emergency app",
+		heroBadge: "Rider Safety First",
+		headline: "Safety & Accountability on Every Mile",
+		subheadline: "Integrated crash detection, emergency SOS alerts, and live tracking safeguards.",
+		introText: "Motorcycling carries inherent risks, but you don't have to face them alone. CRUIZR equips you and your group with automated crash warnings, quick SOS actions, and real-time location sharing to handle incidents instantly.",
+		features: [
+			{
+				title: "Emergency SOS",
+				desc: "Tap once to notify your group and emergency contacts with your exact GPS.",
+				icon: "shieldalert"
+			},
+			{
+				title: "Rider Check-ins",
+				desc: "Confirm everyone arrives safely at rest stops with automated check-ins.",
+				icon: "checkcircle2"
+			},
+			{
+				title: "Crash Notifications",
+				desc: "Sensors detect sudden stops and notify nearby group members immediately.",
+				icon: "mappin"
+			}
+		],
+		ctaTitle: "Prioritize your riding safety"
+	},
+	"women-motorcycle-riders": {
+		title: "Women Biker Community",
+		metaTitle: "Women Motorcycle Community India — CRUIZR Female Riders",
+		metaDesc: "Discover India's top women motorcycle riders community. Coordinate women-only bike rides, connect with local networks, and access secure safety features.",
+		metaKeywords: "women motorcycle riders app India, women only bike rides, women motorcycle community India",
+		heroBadge: "Women Biker Network",
+		headline: "Empowering Women Motorcycle Riders in India",
+		subheadline: "Coordinate secure, women-only group rides and connect with active female networks.",
+		introText: "CRUIZR supports a thriving and secure ecosystem for female motorcyclists. Organize exclusive women-only highway runs, connect with verified members, and access our group safety tracking tools.",
+		features: [
+			{
+				title: "Women-Only Runs",
+				desc: "Plan private or public rides exclusive to verified female bikers.",
+				icon: "users"
+			},
+			{
+				title: "Enhanced Safety Features",
+				desc: "Live location sharing and strict rider verification protocols.",
+				icon: "checkcircle2"
+			},
+			{
+				title: "Regional Biker Networks",
+				desc: "Connect with female rider circles in Mumbai, Bangalore, Pune, and Delhi.",
+				icon: "compass"
+			}
+		],
+		ctaTitle: "Join India's women biker network"
+	},
+	"best-motorcycle-app-india": {
+		title: "Best Motorcycle App in India",
+		metaTitle: "Best Motorcycle App in India — CRUIZR Riding Companion",
+		metaDesc: "Discover why CRUIZR is the best bike riding and companion app in India. Plan routes, join communities, and stay connected with live intercom.",
+		metaKeywords: "best motorcycle app India, best bike riding app India, Indian motorcycle community app",
+		heroBadge: "Top Indian Riding App",
+		headline: "The Best Motorcycle App in India",
+		subheadline: "From Ladakh expeditions to Bangalore breakfast runs, CRUIZR is your ultimate co-rider.",
+		introText: "CRUIZR is built specifically for the diverse road conditions, route habits, and community structures of Indian motorcyclists. Replaces disjointed tools with a clean, unified companion app.",
+		features: [
+			{
+				title: "Indian Riding Clubs",
+				desc: "Supports local groups across all major tier-1 and tier-2 cities.",
+				icon: "users"
+			},
+			{
+				title: "Monsoon Route Guides",
+				desc: "Filter and flag waterlogged tracks or landslides dynamically.",
+				icon: "compass"
+			},
+			{
+				title: "Low-Data Optimization",
+				desc: "Designed to operate on thin networks throughout rural highways.",
+				icon: "radio"
+			}
+		],
+		ctaTitle: "Download India's top riding companion"
+	},
+	"motorcycle-community-app": {
+		title: "Motorcycle Community Platform",
+		metaTitle: "Join the Ultimate Biker Community — CRUIZR Platform",
+		metaDesc: "Connect with thousands of motorcycle enthusiasts. Share routes, photos, and stories. Join local riding clubs or start your own group.",
+		metaKeywords: "motorcycle community app free, motorcycle social network app, bike riders social app",
+		heroBadge: "Biker Community",
+		headline: "A Biker Community App Built for Connection",
+		subheadline: "Share stories, discover local rides, and turn solo runs into group experiences.",
+		introText: "Motorcycling is more than transport—it is a community. CRUIZR connects you with riders nearby who share your bike type, experience, and style, fostering lifelong connections.",
+		features: [
+			{
+				title: "Share Routes & Feeds",
+				desc: "Post pictures, trail coordinates, and trip updates for your followers.",
+				icon: "compass"
+			},
+			{
+				title: "Discover Local Events",
+				desc: "Find open rides, charity runs, and custom motorcycle meets nearby.",
+				icon: "calendar"
+			},
+			{
+				title: "Accountable Ratings",
+				desc: "Rate co-riders on safety and pace to maintain high community trust.",
+				icon: "checkcircle2"
+			}
+		],
+		ctaTitle: "Become part of the community"
+	},
+	"bike-riders-network": {
+		title: "Bike Riders Network",
+		metaTitle: "Join India's Top Bike Riders Network — CRUIZR App",
+		metaDesc: "Explore the premier bike riders network. Connect with cafe racers, cruiser crews, adventure tourers, and sportbike squads in India.",
+		metaKeywords: "bike riders network India, motorcycle rider networking app, find bike rides",
+		heroBadge: "Rider Networking",
+		headline: "The Ultimate Bike Riders Network",
+		subheadline: "Connect with enthusiasts across India matching your exact machine and pace.",
+		introText: "Whether you ride a retro classic cruiser, a heavy-duty adventure tourer, or an agile sportbike, CRUIZR's smart matching algorithm pairs you with the perfect companion riders in your city.",
+		features: [
+			{
+				title: "Machine-Specific Matches",
+				desc: "Connect specifically with riders owning similar displacement or styling.",
+				icon: "bike"
+			},
+			{
+				title: "Urban & Highway Feeds",
+				desc: "Read safety logs and road conditions from real riders in your region.",
+				icon: "mappin"
+			},
+			{
+				title: "Verify Profiles",
+				desc: "Every user goes through standard verification to ensure genuine interactions.",
+				icon: "checkcircle2"
+			}
+		],
+		ctaTitle: "Connect to the bike riders network"
+	},
+	"motorcycle-gps-tracker": {
+		title: "Motorcycle GPS Tracking App",
+		metaTitle: "Motorcycle GPS Tracker & Live Group Map — CRUIZR",
+		metaDesc: "Get the best motorcycle GPS tracker app. Monitor group location, check-in at waypoints, and share live ETAs with friends and family.",
+		metaKeywords: "motorcycle GPS tracker, track group rides safely, download motorcycle riders app with GPS",
+		heroBadge: "GPS Ride Tracking",
+		headline: "Low-Latency Motorcycle GPS Tracking",
+		subheadline: "Keep tabs on group formations and share live coordinates in real-time.",
+		introText: "Forget buying expensive standalone hardware GPS trackers. CRUIZR utilizes your smartphone's built-in sensors and GPS to broadcast low-latency coordinates to your private group map, keeping everyone secure.",
+		features: [
+			{
+				title: "Interactive Group Maps",
+				desc: "Displays exact positioning of all convoy members on a shared screen.",
+				icon: "mappin"
+			},
+			{
+				title: "Minimal Battery Drain",
+				desc: "Built with energy-efficient code protocols for day-long tours.",
+				icon: "bike"
+			},
+			{
+				title: "SOS Location Shares",
+				desc: "Broadcast live GPS coordinates to selected emergency contacts.",
+				icon: "shieldalert"
+			}
+		],
+		ctaTitle: "Start tracking your motorcycle runs"
+	}
+};
+function generateStateContent(slug) {
+	if (!slug.startsWith("motorcycle-app-")) return null;
+	const rawState = slug.replace("motorcycle-app-", "");
+	const stateName = {
+		"andaman-nicobar": "Andaman and Nicobar Islands",
+		"andhra-pradesh": "Andhra Pradesh",
+		"arunachal-pradesh": "Arunachal Pradesh",
+		"himachal-pradesh": "Himachal Pradesh",
+		"jammu-kashmir": "Jammu and Kashmir",
+		"madhya-pradesh": "Madhya Pradesh",
+		"tamil-nadu": "Tamil Nadu",
+		"uttar-pradesh": "Uttar Pradesh",
+		"west-bengal": "West Bengal",
+		"delhi-ncr": "Delhi NCR"
+	}[rawState] || rawState.split("-").map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");
+	return {
+		title: `${stateName} Biker Community`,
+		metaTitle: `Best Motorcycle App in ${stateName} — CRUIZR Riding Companion`,
+		metaDesc: `Discover the best motorcycle app in ${stateName}. Plan group tours, join local motorbike clubs, use live GPS tracking, and hands-free intercom in ${stateName}.`,
+		metaKeywords: `motorcycle app ${stateName}, bike riders ${stateName}, motorcycle community ${stateName}, group rides ${stateName}`,
+		heroBadge: `${stateName} Biker Central`,
+		headline: `The Premier Motorcycle App for ${stateName} Riders`,
+		subheadline: `Connect with local clubs, track group tours, and share routes across ${stateName} safely.`,
+		introText: `Whether you are cruising the highways, scaling mountain passes, or exploring scenic countryside routes in ${stateName}, CRUIZR keeps your group connected with live GPS, voice intercom, and automated crash safety.`,
+		features: [
+			{
+				title: `${stateName} Riding Clubs`,
+				desc: `Connect with passionate riders and motorbike clubs in ${stateName}.`,
+				icon: "users"
+			},
+			{
+				title: "Scenic Route Guides",
+				desc: `Share and explore popular local rides and hidden trails in ${stateName}.`,
+				icon: "compass"
+			},
+			{
+				title: "Safety Check-ins",
+				desc: "Keep every rider in your formation tracked and accounted for.",
+				icon: "checkcircle2"
+			}
+		],
+		ctaTitle: `Ready to stop riding alone in ${stateName}?`,
+		cityContext: true
+	};
+}
+var Route = createFileRoute("/$slug")({
+	head: ({ params }) => {
+		const data = SLUG_CONTENT_MAP[params.slug] || generateStateContent(params.slug);
+		if (!data) return { meta: [{ title: "CRUIZR Biker Network" }, {
+			name: "description",
+			content: "CRUIZR connects motorcycle riders across India."
+		}] };
+		return {
+			meta: [
+				{ title: data.metaTitle },
+				{
+					name: "description",
+					content: data.metaDesc
+				},
+				{
+					name: "keywords",
+					content: data.metaKeywords
+				},
+				{
+					property: "og:title",
+					content: data.metaTitle
+				},
+				{
+					property: "og:description",
+					content: data.metaDesc
+				},
+				{
+					property: "og:image",
+					content: "https://cruizr.in/assets/hero-riders.jpg"
+				},
+				{
+					name: "twitter:title",
+					content: data.metaTitle
+				},
+				{
+					name: "twitter:description",
+					content: data.metaDesc
+				},
+				{
+					name: "twitter:image",
+					content: "https://cruizr.in/assets/hero-riders.jpg"
+				}
+			],
+			links: [{
+				rel: "canonical",
+				href: `https://cruizr.in/${params.slug}`
+			}]
+		};
+	},
+	loader: ({ params }) => {
+		const data = SLUG_CONTENT_MAP[params.slug] || generateStateContent(params.slug);
+		if (!data) throw notFound();
+		return data;
+	},
+	component: lazyRouteComponent($$splitComponentImporter, "component")
+});
+//#endregion
+export { Route as t };

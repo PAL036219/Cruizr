@@ -24,20 +24,25 @@ import { Reveal } from "../components/Reveal";
 export const Route = createFileRoute("/features")({
   head: () => ({
     meta: [
-      { title: "Features — CRUIZR" },
+      { title: "Features — CRUIZR: Best Intercom, GPS Tracking & Club Tools for Bikers" },
       {
         name: "description",
         content:
-          "Explore every CRUIZR feature: smart matching, live GPS, walkie-talkie, OTP verification, private rides, clubs, community feed, and safety.",
+          "Explore the top features that make CRUIZR the best app for motorbike clubs, offriding rides, group navigation, and rider safety. Get free intercom voice comms, live GPS tracking, and crash alerts.",
       },
-      { property: "og:title", content: "Features — CRUIZR" },
-      { property: "og:description", content: "Every feature that makes CRUIZR the ride-partner app for serious riders." },
+      {
+        name: "keywords",
+        content:
+          "motorcycle ride tracking app, bike rider communication app, group motorcycle navigation app, motorcycle intercom app, offline motorcycle maps app, motorcycle GPS tracker, download motorcycle riders app, motorcycle community app free",
+      },
+      { property: "og:title", content: "CRUIZR Features — Built for Motorbike Clubs & Safety" },
+      { property: "og:description", content: "Explore the top features that make CRUIZR the best app for motorbike clubs, offriding rides, group navigation, and rider safety." },
       { property: "og:url", content: "https://cruizr.in/features" },
       { property: "og:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Features — CRUIZR" },
-      { name: "twitter:description", content: "Explore every CRUIZR feature: smart matching, live GPS, walkie-talkie, and more." },
+      { name: "twitter:title", content: "CRUIZR Features — Group Ride Planner & GPS Tracker" },
+      { name: "twitter:description", content: "Free intercom, live group tracking, SOS crash alerts, and dedicated club management for motorcycle riders." },
       { name: "twitter:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
     ],
     links: [{ rel: "canonical", href: "https://cruizr.in/features" }],
