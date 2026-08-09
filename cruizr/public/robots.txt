@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://cruizr.in/sitemap.xml
+Sitemap: https://www.cruizr.in/sitemap.xml

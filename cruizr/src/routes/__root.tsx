@@ -106,7 +106,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
     ],
     links: [
-      { rel: "canonical", href: "https://cruizr.in" },
+      { rel: "canonical", href: "https://www.cruizr.in" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -126,7 +126,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           applicationCategory: "TravelApplication",
           operatingSystem: "Any",
           description: "The best ride sharing and companion app for motorcycle and bike riders. Match with solo riders, use live tracking and built-in intercom.",
-          url: "https://cruizr.in",
+          url: "https://www.cruizr.in",
           image: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
           sameAs: [
             "https://instagram.com/cruizr",

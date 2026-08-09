@@ -1,12 +1,12 @@
 import { a as __toESM } from "../_runtime.mjs";
 import { c as require_react, s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$7 } from "../_slug-c0U9fH8s.mjs";
+import { t as Route$7 } from "../_slug-BXDQkBtN.mjs";
 import { C as Instagram, n as X, x as Mail, y as Menu } from "../_libs/lucide-react.mjs";
-import { t as Route$8 } from "./blog._postSlug-Bg0aUy6L.mjs";
+import { t as Route$8 } from "./blog._postSlug--M1ThiFY.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-B2jA_R_t.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-8QNhfMEU.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-HFJYnATP.css";
@@ -552,7 +552,7 @@ var Route$6 = createRootRouteWithContext()({
 		links: [
 			{
 				rel: "canonical",
-				href: "https://cruizr.in"
+				href: "https://www.cruizr.in"
 			},
 			{
 				rel: "stylesheet",
@@ -586,7 +586,7 @@ var Route$6 = createRootRouteWithContext()({
 				applicationCategory: "TravelApplication",
 				operatingSystem: "Any",
 				description: "The best ride sharing and companion app for motorcycle and bike riders. Match with solo riders, use live tracking and built-in intercom.",
-				url: "https://cruizr.in",
+				url: "https://www.cruizr.in",
 				image: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
 				sameAs: [
 					"https://instagram.com/cruizr",
@@ -643,11 +643,11 @@ var Route$5 = createFileRoute("/terms")({
 			},
 			{
 				property: "og:url",
-				content: "https://cruizr.in/terms"
+				content: "https://www.cruizr.in/terms"
 			},
 			{
 				property: "og:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			},
 			{
 				property: "og:type",
@@ -667,12 +667,12 @@ var Route$5 = createFileRoute("/terms")({
 			},
 			{
 				name: "twitter:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			}
 		],
 		links: [{
 			rel: "canonical",
-			href: "https://cruizr.in/terms"
+			href: "https://www.cruizr.in/terms"
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$5, "component")
@@ -696,11 +696,11 @@ var Route$4 = createFileRoute("/privacy")({
 			},
 			{
 				property: "og:url",
-				content: "https://cruizr.in/privacy"
+				content: "https://www.cruizr.in/privacy"
 			},
 			{
 				property: "og:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			},
 			{
 				property: "og:type",
@@ -720,12 +720,12 @@ var Route$4 = createFileRoute("/privacy")({
 			},
 			{
 				name: "twitter:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			}
 		],
 		links: [{
 			rel: "canonical",
-			href: "https://cruizr.in/privacy"
+			href: "https://www.cruizr.in/privacy"
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$4, "component")
@@ -753,11 +753,11 @@ var Route$3 = createFileRoute("/features")({
 			},
 			{
 				property: "og:url",
-				content: "https://cruizr.in/features"
+				content: "https://www.cruizr.in/features"
 			},
 			{
 				property: "og:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			},
 			{
 				property: "og:type",
@@ -777,12 +777,12 @@ var Route$3 = createFileRoute("/features")({
 			},
 			{
 				name: "twitter:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			}
 		],
 		links: [{
 			rel: "canonical",
-			href: "https://cruizr.in/features"
+			href: "https://www.cruizr.in/features"
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
@@ -806,11 +806,11 @@ var Route$2 = createFileRoute("/contact")({
 			},
 			{
 				property: "og:url",
-				content: "https://cruizr.in/contact"
+				content: "https://www.cruizr.in/contact"
 			},
 			{
 				property: "og:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			},
 			{
 				property: "og:type",
@@ -830,12 +830,12 @@ var Route$2 = createFileRoute("/contact")({
 			},
 			{
 				name: "twitter:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			}
 		],
 		links: [{
 			rel: "canonical",
-			href: "https://cruizr.in/contact"
+			href: "https://www.cruizr.in/contact"
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
@@ -863,11 +863,11 @@ var Route$1 = createFileRoute("/about")({
 			},
 			{
 				property: "og:url",
-				content: "https://cruizr.in/about"
+				content: "https://www.cruizr.in/about"
 			},
 			{
 				property: "og:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			},
 			{
 				property: "og:type",
@@ -887,12 +887,12 @@ var Route$1 = createFileRoute("/about")({
 			},
 			{
 				name: "twitter:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			}
 		],
 		links: [{
 			rel: "canonical",
-			href: "https://cruizr.in/about"
+			href: "https://www.cruizr.in/about"
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
@@ -920,11 +920,11 @@ var Route = createFileRoute("/")({
 			},
 			{
 				property: "og:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			},
 			{
 				property: "og:url",
-				content: "https://cruizr.in/"
+				content: "https://www.cruizr.in/"
 			},
 			{
 				property: "og:type",
@@ -944,12 +944,12 @@ var Route = createFileRoute("/")({
 			},
 			{
 				name: "twitter:image",
-				content: "https://cruizr.in/assets/hero-riders.jpg"
+				content: "https://www.cruizr.in/assets/hero-riders.jpg"
 			}
 		],
 		links: [{
 			rel: "canonical",
-			href: "https://cruizr.in/"
+			href: "https://www.cruizr.in/"
 		}],
 		scripts: [{
 			type: "application/ld+json",

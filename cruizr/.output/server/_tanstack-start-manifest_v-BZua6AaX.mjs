@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-DOO6_X6W.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-BZua6AaX.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "E:/Cruizr/cruizr/src/routes/__root.tsx",
@@ -13,7 +13,7 @@ var tsrStartManifest = () => ({ routes: {
 			"/blog/$postSlug"
 		],
 		preloads: [
-			"/assets/index-BEnqVUI6.js",
+			"/assets/index-BdldIeYf.js",
 			"/assets/jsx-runtime-CZcjcDnw.js",
 			"/assets/createLucideIcon-BlXDHVeD.js",
 			"/assets/link-BBLDnrOX.js"
@@ -21,14 +21,14 @@ var tsrStartManifest = () => ({ routes: {
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-BEnqVUI6.js"
+			src: "/assets/index-BdldIeYf.js"
 		} }]
 	},
 	"/": {
 		filePath: "E:/Cruizr/cruizr/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-CWMnULn0.js",
+			"/assets/routes-C9lxmOms.js",
 			"/assets/arrow-right-BontFere.js",
 			"/assets/trophy-qz-7d1I8.js",
 			"/assets/map-pin-DqgDwBXg.js",
@@ -36,14 +36,14 @@ var tsrStartManifest = () => ({ routes: {
 			"/assets/shield-check-CsKAQ7y9.js",
 			"/assets/SectionHeading-PJajG2sU.js",
 			"/assets/Reveal-BjZXm-z_.js",
-			"/assets/WaitlistForm-Bz4xmuHX.js"
+			"/assets/WaitlistForm-CuH_Weg6.js"
 		]
 	},
 	"/$slug": {
 		filePath: "E:/Cruizr/cruizr/src/routes/$slug.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/_slug-CD6tdIa8.js",
+			"/assets/_slug-lxGW3Flc.js",
 			"/assets/arrow-right-BontFere.js",
 			"/assets/shield-alert-CVpdNueO.js",
 			"/assets/compass-C0oTiA7g.js",
@@ -51,7 +51,7 @@ var tsrStartManifest = () => ({ routes: {
 			"/assets/radio-hvd-RG5X.js",
 			"/assets/SectionHeading-PJajG2sU.js",
 			"/assets/Reveal-BjZXm-z_.js",
-			"/assets/WaitlistForm-Bz4xmuHX.js"
+			"/assets/WaitlistForm-CuH_Weg6.js"
 		]
 	},
 	"/about": {
@@ -69,7 +69,7 @@ var tsrStartManifest = () => ({ routes: {
 	"/contact": {
 		filePath: "E:/Cruizr/cruizr/src/routes/contact.tsx",
 		children: void 0,
-		preloads: ["/assets/contact--IdxKdnI.js", "/assets/check-BCrbOwvW.js"]
+		preloads: ["/assets/contact-399F0fq1.js", "/assets/check-BCrbOwvW.js"]
 	},
 	"/features": {
 		filePath: "E:/Cruizr/cruizr/src/routes/features.tsx",
@@ -99,12 +99,12 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/Cruizr/cruizr/src/routes/blog.$postSlug.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/blog._postSlug-BMQbpjBi.js",
+			"/assets/blog._postSlug-Bi1Z0lmj.js",
 			"/assets/shield-alert-CVpdNueO.js",
 			"/assets/compass-C0oTiA7g.js",
 			"/assets/map-pin-DqgDwBXg.js",
 			"/assets/Reveal-BjZXm-z_.js",
-			"/assets/WaitlistForm-Bz4xmuHX.js"
+			"/assets/WaitlistForm-CuH_Weg6.js"
 		]
 	}
 } });

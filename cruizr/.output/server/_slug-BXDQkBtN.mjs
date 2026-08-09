@@ -1,6 +1,6 @@
 import { A as notFound, f as lazyRouteComponent, p as createFileRoute } from "./_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_slug-c0U9fH8s.js
-var $$splitComponentImporter = () => import("./_slug-BqHCdfSP.mjs");
+//#region node_modules/.nitro/vite/services/ssr/assets/_slug-BXDQkBtN.js
+var $$splitComponentImporter = () => import("./_slug-BG4z8mhy.mjs");
 var SLUG_CONTENT_MAP = {
 	"motorcycle-app-delhi": {
 		title: "Delhi NCR Biker Community",
@@ -615,7 +615,7 @@ var Route = createFileRoute("/$slug")({
 				},
 				{
 					property: "og:image",
-					content: "https://cruizr.in/assets/hero-riders.jpg"
+					content: "https://www.cruizr.in/assets/hero-riders.jpg"
 				},
 				{
 					name: "twitter:title",
@@ -627,12 +627,12 @@ var Route = createFileRoute("/$slug")({
 				},
 				{
 					name: "twitter:image",
-					content: "https://cruizr.in/assets/hero-riders.jpg"
+					content: "https://www.cruizr.in/assets/hero-riders.jpg"
 				}
 			],
 			links: [{
 				rel: "canonical",
-				href: `https://cruizr.in/${params.slug}`
+				href: `https://www.cruizr.in/${params.slug}`
 			}]
 		};
 	},

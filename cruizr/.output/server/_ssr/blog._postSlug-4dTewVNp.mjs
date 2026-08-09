@@ -3,8 +3,8 @@ import { h as Link } from "../_libs/@tanstack/react-router+[...].mjs";
 import { D as CircleCheck, E as Clock, P as ArrowLeft, T as Compass, a as User, b as MapPin, h as Navigation, j as Calendar, u as ShieldAlert } from "../_libs/lucide-react.mjs";
 import { t as WaitlistForm } from "./WaitlistForm-CTuBTSC3.mjs";
 import { t as Reveal } from "./Reveal-BHPg_427.mjs";
-import { t as Route } from "./blog._postSlug-Bg0aUy6L.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/blog._postSlug-BlKsl9Na.js
+import { t as Route } from "./blog._postSlug--M1ThiFY.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/blog._postSlug-4dTewVNp.js
 var import_jsx_runtime = require_jsx_runtime();
 function BlogPostPage() {
 	const post = Route.useLoaderData();

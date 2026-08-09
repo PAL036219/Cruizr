@@ -1,6 +1,6 @@
 import { A as notFound, f as lazyRouteComponent, p as createFileRoute } from "../_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/blog._postSlug-Bg0aUy6L.js
-var $$splitComponentImporter = () => import("./blog._postSlug-BlKsl9Na.mjs");
+//#region node_modules/.nitro/vite/services/ssr/assets/blog._postSlug--M1ThiFY.js
+var $$splitComponentImporter = () => import("./blog._postSlug-4dTewVNp.mjs");
 var BLOG_CONTENT_MAP = {
 	"best-monsoon-motorcycle-rides-india": {
 		title: "Best Monsoon Motorcycle Rides in India: The Ultimate Biker Guide",
@@ -135,7 +135,7 @@ var Route = createFileRoute("/blog/$postSlug")({
 				},
 				{
 					property: "og:image",
-					content: "https://cruizr.in/assets/hero-riders.jpg"
+					content: "https://www.cruizr.in/assets/hero-riders.jpg"
 				},
 				{
 					name: "twitter:title",
@@ -147,12 +147,12 @@ var Route = createFileRoute("/blog/$postSlug")({
 				},
 				{
 					name: "twitter:image",
-					content: "https://cruizr.in/assets/hero-riders.jpg"
+					content: "https://www.cruizr.in/assets/hero-riders.jpg"
 				}
 			],
 			links: [{
 				rel: "canonical",
-				href: `https://cruizr.in/blog/${params.postSlug}`
+				href: `https://www.cruizr.in/blog/${params.postSlug}`
 			}]
 		};
 	},

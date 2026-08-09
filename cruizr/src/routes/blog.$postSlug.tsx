@@ -173,12 +173,12 @@ export const Route = createFileRoute("/blog/$postSlug")({
         { name: "keywords", content: data.metaKeywords },
         { property: "og:title", content: data.metaTitle },
         { property: "og:description", content: data.metaDesc },
-        { property: "og:image", content: "https://cruizr.in/assets/hero-riders.jpg" },
+        { property: "og:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
         { name: "twitter:title", content: data.metaTitle },
         { name: "twitter:description", content: data.metaDesc },
-        { name: "twitter:image", content: "https://cruizr.in/assets/hero-riders.jpg" }
+        { name: "twitter:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" }
       ],
-      links: [{ rel: "canonical", href: `https://cruizr.in/blog/${params.postSlug}` }]
+      links: [{ rel: "canonical", href: `https://www.cruizr.in/blog/${params.postSlug}` }]
     };
   },
   loader: ({ params }) => {
