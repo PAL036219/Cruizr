@@ -42,6 +42,7 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm text-white/60">
               <li><Link to="/privacy" className="hover:text-[var(--orange)]">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-[var(--orange)]">Terms of Service</Link></li>
+              <li><Link to="/delete-account" className="hover:text-[var(--orange)]">Delete Account</Link></li>
               <li><a href="mailto:abhishek@cruizr.in" className="hover:text-[var(--orange)]">abhishek@cruizr.in</a></li>
             </ul>
           </div>
