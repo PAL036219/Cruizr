@@ -1,11 +1,11 @@
 import { s as require_jsx_runtime } from "./_libs/@radix-ui/react-accordion+[...].mjs";
 import { h as Link } from "./_libs/@tanstack/react-router+[...].mjs";
-import { t as Route } from "./_slug-BXDQkBtN.mjs";
+import { t as Route } from "./_slug-CzqrU8Yl.mjs";
 import { D as CircleCheck, M as Bike, N as ArrowRight, T as Compass, b as MapPin, i as Users, j as Calendar, p as Radio, u as ShieldAlert } from "./_libs/lucide-react.mjs";
 import { t as WaitlistForm } from "./_ssr/WaitlistForm-CTuBTSC3.mjs";
 import { t as Reveal } from "./_ssr/Reveal-BHPg_427.mjs";
 import { t as SectionHeading } from "./_ssr/SectionHeading-Baq4kbXp.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_slug-BG4z8mhy.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_slug-BceQ3fo3.js
 var import_jsx_runtime = require_jsx_runtime();
 function SlugLandingPage() {
 	const data = Route.useLoaderData();

@@ -1,6 +1,6 @@
 import { A as notFound, f as lazyRouteComponent, p as createFileRoute } from "./_libs/@tanstack/react-router+[...].mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_slug-BXDQkBtN.js
-var $$splitComponentImporter = () => import("./_slug-BG4z8mhy.mjs");
+//#region node_modules/.nitro/vite/services/ssr/assets/_slug-CzqrU8Yl.js
+var $$splitComponentImporter = () => import("./_slug-BceQ3fo3.mjs");
 var SLUG_CONTENT_MAP = {
 	"motorcycle-app-delhi": {
 		title: "Delhi NCR Biker Community",
@@ -540,6 +540,91 @@ var SLUG_CONTENT_MAP = {
 			}
 		],
 		ctaTitle: "Start tracking your motorcycle runs"
+	},
+	"motorcycle-rides-near-me": {
+		title: "Motorcycle Rides Near Me",
+		metaTitle: "Find Motorcycle Rides Near Me — CRUIZR Group Ride App India",
+		metaDesc: "Looking for motorcycle rides near you? CRUIZR instantly connects you with local group rides, weekend bike tours, and riding partners in your city across India.",
+		metaKeywords: "motorcycle rides near me, find bike rides near me, local motorcycle rides India, group rides near me, find riding partner near me, weekend bike rides India",
+		heroBadge: "Find Rides Near You",
+		headline: "Find Motorcycle Rides Near You — Instantly",
+		subheadline: "Stop searching alone. Discover group rides, weekend tours, and compatible riders in your city right now.",
+		introText: "CRUIZR is the fastest way to find motorcycle rides near you. Whether you want a quick breakfast run, an offroad adventure, a monsoon hill ride, or a multi-day Himalayan tour, CRUIZR shows you live rides happening near your location — filtered by pace, bike type, and terrain. Available in Bangalore, Mumbai, Pune, Delhi NCR, Hyderabad, Chennai, Kolkata, Goa, and across India.",
+		features: [
+			{
+				title: "Live Nearby Rides Feed",
+				desc: "See all active and upcoming rides within your area in real-time.",
+				icon: "mappin"
+			},
+			{
+				title: "Smart Rider Matching",
+				desc: "Instantly matched with riders who share your pace, bike, and style.",
+				icon: "users"
+			},
+			{
+				title: "Instant Join & Track",
+				desc: "Join a ride with one tap and start live GPS tracking immediately.",
+				icon: "compass"
+			}
+		],
+		ctaTitle: "Find motorcycle rides near you today"
+	},
+	"find-riding-partner": {
+		title: "Find a Motorcycle Riding Partner",
+		metaTitle: "Find Motorcycle Riding Partner in India — CRUIZR Rider Matching App",
+		metaDesc: "Find a motorcycle riding partner near you in India. CRUIZR matches you with compatible riders by bike type, pace, experience, and city. Stop riding solo today.",
+		metaKeywords: "find motorcycle riding partner, find riding partner India, motorcycle partner app, find bike rider near me, riding companion app India, motorcycle riding buddy app",
+		heroBadge: "Rider Partner Matching",
+		headline: "Find Your Perfect Motorcycle Riding Partner",
+		subheadline: "No more solo rides. CRUIZR matches you with compatible riders in your city based on your bike, pace, and style.",
+		introText: "Finding a motorcycle riding partner who matches your pace, bike type, and riding style has always been a challenge. CRUIZR solves this with a smart matching algorithm that considers your preferred terrain, experience level, and riding schedule to connect you with the ideal companion. Available in cities across India including Bangalore, Mumbai, Pune, Delhi NCR, Hyderabad, Chennai, Goa, and beyond.",
+		features: [
+			{
+				title: "Smart Compatibility Matching",
+				desc: "Matched by bike type, pace, experience, and terrain preference.",
+				icon: "users"
+			},
+			{
+				title: "Verified Rider Profiles",
+				desc: "Every rider is verified for safety and accountability before you meet.",
+				icon: "checkcircle2"
+			},
+			{
+				title: "Group or 1-on-1 Rides",
+				desc: "Find a single riding partner or join an entire group that fits your vibe.",
+				icon: "compass"
+			}
+		],
+		ctaTitle: "Find your riding partner today"
+	},
+	"ladakh-motorcycle-ride": {
+		title: "Ladakh Motorcycle Ride App",
+		metaTitle: "Plan Your Ladakh Motorcycle Ride — CRUIZR Group Tour App India",
+		metaDesc: "Planning a Ladakh motorcycle ride? CRUIZR helps you find group Ladakh bike tour partners, plan the Manali-Leh or Srinagar-Leh routes, use offline GPS tracking, and communicate in dead zones.",
+		metaKeywords: "Ladakh motorcycle ride, Ladakh bike ride app, Manali Leh motorcycle route, Srinagar Leh bike tour, Ladakh group motorcycle tour, Ladakh offroad bike ride India",
+		heroBadge: "Ladakh Expedition Hub",
+		headline: "Plan Your Ladakh Motorcycle Expedition with CRUIZR",
+		subheadline: "Find Ladakh group tour partners, navigate Manali-Leh or Srinagar-Leh, and stay connected in zero-network zones.",
+		introText: "A Ladakh motorcycle ride is a dream for every Indian biker. With CRUIZR, planning your Ladakh expedition is seamless. Find group tour partners who match your pace and experience, coordinate the iconic Manali-Leh or Srinagar-Leh highway routes, use offline GPS tracking through Lahaul & Spiti, and communicate hands-free with built-in intercom even in the most remote mountain passes with zero network coverage.",
+		features: [
+			{
+				title: "Offline GPS in Dead Zones",
+				desc: "Track your entire Ladakh convoy even with zero cellular signal on high passes.",
+				icon: "mappin"
+			},
+			{
+				title: "Mesh Network Intercom",
+				desc: "Communicate hands-free through Baralacha La, Tanglang La, and Khardung La.",
+				icon: "radio"
+			},
+			{
+				title: "Ladakh Tour Groups",
+				desc: "Connect with experienced Ladakh riders and join organized group expeditions.",
+				icon: "users"
+			}
+		],
+		ctaTitle: "Start planning your Ladakh motorcycle ride",
+		cityContext: true
 	}
 };
 function generateStateContent(slug) {
@@ -606,6 +691,10 @@ var Route = createFileRoute("/$slug")({
 					content: data.metaKeywords
 				},
 				{
+					name: "robots",
+					content: "index, follow, max-image-preview:large, max-snippet:-1"
+				},
+				{
 					property: "og:title",
 					content: data.metaTitle
 				},
@@ -615,7 +704,35 @@ var Route = createFileRoute("/$slug")({
 				},
 				{
 					property: "og:image",
-					content: "https://www.cruizr.in/assets/hero-riders.jpg"
+					content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
+				},
+				{
+					property: "og:image:alt",
+					content: data.metaTitle
+				},
+				{
+					property: "og:url",
+					content: `https://www.cruizr.in/${params.slug}`
+				},
+				{
+					property: "og:type",
+					content: "website"
+				},
+				{
+					property: "og:locale",
+					content: "en_IN"
+				},
+				{
+					property: "og:site_name",
+					content: "CRUIZR"
+				},
+				{
+					name: "twitter:card",
+					content: "summary_large_image"
+				},
+				{
+					name: "twitter:site",
+					content: "@cruizrapp"
 				},
 				{
 					name: "twitter:title",
@@ -627,7 +744,7 @@ var Route = createFileRoute("/$slug")({
 				},
 				{
 					name: "twitter:image",
-					content: "https://www.cruizr.in/assets/hero-riders.jpg"
+					content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 				}
 			],
 			links: [{

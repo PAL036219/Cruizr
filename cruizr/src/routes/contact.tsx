@@ -5,25 +5,56 @@ import { Mail, Instagram, Twitter, Youtube, Send, Check } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — CRUIZR" },
+      { title: "Contact CRUIZR — Support, Partnerships & Press for India's #1 Motorcycle App" },
       {
         name: "description",
-        content: "Get in touch with the CRUIZR team. Support, partnerships, or press — we'd love to hear from you.",
+        content: "Reach the CRUIZR team for rider support, business partnerships, or press inquiries. India's top motorcycle group ride and GPS tracking app responds within 1–2 business days. Email: abhishek@cruizr.in",
       },
-      { property: "og:title", content: "Contact — CRUIZR" },
-      { property: "og:description", content: "Reach the CRUIZR team." },
+      {
+        name: "keywords",
+        content: "contact CRUIZR, CRUIZR support, motorcycle app support India, CRUIZR partnership, CRUIZR press, motorcycle app contact, CRUIZR email",
+      },
+      { property: "og:title", content: "Contact CRUIZR — Support, Partnerships & Press" },
+      { property: "og:description", content: "Reach the CRUIZR team for support, business partnerships, or press. India's #1 motorcycle app responds within 1–2 business days." },
       { property: "og:url", content: "https://www.cruizr.in/contact" },
-      { property: "og:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Contact — CRUIZR" },
-      { name: "twitter:description", content: "Reach the CRUIZR team." },
-      { name: "twitter:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+      { name: "twitter:title", content: "Contact CRUIZR — India's #1 Motorcycle App" },
+      { name: "twitter:description", content: "Reach the CRUIZR team for support, partnerships, or press. Responds within 1–2 business days." },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.cruizr.in/contact" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "ContactPage",
+              "@id": "https://www.cruizr.in/contact#webpage",
+              url: "https://www.cruizr.in/contact",
+              name: "Contact CRUIZR — India's #1 Motorcycle App",
+              description: "Get in touch with the CRUIZR team for support, partnerships, or press inquiries.",
+              isPartOf: { "@id": "https://www.cruizr.in/#website" },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                  { "@type": "ListItem", position: 2, name: "Contact", item: "https://www.cruizr.in/contact" },
+                ],
+              },
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: ContactPage,
 });
+
 
 function ContactPage() {
   const [sent, setSent] = useState(false);

@@ -8,7 +8,7 @@ import { t as Reveal } from "./Reveal-BHPg_427.mjs";
 import { t as SectionHeading } from "./SectionHeading-Baq4kbXp.mjs";
 import { t as clsx } from "../_libs/clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/routes-j3Xy2bGt.js
+//#region node_modules/.nitro/vite/services/ssr/assets/routes-Dlm_n852.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var hero_riders_default = "/assets/hero-riders-DSSPWlN1.jpg";
@@ -291,7 +291,7 @@ function Home() {
 						className: "relative flex gap-6 items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: Map_default,
-							alt: "CRUIZR map interface",
+							alt: "CRUIZR live GPS group tracking map — see every rider's real-time location on a shared map",
 							loading: "lazy",
 							width: 300,
 							height: 300,
@@ -312,7 +312,7 @@ function Home() {
 						className: "relative flex gap-6 items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: Clubs_default,
-							alt: "CRUIZR matching interface",
+							alt: "CRUIZR motorcycle clubs — join or create a motorbike club with dedicated chat and group rides",
 							loading: "lazy",
 							width: 300,
 							height: 400,
@@ -386,7 +386,7 @@ function Home() {
 						className: "relative flex gap-6 items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: liveintercom_default,
-							alt: "CRUIZR matching interface",
+							alt: "CRUIZR free motorcycle intercom app — hands-free group voice communication without hardware",
 							loading: "lazy",
 							width: 300,
 							height: 400,
@@ -407,7 +407,7 @@ function Home() {
 						className: "relative flex gap-6 items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: live_default,
-							alt: "CRUIZR matching interface",
+							alt: "CRUIZR mobile app interface for live streaming motorcycle rides to followers",
 							loading: "lazy",
 							width: 300,
 							height: 400,
@@ -481,7 +481,7 @@ function Home() {
 						className: "relative flex gap-6 items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: womens_default,
-							alt: "CRUIZR matching interface",
+							alt: "CRUIZR women-only motorcycle rides — safe verified rides for female bikers in India",
 							loading: "lazy",
 							width: 300,
 							height: 400,
@@ -502,10 +502,7 @@ function Home() {
 						className: "relative flex gap-6 items-center",
 						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", { className: "absolute -inset-6 rounded-3xl bg-gradient-to-br from-[var(--orange)]/20 to-[var(--cyan)]/20 blur-2xl" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("img", {
 							src: commongallery_default,
-							alt: "CRUIZR matching interface",
-							loading: "lazy",
-							width: 300,
-							height: 400,
+							alt: "CRUIZR community photo gallery — riders share scenic spots, routes and destinations",
 							className: "relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
 						})]
 					})

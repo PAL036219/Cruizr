@@ -3,53 +3,95 @@
   <!-- HOMEPAGE & CORE PAGES -->
   <url>
     <loc>https://www.cruizr.in/</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/features</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/about</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.cruizr.in/contact</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- HIGH-INTENT KEYWORD LANDING PAGES -->
+  <url>
+    <loc>https://www.cruizr.in/motorcycle-rides-near-me</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.98</priority>
+  </url>
+  <url>
+    <loc>https://www.cruizr.in/find-riding-partner</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.97</priority>
+  </url>
+  <url>
+    <loc>https://www.cruizr.in/best-motorcycle-app-india</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://www.cruizr.in/ladakh-motorcycle-ride</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.94</priority>
   </url>
 
   <!-- CITY-SPECIFIC PAGES (High-Intent Keywords) -->
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-delhi</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-bangalore</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-mumbai</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-pune</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-hyderabad</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-chennai</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-kolkata</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
@@ -57,80 +99,101 @@
   <!-- FEATURE/USE-CASE PAGES (Problem-Solution Keywords) -->
   <url>
     <loc>https://www.cruizr.in/group-motorcycle-rides</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.93</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-ride-planning</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/offroad-motorcycle-rides</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.92</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-clubs</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.91</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-tracking</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-intercom</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-safety</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.87</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/women-motorcycle-riders</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.89</priority>
   </url>
 
-  <!-- KEYWORD LANDING PAGES (Generic Keywords) -->
-  <url>
-    <loc>https://www.cruizr.in/best-motorcycle-app-india</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.93</priority>
-  </url>
+  <!-- GENERIC KEYWORD LANDING PAGES -->
   <url>
     <loc>https://www.cruizr.in/motorcycle-community-app</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/bike-riders-network</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.88</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-gps-tracker</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
   <!-- BLOG/CONTENT PAGES (Long-Tail Keywords) -->
   <url>
-    <loc>https://www.cruizr.in/blog/best-monsoon-motorcycle-rides-india</loc>
+    <loc>https://www.cruizr.in/blog/best-motorcycle-club-apps-india</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.82</priority>
+  </url>
+  <url>
+    <loc>https://www.cruizr.in/blog/how-to-start-motorcycle-club-india</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://www.cruizr.in/blog/best-monsoon-motorcycle-rides-india</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/blog/motorcycle-safety-tips</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.76</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/blog/how-to-find-motorcycle-rides-near-me</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
@@ -138,133 +201,153 @@
   <!-- INDIAN STATES (SEO Landing Pages) -->
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-maharashtra</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-karnataka</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-tamil-nadu</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-goa</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-kerala</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-telangana</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-andhra-pradesh</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-gujarat</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-rajasthan</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-west-bengal</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-madhya-pradesh</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-uttar-pradesh</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-punjab</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-haryana</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-bihar</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-odisha</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-assam</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-himachal-pradesh</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-uttarakhand</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.75</priority>
+    <priority>0.78</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-jharkhand</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-chhattisgarh</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-jammu-kashmir</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.82</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/motorcycle-app-ladakh</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.80</priority>
+    <priority>0.85</priority>
   </url>
 
   <!-- FOOTER LINKS -->
   <url>
-    <loc>https://www.cruizr.in/contact</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://www.cruizr.in/terms</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.cruizr.in/privacy</loc>
+    <lastmod>2026-08-12</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

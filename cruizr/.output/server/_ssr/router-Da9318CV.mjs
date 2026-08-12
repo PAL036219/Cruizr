@@ -1,12 +1,12 @@
 import { a as __toESM } from "../_runtime.mjs";
 import { c as require_react, s as require_jsx_runtime } from "../_libs/@radix-ui/react-accordion+[...].mjs";
 import { c as HeadContent, d as Outlet, f as lazyRouteComponent, g as useRouter, h as Link, m as createRootRouteWithContext, p as createFileRoute, s as Scripts, u as createRouter } from "../_libs/@tanstack/react-router+[...].mjs";
-import { t as Route$7 } from "../_slug-BXDQkBtN.mjs";
+import { t as Route$8 } from "../_slug-CzqrU8Yl.mjs";
 import { C as Instagram, n as X, x as Mail, y as Menu } from "../_libs/lucide-react.mjs";
-import { t as Route$8 } from "./blog._postSlug--M1ThiFY.mjs";
+import { t as Route$9 } from "./blog._postSlug-Bd-6CzlJ.mjs";
 import { t as QueryClient } from "../_libs/tanstack__query-core.mjs";
 import { t as QueryClientProvider } from "../_libs/tanstack__react-query.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/router-8QNhfMEU.js
+//#region node_modules/.nitro/vite/services/ssr/assets/router-Da9318CV.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-HFJYnATP.css";
@@ -207,6 +207,11 @@ function SiteFooter() {
 									to: "/terms",
 									className: "hover:text-[var(--orange)]",
 									children: "Terms of Service"
+								}) }),
+								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+									to: "/delete-account",
+									className: "hover:text-[var(--orange)]",
+									children: "Delete Account"
 								}) }),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("li", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
 									href: "mailto:abhishek@cruizr.in",
@@ -483,7 +488,7 @@ function ErrorComponent({ error, reset }) {
 		})
 	});
 }
-var Route$6 = createRootRouteWithContext()({
+var Route$7 = createRootRouteWithContext()({
 	head: () => ({
 		meta: [
 			{ charSet: "utf-8" },
@@ -491,14 +496,14 @@ var Route$6 = createRootRouteWithContext()({
 				name: "viewport",
 				content: "width=device-width, initial-scale=1"
 			},
-			{ title: "CRUIZR — Best App for Motorbike Club, Offroad Rides & Group Riding in India" },
+			{ title: "CRUIZR — #1 Motorcycle App India | Group Rides, GPS Tracker & Free Intercom" },
 			{
 				name: "description",
-				content: "CRUIZR is the ultimate motorcycle companion app. Join motorbike clubs, plan offroad/monsoon rides, track groups live with built-in intercom and crash safety features. The best app for bike riders in Bangalore, Mumbai, Pune, Delhi NCR, and across India."
+				content: "CRUIZR is India's #1 motorcycle companion app. Join motorbike clubs, plan offroad & monsoon rides, track groups live with free built-in intercom and crash safety alerts. Trusted by riders in Bangalore, Mumbai, Pune, Delhi NCR & across India."
 			},
 			{
 				name: "keywords",
-				content: "best app for motorbike club, best app for offriding rides, best app for group motorcycle rides, best app for bike riders, best app for motorcycle community, best app for offroad riding, best motorcycle app India, bike riding app Bangalore, Pune, Mumbai, Hyderabad, Chennai, Delhi NCR, women motorcycle riders app India, motorcycle intercom app, motorcycle crash alert app, motorcycle GPS tracker"
+				content: "best motorcycle app India, best app for motorbike club, best app for offriding rides, best app for group motorcycle rides, motorcycle rides near me, find riding partner motorcycle, group motorcycle ride planner, motorcycle riding partner app, bike riding app Bangalore, Pune, Mumbai, Hyderabad, Chennai, Delhi NCR, Kolkata, Goa, Ladakh, women motorcycle riders app India, free motorcycle intercom app, motorcycle GPS tracker India, motorcycle crash alert app, motorcycle club management app, offroad riding app India"
 			},
 			{
 				name: "author",
@@ -509,12 +514,32 @@ var Route$6 = createRootRouteWithContext()({
 				content: "#1a1a2e"
 			},
 			{
+				name: "robots",
+				content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+			},
+			{
+				name: "geo.region",
+				content: "IN"
+			},
+			{
+				name: "geo.placename",
+				content: "India"
+			},
+			{
+				name: "geo.position",
+				content: "20.5937;78.9629"
+			},
+			{
+				name: "ICBM",
+				content: "20.5937, 78.9629"
+			},
+			{
 				property: "og:title",
-				content: "CRUIZR — Best App for Motorbike Clubs, Offroad Rides & Group Riding"
+				content: "CRUIZR — #1 Motorcycle App India | Group Rides, GPS Tracker & Free Intercom"
 			},
 			{
 				property: "og:description",
-				content: "CRUIZR is the ultimate motorcycle companion app. Join motorbike clubs, plan offroad/monsoon rides, track groups live with built-in intercom, safety crash alerts, and female-only rides in India."
+				content: "India's #1 motorcycle companion app. Join motorbike clubs, plan offroad & monsoon rides, use free built-in intercom, live GPS tracking, crash safety alerts, and female-only rides across India."
 			},
 			{
 				property: "og:type",
@@ -525,33 +550,67 @@ var Route$6 = createRootRouteWithContext()({
 				content: "CRUIZR"
 			},
 			{
+				property: "og:locale",
+				content: "en_IN"
+			},
+			{
 				name: "twitter:card",
 				content: "summary_large_image"
 			},
 			{
 				name: "twitter:site",
-				content: "@cruizr"
+				content: "@cruizrapp"
+			},
+			{
+				name: "twitter:creator",
+				content: "@cruizrapp"
 			},
 			{
 				name: "twitter:title",
-				content: "CRUIZR — Best App for Motorbike Clubs & Offriding Rides"
+				content: "CRUIZR — #1 Motorcycle App India | Group Rides, GPS & Free Intercom"
 			},
 			{
 				name: "twitter:description",
-				content: "CRUIZR matches solo riders, coordinates group rides, supports voice intercom, offers live GPS tracking, and supports motorcycle clubs across India."
+				content: "India's top motorcycle app. Match riders, coordinate group rides, free built-in intercom, live GPS tracking, crash alerts, and club management across India."
 			},
 			{
 				property: "og:image",
 				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 			},
 			{
+				property: "og:image:width",
+				content: "1200"
+			},
+			{
+				property: "og:image:height",
+				content: "630"
+			},
+			{
+				property: "og:image:alt",
+				content: "CRUIZR — India's #1 Motorcycle Group Ride App"
+			},
+			{
 				name: "twitter:image",
 				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
+			},
+			{
+				name: "twitter:image:alt",
+				content: "CRUIZR — India's #1 Motorcycle Group Ride App"
 			}
 		],
 		links: [
 			{
 				rel: "canonical",
+				href: "https://www.cruizr.in"
+			},
+			{
+				rel: "alternate",
+				hrefLang: "en-IN",
+				href: "https://www.cruizr.in"
+			},
+			{
+				rel: "alternate",
+				hrefLang: "en",
 				href: "https://www.cruizr.in"
 			},
 			{
@@ -562,6 +621,10 @@ var Route$6 = createRootRouteWithContext()({
 				rel: "icon",
 				href: "/favicon.png",
 				type: "image/png"
+			},
+			{
+				rel: "apple-touch-icon",
+				href: "/favicon.png"
 			},
 			{
 				rel: "preconnect",
@@ -581,17 +644,82 @@ var Route$6 = createRootRouteWithContext()({
 			type: "application/ld+json",
 			children: JSON.stringify({
 				"@context": "https://schema.org",
-				"@type": "WebApplication",
-				name: "CRUIZR",
-				applicationCategory: "TravelApplication",
-				operatingSystem: "Any",
-				description: "The best ride sharing and companion app for motorcycle and bike riders. Match with solo riders, use live tracking and built-in intercom.",
-				url: "https://www.cruizr.in",
-				image: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
-				sameAs: [
-					"https://instagram.com/cruizr",
-					"https://twitter.com/cruizr",
-					"https://youtube.com/@cruizr"
+				"@graph": [
+					{
+						"@type": "Organization",
+						"@id": "https://www.cruizr.in/#organization",
+						name: "CRUIZR",
+						url: "https://www.cruizr.in",
+						logo: {
+							"@type": "ImageObject",
+							url: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
+							width: 512,
+							height: 512
+						},
+						description: "India's #1 motorcycle community and group ride companion app. Live GPS tracking, free intercom, club management, and rider safety tools.",
+						email: "abhishek@cruizr.in",
+						areaServed: {
+							"@type": "Country",
+							name: "India"
+						},
+						sameAs: [
+							"https://www.instagram.com/cruizrapp",
+							"https://twitter.com/cruizrapp",
+							"https://youtube.com/@cruizr"
+						],
+						contactPoint: {
+							"@type": "ContactPoint",
+							contactType: "customer support",
+							email: "abhishek@cruizr.in",
+							areaServed: "IN",
+							availableLanguage: ["English", "Hindi"]
+						}
+					},
+					{
+						"@type": "WebSite",
+						"@id": "https://www.cruizr.in/#website",
+						url: "https://www.cruizr.in",
+						name: "CRUIZR",
+						description: "India's #1 motorcycle group ride, club, and GPS tracking companion app.",
+						publisher: { "@id": "https://www.cruizr.in/#organization" },
+						potentialAction: {
+							"@type": "SearchAction",
+							target: {
+								"@type": "EntryPoint",
+								urlTemplate: "https://www.cruizr.in/?q={search_term_string}"
+							},
+							"query-input": "required name=search_term_string"
+						}
+					},
+					{
+						"@type": "SoftwareApplication",
+						"@id": "https://www.cruizr.in/#app",
+						name: "CRUIZR",
+						applicationCategory: "LifestyleApplication",
+						operatingSystem: "iOS, Android",
+						description: "The best motorcycle companion app in India. Find riding partners, join motorbike clubs, track groups live with GPS, communicate hands-free with built-in intercom, and ride safely.",
+						url: "https://www.cruizr.in",
+						image: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
+						featureList: [
+							"Live GPS Group Tracking",
+							"Built-in Motorcycle Intercom",
+							"Motorbike Club Management",
+							"Women-Only Ride Mode",
+							"Crash Detection & SOS Alerts",
+							"OTP Rider Verification",
+							"Live Ride Streaming",
+							"Smart Rider Matching",
+							"Offroad & Adventure Rides",
+							"Seasonal Ride Planning"
+						],
+						offers: {
+							"@type": "Offer",
+							price: "0",
+							priceCurrency: "INR",
+							description: "Free to download and use"
+						},
+						publisher: { "@id": "https://www.cruizr.in/#organization" }
+					}
 				]
 			})
 		}]
@@ -608,7 +736,7 @@ function RootShell({ children }) {
 	});
 }
 function RootComponent() {
-	const { queryClient } = Route$6.useRouteContext();
+	const { queryClient } = Route$7.useRouteContext();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(QueryClientProvider, {
 		client: queryClient,
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -624,8 +752,8 @@ function RootComponent() {
 		})
 	});
 }
-var $$splitComponentImporter$5 = () => import("./terms-BXpkMZL4.mjs");
-var Route$5 = createFileRoute("/terms")({
+var $$splitComponentImporter$6 = () => import("./terms-BXpkMZL4.mjs");
+var Route$6 = createFileRoute("/terms")({
 	head: () => ({
 		meta: [
 			{ title: "Terms of Service — CRUIZR" },
@@ -675,10 +803,10 @@ var Route$5 = createFileRoute("/terms")({
 			href: "https://www.cruizr.in/terms"
 		}]
 	}),
-	component: lazyRouteComponent($$splitComponentImporter$5, "component")
+	component: lazyRouteComponent($$splitComponentImporter$6, "component")
 });
-var $$splitComponentImporter$4 = () => import("./privacy-CGLYAxYK.mjs");
-var Route$4 = createFileRoute("/privacy")({
+var $$splitComponentImporter$5 = () => import("./privacy-CGLYAxYK.mjs");
+var Route$5 = createFileRoute("/privacy")({
 	head: () => ({
 		meta: [
 			{ title: "Privacy Policy — CRUIZR" },
@@ -728,28 +856,28 @@ var Route$4 = createFileRoute("/privacy")({
 			href: "https://www.cruizr.in/privacy"
 		}]
 	}),
-	component: lazyRouteComponent($$splitComponentImporter$4, "component")
+	component: lazyRouteComponent($$splitComponentImporter$5, "component")
 });
-var $$splitComponentImporter$3 = () => import("./features-DtcuYcZj.mjs");
-var Route$3 = createFileRoute("/features")({
+var $$splitComponentImporter$4 = () => import("./features-DtcuYcZj.mjs");
+var Route$4 = createFileRoute("/features")({
 	head: () => ({
 		meta: [
-			{ title: "Features — CRUIZR: Best Intercom, GPS Tracking & Club Tools for Bikers" },
+			{ title: "CRUIZR Features — Free Motorcycle Intercom, Live GPS Tracker, Club Manager & Crash Alerts" },
 			{
 				name: "description",
-				content: "Explore the top features that make CRUIZR the best app for motorbike clubs, offriding rides, group navigation, and rider safety. Get free intercom voice comms, live GPS tracking, and crash alerts."
+				content: "Explore all CRUIZR features: free built-in motorcycle intercom, real-time group GPS tracking, motorbike club management, crash detection & SOS alerts, women-only ride mode, live ride streaming, and smart rider matching. India's most complete motorcycle app."
 			},
 			{
 				name: "keywords",
-				content: "motorcycle ride tracking app, bike rider communication app, group motorcycle navigation app, motorcycle intercom app, offline motorcycle maps app, motorcycle GPS tracker, download motorcycle riders app, motorcycle community app free"
+				content: "motorcycle ride tracking app, free motorcycle intercom app India, group motorcycle GPS tracking, motorcycle club management app, motorcycle crash detection app, women only bike ride app India, motorcycle live streaming app, offline motorcycle maps app, motorcycle GPS tracker India, smart rider matching app, motorcycle safety app India, download motorcycle riders app free"
 			},
 			{
 				property: "og:title",
-				content: "CRUIZR Features — Built for Motorbike Clubs & Safety"
+				content: "CRUIZR Features — Free Intercom, GPS Tracker, Club Manager & Crash Alerts"
 			},
 			{
 				property: "og:description",
-				content: "Explore the top features that make CRUIZR the best app for motorbike clubs, offriding rides, group navigation, and rider safety."
+				content: "India's most complete motorcycle app: free intercom, live GPS group tracking, club management, crash detection & SOS, women-only rides, and live streaming."
 			},
 			{
 				property: "og:url",
@@ -757,11 +885,19 @@ var Route$3 = createFileRoute("/features")({
 			},
 			{
 				property: "og:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
+			},
+			{
+				property: "og:image:alt",
+				content: "CRUIZR Features — India's Most Complete Motorcycle App"
 			},
 			{
 				property: "og:type",
 				content: "website"
+			},
+			{
+				property: "og:locale",
+				content: "en_IN"
 			},
 			{
 				name: "twitter:card",
@@ -769,20 +905,167 @@ var Route$3 = createFileRoute("/features")({
 			},
 			{
 				name: "twitter:title",
-				content: "CRUIZR Features — Group Ride Planner & GPS Tracker"
+				content: "CRUIZR Features — Free Intercom, GPS & Club Manager"
 			},
 			{
 				name: "twitter:description",
-				content: "Free intercom, live group tracking, SOS crash alerts, and dedicated club management for motorcycle riders."
+				content: "Free intercom, live group tracking, SOS crash alerts, club management, women-only rides, and live streaming — India's most complete motorcycle companion app."
 			},
 			{
 				name: "twitter:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 			}
 		],
 		links: [{
 			rel: "canonical",
 			href: "https://www.cruizr.in/features"
+		}],
+		scripts: [{
+			type: "application/ld+json",
+			children: JSON.stringify({
+				"@context": "https://schema.org",
+				"@graph": [{
+					"@type": "WebPage",
+					"@id": "https://www.cruizr.in/features#webpage",
+					url: "https://www.cruizr.in/features",
+					name: "CRUIZR Features — Free Motorcycle Intercom, Live GPS, Club Manager & Crash Alerts",
+					description: "Explore all features of India's #1 motorcycle companion app: free intercom, group GPS tracking, club management, crash alerts, and more.",
+					isPartOf: { "@id": "https://www.cruizr.in/#website" },
+					breadcrumb: {
+						"@type": "BreadcrumbList",
+						itemListElement: [{
+							"@type": "ListItem",
+							position: 1,
+							name: "Home",
+							item: "https://www.cruizr.in/"
+						}, {
+							"@type": "ListItem",
+							position: 2,
+							name: "Features",
+							item: "https://www.cruizr.in/features"
+						}]
+					}
+				}, {
+					"@type": "ItemList",
+					name: "CRUIZR Motorcycle App Features",
+					description: "Complete list of features in India's #1 motorcycle companion app CRUIZR.",
+					itemListElement: [
+						{
+							"@type": "ListItem",
+							position: 1,
+							name: "Smart Rider Matching",
+							url: "https://www.cruizr.in/features#smart-matching"
+						},
+						{
+							"@type": "ListItem",
+							position: 2,
+							name: "Live GPS Group Tracking",
+							url: "https://www.cruizr.in/features#live-tracking"
+						},
+						{
+							"@type": "ListItem",
+							position: 3,
+							name: "Free Built-in Motorcycle Intercom",
+							url: "https://www.cruizr.in/features#walkie-talkie"
+						},
+						{
+							"@type": "ListItem",
+							position: 4,
+							name: "OTP Rider Verification",
+							url: "https://www.cruizr.in/features#otp-verification"
+						},
+						{
+							"@type": "ListItem",
+							position: 5,
+							name: "Private & Invite-Only Rides",
+							url: "https://www.cruizr.in/features#private-rides"
+						},
+						{
+							"@type": "ListItem",
+							position: 6,
+							name: "Motorcycle Club Management",
+							url: "https://www.cruizr.in/features#clubs"
+						},
+						{
+							"@type": "ListItem",
+							position: 7,
+							name: "Community Feed & Route Sharing",
+							url: "https://www.cruizr.in/features#community-feed"
+						},
+						{
+							"@type": "ListItem",
+							position: 8,
+							name: "Ride History & Stats",
+							url: "https://www.cruizr.in/features#ride-history"
+						},
+						{
+							"@type": "ListItem",
+							position: 9,
+							name: "Crash Detection & Emergency SOS",
+							url: "https://www.cruizr.in/features#safety"
+						},
+						{
+							"@type": "ListItem",
+							position: 10,
+							name: "Direct & Group Chat",
+							url: "https://www.cruizr.in/features#group-chat"
+						},
+						{
+							"@type": "ListItem",
+							position: 11,
+							name: "Live Ride Broadcasting",
+							url: "https://www.cruizr.in/features#live-broadcasting"
+						},
+						{
+							"@type": "ListItem",
+							position: 12,
+							name: "Daily Rider Challenges",
+							url: "https://www.cruizr.in/features#challenges"
+						}
+					]
+				}]
+			})
+		}]
+	}),
+	component: lazyRouteComponent($$splitComponentImporter$4, "component")
+});
+var $$splitComponentImporter$3 = () => import("./delete-account-CG53eLy4.mjs");
+var Route$3 = createFileRoute("/delete-account")({
+	head: () => ({
+		meta: [
+			{ title: "Delete Account Request — CRUIZR" },
+			{
+				name: "description",
+				content: "How to request deletion of your CRUIZR account and associated personal data."
+			},
+			{
+				property: "og:title",
+				content: "Delete Account Request — CRUIZR"
+			},
+			{
+				property: "og:description",
+				content: "Learn how to request deletion of your CRUIZR profile and account data."
+			},
+			{
+				property: "og:url",
+				content: "https://www.cruizr.in/delete-account"
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary"
+			},
+			{
+				name: "twitter:title",
+				content: "Delete Account Request — CRUIZR"
+			}
+		],
+		links: [{
+			rel: "canonical",
+			href: "https://www.cruizr.in/delete-account"
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$3, "component")
@@ -791,18 +1074,22 @@ var $$splitComponentImporter$2 = () => import("./contact-B-Fba4RW.mjs");
 var Route$2 = createFileRoute("/contact")({
 	head: () => ({
 		meta: [
-			{ title: "Contact — CRUIZR" },
+			{ title: "Contact CRUIZR — Support, Partnerships & Press for India's #1 Motorcycle App" },
 			{
 				name: "description",
-				content: "Get in touch with the CRUIZR team. Support, partnerships, or press — we'd love to hear from you."
+				content: "Reach the CRUIZR team for rider support, business partnerships, or press inquiries. India's top motorcycle group ride and GPS tracking app responds within 1–2 business days. Email: abhishek@cruizr.in"
+			},
+			{
+				name: "keywords",
+				content: "contact CRUIZR, CRUIZR support, motorcycle app support India, CRUIZR partnership, CRUIZR press, motorcycle app contact, CRUIZR email"
 			},
 			{
 				property: "og:title",
-				content: "Contact — CRUIZR"
+				content: "Contact CRUIZR — Support, Partnerships & Press"
 			},
 			{
 				property: "og:description",
-				content: "Reach the CRUIZR team."
+				content: "Reach the CRUIZR team for support, business partnerships, or press. India's #1 motorcycle app responds within 1–2 business days."
 			},
 			{
 				property: "og:url",
@@ -810,11 +1097,15 @@ var Route$2 = createFileRoute("/contact")({
 			},
 			{
 				property: "og:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 			},
 			{
 				property: "og:type",
 				content: "website"
+			},
+			{
+				property: "og:locale",
+				content: "en_IN"
 			},
 			{
 				name: "twitter:card",
@@ -822,20 +1113,48 @@ var Route$2 = createFileRoute("/contact")({
 			},
 			{
 				name: "twitter:title",
-				content: "Contact — CRUIZR"
+				content: "Contact CRUIZR — India's #1 Motorcycle App"
 			},
 			{
 				name: "twitter:description",
-				content: "Reach the CRUIZR team."
+				content: "Reach the CRUIZR team for support, partnerships, or press. Responds within 1–2 business days."
 			},
 			{
 				name: "twitter:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 			}
 		],
 		links: [{
 			rel: "canonical",
 			href: "https://www.cruizr.in/contact"
+		}],
+		scripts: [{
+			type: "application/ld+json",
+			children: JSON.stringify({
+				"@context": "https://schema.org",
+				"@graph": [{
+					"@type": "ContactPage",
+					"@id": "https://www.cruizr.in/contact#webpage",
+					url: "https://www.cruizr.in/contact",
+					name: "Contact CRUIZR — India's #1 Motorcycle App",
+					description: "Get in touch with the CRUIZR team for support, partnerships, or press inquiries.",
+					isPartOf: { "@id": "https://www.cruizr.in/#website" },
+					breadcrumb: {
+						"@type": "BreadcrumbList",
+						itemListElement: [{
+							"@type": "ListItem",
+							position: 1,
+							name: "Home",
+							item: "https://www.cruizr.in/"
+						}, {
+							"@type": "ListItem",
+							position: 2,
+							name: "Contact",
+							item: "https://www.cruizr.in/contact"
+						}]
+					}
+				}]
+			})
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$2, "component")
@@ -844,22 +1163,22 @@ var $$splitComponentImporter$1 = () => import("./about-syx7tr4K.mjs");
 var Route$1 = createFileRoute("/about")({
 	head: () => ({
 		meta: [
-			{ title: "About — CRUIZR: The Free Motorcycle Riding Community App" },
+			{ title: "About CRUIZR — India's Premier Motorcycle Community App & Rider Network Story" },
 			{
 				name: "description",
-				content: "Discover why we built CRUIZR. We are building the ultimate Indian motorcycle community app and rider networking platform. Join us to find weekend bike rides near you."
+				content: "Learn how CRUIZR was built by motorcycle riders for riders. India's fastest-growing bike community app with live GPS tracking, free intercom, club management, and group ride planning. Built by a passionate Java developer who wanted to stop riding alone."
 			},
 			{
 				name: "keywords",
-				content: "free motorcycle riding community app, motorcycle rider networking app, best app to meet motorcycle riders, Indian motorcycle community app, motorcycle club app India, bike riders app Delhi"
+				content: "about CRUIZR, CRUIZR app story, who built CRUIZR, best free bike riding social app India, motorcycle riding app founder India, Indian motorcycle community app, motorcycle rider networking app, best app to meet motorcycle riders, motorcycle club app India, bike riders social app India, CRUIZR mission, motorcycle community India"
 			},
 			{
 				property: "og:title",
-				content: "About CRUIZR — Indian Motorcycle Community & Biker Network"
+				content: "About CRUIZR — India's Premier Motorcycle Community App & Biker Network"
 			},
 			{
 				property: "og:description",
-				content: "Discover why we built CRUIZR. We are building the ultimate Indian motorcycle community app and rider networking platform."
+				content: "Learn how CRUIZR was built by a rider for riders. India's fastest-growing motorcycle community app with GPS tracking, free intercom, and group ride planning."
 			},
 			{
 				property: "og:url",
@@ -867,11 +1186,19 @@ var Route$1 = createFileRoute("/about")({
 			},
 			{
 				property: "og:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
+			},
+			{
+				property: "og:image:alt",
+				content: "CRUIZR About — India's Motorcycle Community App Story"
 			},
 			{
 				property: "og:type",
 				content: "website"
+			},
+			{
+				property: "og:locale",
+				content: "en_IN"
 			},
 			{
 				name: "twitter:card",
@@ -879,48 +1206,88 @@ var Route$1 = createFileRoute("/about")({
 			},
 			{
 				name: "twitter:title",
-				content: "About CRUIZR — Biker Social Network"
+				content: "About CRUIZR — India's Top Motorcycle Community App"
 			},
 			{
 				name: "twitter:description",
-				content: "Connecting motorcycle riders across India. Join the ultimate biker community."
+				content: "Discover how CRUIZR was built from a solo rider's frustration. Connecting India's motorcycle community with live GPS, free intercom, and group rides."
 			},
 			{
 				name: "twitter:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 			}
 		],
 		links: [{
 			rel: "canonical",
 			href: "https://www.cruizr.in/about"
+		}],
+		scripts: [{
+			type: "application/ld+json",
+			children: JSON.stringify({
+				"@context": "https://schema.org",
+				"@graph": [{
+					"@type": "AboutPage",
+					"@id": "https://www.cruizr.in/about#webpage",
+					url: "https://www.cruizr.in/about",
+					name: "About CRUIZR — India's Premier Motorcycle Community App",
+					description: "Learn how CRUIZR was built by a motorcycle rider for riders across India.",
+					isPartOf: { "@id": "https://www.cruizr.in/#website" },
+					breadcrumb: {
+						"@type": "BreadcrumbList",
+						itemListElement: [{
+							"@type": "ListItem",
+							position: 1,
+							name: "Home",
+							item: "https://www.cruizr.in/"
+						}, {
+							"@type": "ListItem",
+							position: 2,
+							name: "About",
+							item: "https://www.cruizr.in/about"
+						}]
+					}
+				}, {
+					"@type": "Person",
+					name: "Abhishek",
+					jobTitle: "Founder & Full-Stack Developer",
+					worksFor: { "@id": "https://www.cruizr.in/#organization" },
+					description: "Full-stack Java developer and motorcycle enthusiast. Built CRUIZR to solve the real problem of finding compatible riding partners in India.",
+					email: "abhishek@cruizr.in",
+					sameAs: ["https://www.instagram.com/cruizrapp"]
+				}]
+			})
 		}]
 	}),
 	component: lazyRouteComponent($$splitComponentImporter$1, "component")
 });
-var $$splitComponentImporter = () => import("./routes-j3Xy2bGt.mjs");
+var $$splitComponentImporter = () => import("./routes-Dlm_n852.mjs");
 var Route = createFileRoute("/")({
 	head: () => ({
 		meta: [
-			{ title: "CRUIZR — Best App for Motorbike Clubs, Offriding Rides & Bike Community" },
+			{ title: "CRUIZR — India's #1 Motorcycle App | Find Riding Partners, Group Rides & Free Intercom" },
 			{
 				name: "description",
-				content: "Looking for the best app for motorbike clubs, offriding rides, or group motorcycle rides? CRUIZR offers live GPS tracking, hands-free intercom, crash safety alerts, and a vibrant riding community in Bangalore, Mumbai, Pune, and India."
+				content: "CRUIZR is India's #1 motorcycle companion app. Find riding partners, join motorbike clubs, plan offroad & monsoon group rides, use free built-in intercom, live GPS tracking, and crash SOS alerts. Available in Bangalore, Mumbai, Pune, Delhi NCR, Hyderabad, Chennai & across India."
 			},
 			{
 				name: "keywords",
-				content: "best app for motorbike club, best app for offriding rides, best app for group motorcycle rides, best app for bike riders, best app for motorcycle enthusiasts, best app for offroad riding, best motorcycle app India, bike riding app Bangalore, Pune, Mumbai, Hyderabad, Chennai, Delhi NCR, women motorcycle riders app India, women only bike rides, monsoon bike rides India, offroad rides monsoon, winter motorcycle rides India, motorcycle intercom app, motorcycle crash alert app, motorcycle GPS tracker"
+				content: "best app for motorbike club, best app for offriding rides, best app for group motorcycle rides, find riding partner motorcycle India, motorcycle rides near me, best motorcycle app India, motorcycle ride planning app, bike riding app Bangalore Pune Mumbai Hyderabad Chennai Delhi NCR Kolkata Goa Ladakh Himachal Pradesh, women motorcycle riders app India, women only bike rides India, monsoon bike rides India, offroad rides monsoon, winter motorcycle rides India, free motorcycle intercom app, motorcycle crash alert app, motorcycle GPS tracker India, motorcycle club management app, motorcycle live streaming app, group motorcycle GPS tracker"
 			},
 			{
 				property: "og:title",
-				content: "CRUIZR — Best App for Motorbike Clubs & Group Rides"
+				content: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Free Intercom"
 			},
 			{
 				property: "og:description",
-				content: "CRUIZR is the ultimate motorcycle companion app. Join motorbike clubs, plan offroad/monsoon rides, track groups live with built-in intercom, safety crash alerts, and female-only rides in India."
+				content: "CRUIZR is the ultimate motorcycle companion app. Find riding partners, join motorbike clubs, plan offroad/monsoon group rides, use free intercom & live GPS. India's top bike riding app."
 			},
 			{
 				property: "og:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
+			},
+			{
+				property: "og:image:alt",
+				content: "CRUIZR Motorcycle App — India's #1 Group Ride Platform"
 			},
 			{
 				property: "og:url",
@@ -931,20 +1298,24 @@ var Route = createFileRoute("/")({
 				content: "website"
 			},
 			{
+				property: "og:locale",
+				content: "en_IN"
+			},
+			{
 				name: "twitter:card",
 				content: "summary_large_image"
 			},
 			{
 				name: "twitter:title",
-				content: "CRUIZR — Best App for Motorbike Clubs & Offriding"
+				content: "CRUIZR — India's #1 Motorcycle App | Group Rides & Free Intercom"
 			},
 			{
 				name: "twitter:description",
-				content: "Join motorbike clubs, plan offroad/monsoon rides, track groups live with built-in intercom, safety crash alerts, and female-only rides in India."
+				content: "Find riding partners, join motorbike clubs, plan offroad & monsoon rides, use free built-in intercom and live GPS tracking across India."
 			},
 			{
 				name: "twitter:image",
-				content: "https://www.cruizr.in/assets/hero-riders.jpg"
+				content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 			}
 		],
 		links: [{
@@ -956,57 +1327,82 @@ var Route = createFileRoute("/")({
 			children: JSON.stringify({
 				"@context": "https://schema.org",
 				"@graph": [{
-					"@type": "MobileApplication",
-					"name": "CRUIZR",
-					"applicationCategory": "LifestyleApplication",
-					"operatingSystem": "iOS, Android",
-					"description": "The best app for motorbike clubs and offriding rides. Find local riding partners, use live tracking, and communicate hands-free.",
-					"offers": {
-						"@type": "Offer",
-						"price": "0",
-						"priceCurrency": "INR"
+					"@type": "WebPage",
+					"@id": "https://www.cruizr.in/#webpage",
+					url: "https://www.cruizr.in/",
+					name: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Free Intercom",
+					description: "India's #1 motorcycle companion app. Find riding partners, join motorbike clubs, plan group rides, use free intercom and live GPS tracking across India.",
+					isPartOf: { "@id": "https://www.cruizr.in/#website" },
+					about: { "@id": "https://www.cruizr.in/#app" },
+					primaryImageOfPage: {
+						"@type": "ImageObject",
+						url: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp"
 					}
 				}, {
 					"@type": "FAQPage",
-					"mainEntity": [
+					mainEntity: [
 						{
 							"@type": "Question",
-							"name": "What is the best app for motorbike clubs and organizing group motorcycle rides?",
-							"acceptedAnswer": {
+							name: "What is the best app for motorbike clubs and organizing group motorcycle rides?",
+							acceptedAnswer: {
 								"@type": "Answer",
-								"text": "CRUIZR is the best app for motorbike clubs and group motorcycle rides. It replaces scattered WhatsApp groups with a unified platform offering built-in intercom voice communication, live GPS tracking for every member, and safety features like rider accountability."
+								text: "CRUIZR is the best app for motorbike clubs and group motorcycle rides in India. It replaces scattered WhatsApp groups with a unified platform offering built-in intercom voice communication, live GPS tracking for every member, OTP rider verification, and safety features like crash alerts and emergency SOS."
 							}
 						},
 						{
 							"@type": "Question",
-							"name": "How can riders find offriding rides, offroad trails, and adventure rides?",
-							"acceptedAnswer": {
+							name: "How can riders find offriding rides, offroad trails, and adventure rides near me?",
+							acceptedAnswer: {
 								"@type": "Answer",
-								"text": "CRUIZR makes finding offriding rides and offroad trials simple. The app lets you filter rides by terrain, bike type (adventure, dirt, sport, cruiser), and pace. Whether you are searching for offroad trails in Pune, monsoon bike rides in Mumbai, or weekend trips in Bangalore, CRUIZR connects you with local riders."
+								text: "CRUIZR makes finding motorcycle rides near you and offroad adventures simple. Filter rides by terrain, bike type (adventure, dirt, sport, cruiser), and pace. Whether you are searching for offroad trails in Pune, monsoon bike rides in Mumbai, weekend trips in Bangalore, or Ladakh expeditions, CRUIZR connects you with local riders instantly."
 							}
 						},
 						{
 							"@type": "Question",
-							"name": "What makes CRUIZR the best app for rider safety and group communication?",
-							"acceptedAnswer": {
+							name: "What makes CRUIZR the best app for rider safety and group communication?",
+							acceptedAnswer: {
 								"@type": "Answer",
-								"text": "CRUIZR focuses on safety with real-time GPS tracking so no one gets left behind, intercom voice communication, crash alerts, and one-tap emergency SOS features. Its OTP verification confirms rider presence at meetups, creating an accountable community."
+								text: "CRUIZR prioritizes safety with real-time GPS tracking so no one gets left behind, free built-in intercom voice communication (no hardware needed), automatic crash detection alerts, one-tap emergency SOS with location sharing, and OTP verification that confirms rider presence at meetups."
 							}
 						},
 						{
 							"@type": "Question",
-							"name": "Is there a dedicated app for women motorcycle riders in India?",
-							"acceptedAnswer": {
+							name: "Is there a dedicated app for women motorcycle riders in India?",
+							acceptedAnswer: {
 								"@type": "Answer",
-								"text": "Yes, CRUIZR supports the female riding community. Women motorcycle riders in India can create and join women-only bike rides, connect with a dedicated female riders network, and plan secure trips in Bangalore, Mumbai, Pune, Chennai, Delhi NCR, and Hyderabad."
+								text: "Yes, CRUIZR has a dedicated women-only ride mode. Women motorcycle riders in India can create rides visible only to other women — men cannot join, request, or see the live location. Connect with India's female riders network in Bangalore, Mumbai, Pune, Chennai, Delhi NCR, and Hyderabad."
 							}
 						},
 						{
 							"@type": "Question",
-							"name": "How does CRUIZR support seasonal rides like monsoon, winter, and summer trips?",
-							"acceptedAnswer": {
+							name: "How does CRUIZR support seasonal rides like monsoon, winter, and Ladakh expeditions?",
+							acceptedAnswer: {
 								"@type": "Answer",
-								"text": "CRUIZR organizes seasonal ride highlights, making it the perfect app for planning monsoon bike rides, winter motorcycle expeditions, and summer highway cruises. The community provides weather alerts, road reports, and safety updates."
+								text: "CRUIZR organizes seasonal ride categories including monsoon bike rides, Ladakh motorcycle expeditions, Himachal Pradesh tours, winter cruises, and summer highway runs. The community provides weather alerts, road hazard reports, and live safety updates for all conditions."
+							}
+						},
+						{
+							"@type": "Question",
+							name: "Is there a free motorcycle intercom app that works without expensive hardware?",
+							acceptedAnswer: {
+								"@type": "Answer",
+								text: "Yes! CRUIZR includes a completely free built-in motorcycle intercom. Unlike expensive Bluetooth Cardo or Sena headsets, CRUIZR lets your entire group communicate hands-free using just your phone and standard earbuds. It works over internet in cities and uses mesh networking in dead zones."
+							}
+						},
+						{
+							"@type": "Question",
+							name: "How do I find a motorcycle riding partner near me in India?",
+							acceptedAnswer: {
+								"@type": "Answer",
+								text: "CRUIZR's smart rider matching algorithm finds compatible motorcycle riding partners near you based on your bike type, riding pace, experience level, and preferred terrain. Create your profile, browse rides near you, or post your own ride — CRUIZR instantly matches you with like-minded riders in your city."
+							}
+						},
+						{
+							"@type": "Question",
+							name: "Which major cities and states in India are supported by CRUIZR?",
+							acceptedAnswer: {
+								"@type": "Answer",
+								text: "CRUIZR supports riding communities nationwide across Bangalore, Mumbai, Pune, Hyderabad, Chennai, Delhi NCR, Kolkata, Goa, Jaipur, and states including Karnataka, Maharashtra, Telangana, Tamil Nadu, Rajasthan, Kerala, Goa, Himachal Pradesh, Uttarakhand, and Jammu & Kashmir for Ladakh riders."
 							}
 						}
 					]
@@ -1016,55 +1412,61 @@ var Route = createFileRoute("/")({
 	}),
 	component: lazyRouteComponent($$splitComponentImporter, "component")
 });
-var TermsRoute = Route$5.update({
+var TermsRoute = Route$6.update({
 	id: "/terms",
 	path: "/terms",
-	getParentRoute: () => Route$6
+	getParentRoute: () => Route$7
 });
-var PrivacyRoute = Route$4.update({
+var PrivacyRoute = Route$5.update({
 	id: "/privacy",
 	path: "/privacy",
-	getParentRoute: () => Route$6
+	getParentRoute: () => Route$7
 });
-var FeaturesRoute = Route$3.update({
+var FeaturesRoute = Route$4.update({
 	id: "/features",
 	path: "/features",
-	getParentRoute: () => Route$6
+	getParentRoute: () => Route$7
+});
+var DeleteAccountRoute = Route$3.update({
+	id: "/delete-account",
+	path: "/delete-account",
+	getParentRoute: () => Route$7
 });
 var ContactRoute = Route$2.update({
 	id: "/contact",
 	path: "/contact",
-	getParentRoute: () => Route$6
+	getParentRoute: () => Route$7
 });
 var AboutRoute = Route$1.update({
 	id: "/about",
 	path: "/about",
-	getParentRoute: () => Route$6
+	getParentRoute: () => Route$7
 });
-var SlugRoute = Route$7.update({
+var SlugRoute = Route$8.update({
 	id: "/$slug",
 	path: "/$slug",
-	getParentRoute: () => Route$6
+	getParentRoute: () => Route$7
 });
 var rootRouteChildren = {
 	IndexRoute: Route.update({
 		id: "/",
 		path: "/",
-		getParentRoute: () => Route$6
+		getParentRoute: () => Route$7
 	}),
 	SlugRoute,
 	AboutRoute,
 	ContactRoute,
+	DeleteAccountRoute,
 	FeaturesRoute,
 	PrivacyRoute,
 	TermsRoute,
-	BlogPostSlugRoute: Route$8.update({
+	BlogPostSlugRoute: Route$9.update({
 		id: "/blog/$postSlug",
 		path: "/blog/$postSlug",
-		getParentRoute: () => Route$6
+		getParentRoute: () => Route$7
 	})
 };
-var routeTree = Route$6._addFileChildren(rootRouteChildren)._addFileTypes();
+var routeTree = Route$7._addFileChildren(rootRouteChildren)._addFileTypes();
 var getRouter = () => {
 	return createRouter({
 		routeTree,

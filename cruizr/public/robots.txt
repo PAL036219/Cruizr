@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /delete-account
+
+# Host directive (for Yandex)
+Host: https://www.cruizr.in
 
 Sitemap: https://www.cruizr.in/sitemap.xml

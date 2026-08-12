@@ -24,28 +24,74 @@ import { Reveal } from "../components/Reveal";
 export const Route = createFileRoute("/features")({
   head: () => ({
     meta: [
-      { title: "Features — CRUIZR: Best Intercom, GPS Tracking & Club Tools for Bikers" },
+      { title: "CRUIZR Features — Free Motorcycle Intercom, Live GPS Tracker, Club Manager & Crash Alerts" },
       {
         name: "description",
         content:
-          "Explore the top features that make CRUIZR the best app for motorbike clubs, offriding rides, group navigation, and rider safety. Get free intercom voice comms, live GPS tracking, and crash alerts.",
+          "Explore all CRUIZR features: free built-in motorcycle intercom, real-time group GPS tracking, motorbike club management, crash detection & SOS alerts, women-only ride mode, live ride streaming, and smart rider matching. India's most complete motorcycle app.",
       },
       {
         name: "keywords",
         content:
-          "motorcycle ride tracking app, bike rider communication app, group motorcycle navigation app, motorcycle intercom app, offline motorcycle maps app, motorcycle GPS tracker, download motorcycle riders app, motorcycle community app free",
+          "motorcycle ride tracking app, free motorcycle intercom app India, group motorcycle GPS tracking, motorcycle club management app, motorcycle crash detection app, women only bike ride app India, motorcycle live streaming app, offline motorcycle maps app, motorcycle GPS tracker India, smart rider matching app, motorcycle safety app India, download motorcycle riders app free",
       },
-      { property: "og:title", content: "CRUIZR Features — Built for Motorbike Clubs & Safety" },
-      { property: "og:description", content: "Explore the top features that make CRUIZR the best app for motorbike clubs, offriding rides, group navigation, and rider safety." },
+      { property: "og:title", content: "CRUIZR Features — Free Intercom, GPS Tracker, Club Manager & Crash Alerts" },
+      { property: "og:description", content: "India's most complete motorcycle app: free intercom, live GPS group tracking, club management, crash detection & SOS, women-only rides, and live streaming." },
       { property: "og:url", content: "https://www.cruizr.in/features" },
-      { property: "og:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+      { property: "og:image:alt", content: "CRUIZR Features — India's Most Complete Motorcycle App" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "CRUIZR Features — Group Ride Planner & GPS Tracker" },
-      { name: "twitter:description", content: "Free intercom, live group tracking, SOS crash alerts, and dedicated club management for motorcycle riders." },
-      { name: "twitter:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+      { name: "twitter:title", content: "CRUIZR Features — Free Intercom, GPS & Club Manager" },
+      { name: "twitter:description", content: "Free intercom, live group tracking, SOS crash alerts, club management, women-only rides, and live streaming — India's most complete motorcycle companion app." },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.cruizr.in/features" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.cruizr.in/features#webpage",
+              url: "https://www.cruizr.in/features",
+              name: "CRUIZR Features — Free Motorcycle Intercom, Live GPS, Club Manager & Crash Alerts",
+              description: "Explore all features of India's #1 motorcycle companion app: free intercom, group GPS tracking, club management, crash alerts, and more.",
+              isPartOf: { "@id": "https://www.cruizr.in/#website" },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                  { "@type": "ListItem", position: 2, name: "Features", item: "https://www.cruizr.in/features" },
+                ],
+              },
+            },
+            {
+              "@type": "ItemList",
+              name: "CRUIZR Motorcycle App Features",
+              description: "Complete list of features in India's #1 motorcycle companion app CRUIZR.",
+              itemListElement: [
+                { "@type": "ListItem", position: 1, name: "Smart Rider Matching", url: "https://www.cruizr.in/features#smart-matching" },
+                { "@type": "ListItem", position: 2, name: "Live GPS Group Tracking", url: "https://www.cruizr.in/features#live-tracking" },
+                { "@type": "ListItem", position: 3, name: "Free Built-in Motorcycle Intercom", url: "https://www.cruizr.in/features#walkie-talkie" },
+                { "@type": "ListItem", position: 4, name: "OTP Rider Verification", url: "https://www.cruizr.in/features#otp-verification" },
+                { "@type": "ListItem", position: 5, name: "Private & Invite-Only Rides", url: "https://www.cruizr.in/features#private-rides" },
+                { "@type": "ListItem", position: 6, name: "Motorcycle Club Management", url: "https://www.cruizr.in/features#clubs" },
+                { "@type": "ListItem", position: 7, name: "Community Feed & Route Sharing", url: "https://www.cruizr.in/features#community-feed" },
+                { "@type": "ListItem", position: 8, name: "Ride History & Stats", url: "https://www.cruizr.in/features#ride-history" },
+                { "@type": "ListItem", position: 9, name: "Crash Detection & Emergency SOS", url: "https://www.cruizr.in/features#safety" },
+                { "@type": "ListItem", position: 10, name: "Direct & Group Chat", url: "https://www.cruizr.in/features#group-chat" },
+                { "@type": "ListItem", position: 11, name: "Live Ride Broadcasting", url: "https://www.cruizr.in/features#live-broadcasting" },
+                { "@type": "ListItem", position: 12, name: "Daily Rider Challenges", url: "https://www.cruizr.in/features#challenges" },
+              ],
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: FeaturesPage,
 });

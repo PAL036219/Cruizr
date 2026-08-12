@@ -152,6 +152,109 @@ const BLOG_CONTENT_MAP: Record<string, BlogPost> = {
       }
     ],
     conclusion: "The motorcycle community is incredibly welcoming. Take the first step, join a local run, and enjoy the open road with your new crew."
+  },
+  "best-motorcycle-club-apps-india": {
+    title: "Best Apps for Motorbike Clubs in India 2026: The Ultimate Comparison",
+    metaTitle: "Best App for Motorbike Clubs in India 2026 — CRUIZR vs WhatsApp vs Others",
+    metaDesc: "Looking for the best app for motorbike clubs in India? Compare CRUIZR vs WhatsApp, Strava, and other apps for group ride coordination, intercom, live GPS, and club management.",
+    metaKeywords: "best app for motorbike club, motorcycle club app India, motorcycle group ride app India, WhatsApp alternative for bikers, best motorcycle coordination app 2026",
+    author: "CRUIZR Product Team",
+    date: "Aug 10, 2026",
+    readTime: "7 min read",
+    category: "App Reviews",
+    intro: "Motorbike clubs in India have long relied on WhatsApp groups and scattered social media pages to coordinate rides, share routes, and manage members. But as clubs grow, these tools show serious limitations. In 2026, purpose-built motorcycle club apps are changing the game. Here is how the top options compare.",
+    sections: [
+      {
+        heading: "Why WhatsApp Fails for Motorcycle Clubs",
+        body: "WhatsApp is the default for most Indian biker clubs, but it was never designed for ride coordination. Critical messages get buried in group chats, there is no live GPS tracking, no hands-free voice communication, and no way to verify if a rider actually showed up at the meetup point.",
+        listItems: [
+          "No built-in GPS tracking or live location sharing.",
+          "No hands-free intercom for use while riding.",
+          "Messages get lost in high-traffic group chats.",
+          "No accountability — anyone can claim to have joined a ride."
+        ]
+      },
+      {
+        heading: "CRUIZR: The Best App for Motorbike Clubs in India",
+        body: "CRUIZR is purpose-built for Indian motorbike clubs. It replaces everything you need from WhatsApp with features designed specifically for group riding. From OTP-verified meetup check-ins to live GPS tracking of every rider, CRUIZR ensures your club rides run smoothly, safely, and accountably.",
+        listItems: [
+          "Real-time GPS tracking for every rider in your convoy.",
+          "Free built-in intercom — no Bluetooth hardware required.",
+          "OTP verification confirms riders are physically at the meetup.",
+          "Permanent club hubs with dedicated chat boards.",
+          "Women-only ride mode for inclusive club management."
+        ]
+      },
+      {
+        heading: "Other Apps: Strava, Rever, and Facebook Groups",
+        body: "Strava and Rever are popular among cyclists and tourers but lack real-time group coordination features. Facebook groups work for announcement broadcasting but have no tracking, no intercom, and no safety features. They are communities, not ride coordinators.",
+        listItems: [
+          "Strava: Best for post-ride stats, not live group coordination.",
+          "Rever: Good for route planning, no intercom or club management.",
+          "Facebook Groups: Broad reach but zero safety tools."
+        ]
+      },
+      {
+        heading: "The Verdict for Indian Motorbike Clubs in 2026",
+        body: "For Indian motorbike clubs that prioritize live safety, hands-free communication, and accountability, CRUIZR is the clear winner. It is the only app built from the ground up for the unique challenges of riding in India — from Ladakh mountain passes to Mumbai monsoon traffic to Goa coastal cruises.",
+        listItems: [
+          "Best for: Club management, group tracking, free intercom.",
+          "Available in: All major Indian cities and states.",
+          "Price: Free to download and use."
+        ]
+      }
+    ],
+    conclusion: "Stop coordinating your club rides in a WhatsApp group that was never designed for bikers. CRUIZR is the best app for motorbike clubs in India in 2026, offering everything your club needs in one place — for free."
+  },
+  "how-to-start-motorcycle-club-india": {
+    title: "How to Start a Motorcycle Club in India: The Complete 2026 Guide",
+    metaTitle: "How to Start a Motorcycle Club in India 2026 — Step-by-Step Guide",
+    metaDesc: "Want to start a motorcycle club in India? This complete guide covers naming your club, recruiting members, planning rides, setting rules, and the best app to manage your motorbike club.",
+    metaKeywords: "how to start motorcycle club India, start a biker club India, motorcycle club rules India, motorbike club management app India, biker club guide 2026",
+    author: "CRUIZR Community Team",
+    date: "Aug 08, 2026",
+    readTime: "8 min read",
+    category: "Community",
+    intro: "Starting a motorcycle club in India is one of the most rewarding things a passionate rider can do. Whether you want to build a local weekend run group or a serious long-tour club, this guide walks you through every step — from your first meeting to your first 1000 km expedition.",
+    sections: [
+      {
+        heading: "Step 1: Define Your Club's Identity",
+        body: "The best motorcycle clubs have a clear identity. Decide on your bike preference (all bikes welcome vs. adventure-only vs. cruisers), your riding style (casual breakfast runs vs. long highway tours vs. offroad expeditions), and your primary city of operation.",
+        listItems: [
+          "Choose a memorable club name that reflects your riding identity.",
+          "Create a simple logo or patch design for your club.",
+          "Set a geographic focus: city-based, state-wide, or national touring club."
+        ]
+      },
+      {
+        heading: "Step 2: Recruit Your Founding Members",
+        body: "Your founding members are the backbone of your club. Look for 5-10 passionate, reliable riders from biker meetups, Sunday breakfast rides, or through dedicated rider networking apps like CRUIZR.",
+        listItems: [
+          "Find riders who share your values around safety, respect, and adventure.",
+          "Use CRUIZR to connect with verified riders in your city.",
+          "Host an inaugural meetup at a local biker café."
+        ]
+      },
+      {
+        heading: "Step 3: Set Your Club Rules and Structure",
+        body: "Every successful club needs clear operating rules. Define ride pace expectations, safety requirements (helmet, gear), how new members join, and what happens when members are inactive.",
+        listItems: [
+          "Mandatory gear policy: helmet, gloves, jacket at minimum.",
+          "Probationary period for new members to observe and participate.",
+          "Clear process for planning and voting on rides."
+        ]
+      },
+      {
+        heading: "Step 4: Set Up Your Digital Infrastructure",
+        body: "Every modern motorcycle club needs a digital home. CRUIZR provides permanent club hubs with dedicated chat boards, ride scheduling, OTP-verified meetup check-ins, and live GPS tracking — all in one place, replacing the chaos of WhatsApp groups.",
+        listItems: [
+          "Create your club on CRUIZR for a permanent, dedicated hub.",
+          "Invite members via the app for verified profiles only.",
+          "Schedule all rides in-app so everyone has automatic reminders."
+        ]
+      }
+    ],
+    conclusion: "Starting a motorcycle club in India is about building a community of trust, safety, and shared adventure. With the right foundation, clear rules, and a purpose-built tool like CRUIZR, your club will grow into a legacy that lasts for years."
   }
 };
 
@@ -171,14 +274,60 @@ export const Route = createFileRoute("/blog/$postSlug")({
         { title: data.metaTitle },
         { name: "description", content: data.metaDesc },
         { name: "keywords", content: data.metaKeywords },
+        { name: "robots", content: "index, follow, max-image-preview:large, max-snippet:-1" },
+        { property: "article:published_time", content: data.date },
+        { property: "article:author", content: data.author },
+        { property: "article:section", content: data.category },
         { property: "og:title", content: data.metaTitle },
         { property: "og:description", content: data.metaDesc },
-        { property: "og:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+        { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+        { property: "og:image:alt", content: data.metaTitle },
+        { property: "og:url", content: `https://www.cruizr.in/blog/${params.postSlug}` },
+        { property: "og:type", content: "article" },
+        { property: "og:locale", content: "en_IN" },
+        { property: "og:site_name", content: "CRUIZR" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:site", content: "@cruizrapp" },
         { name: "twitter:title", content: data.metaTitle },
         { name: "twitter:description", content: data.metaDesc },
-        { name: "twitter:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" }
+        { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
       ],
-      links: [{ rel: "canonical", href: `https://www.cruizr.in/blog/${params.postSlug}` }]
+      links: [{ rel: "canonical", href: `https://www.cruizr.in/blog/${params.postSlug}` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: data.title,
+            description: data.metaDesc,
+            image: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
+            datePublished: data.date,
+            dateModified: data.date,
+            author: {
+              "@type": "Organization",
+              name: data.author,
+              url: "https://www.cruizr.in",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "CRUIZR",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
+              },
+            },
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `https://www.cruizr.in/blog/${params.postSlug}`,
+            },
+            articleSection: data.category,
+            keywords: data.metaKeywords,
+            inLanguage: "en-IN",
+            isPartOf: { "@id": "https://www.cruizr.in/#website" },
+          }),
+        },
+      ],
     };
   },
   loader: ({ params }) => {

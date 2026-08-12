@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-BZua6AaX.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-I02DoAV-.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "E:/Cruizr/cruizr/src/routes/__root.tsx",
@@ -7,13 +7,14 @@ var tsrStartManifest = () => ({ routes: {
 			"/$slug",
 			"/about",
 			"/contact",
+			"/delete-account",
 			"/features",
 			"/privacy",
 			"/terms",
 			"/blog/$postSlug"
 		],
 		preloads: [
-			"/assets/index-BdldIeYf.js",
+			"/assets/index-U7mWY87q.js",
 			"/assets/jsx-runtime-CZcjcDnw.js",
 			"/assets/createLucideIcon-BlXDHVeD.js",
 			"/assets/link-BBLDnrOX.js"
@@ -21,14 +22,14 @@ var tsrStartManifest = () => ({ routes: {
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-BdldIeYf.js"
+			src: "/assets/index-U7mWY87q.js"
 		} }]
 	},
 	"/": {
 		filePath: "E:/Cruizr/cruizr/src/routes/index.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/routes-C9lxmOms.js",
+			"/assets/routes-ClTxkGoK.js",
 			"/assets/arrow-right-BontFere.js",
 			"/assets/trophy-qz-7d1I8.js",
 			"/assets/map-pin-DqgDwBXg.js",
@@ -36,14 +37,14 @@ var tsrStartManifest = () => ({ routes: {
 			"/assets/shield-check-CsKAQ7y9.js",
 			"/assets/SectionHeading-PJajG2sU.js",
 			"/assets/Reveal-BjZXm-z_.js",
-			"/assets/WaitlistForm-CuH_Weg6.js"
+			"/assets/WaitlistForm-jD1RmIio.js"
 		]
 	},
 	"/$slug": {
 		filePath: "E:/Cruizr/cruizr/src/routes/$slug.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/_slug-lxGW3Flc.js",
+			"/assets/_slug-CUrUyufZ.js",
 			"/assets/arrow-right-BontFere.js",
 			"/assets/shield-alert-CVpdNueO.js",
 			"/assets/compass-C0oTiA7g.js",
@@ -51,7 +52,7 @@ var tsrStartManifest = () => ({ routes: {
 			"/assets/radio-hvd-RG5X.js",
 			"/assets/SectionHeading-PJajG2sU.js",
 			"/assets/Reveal-BjZXm-z_.js",
-			"/assets/WaitlistForm-CuH_Weg6.js"
+			"/assets/WaitlistForm-jD1RmIio.js"
 		]
 	},
 	"/about": {
@@ -69,7 +70,12 @@ var tsrStartManifest = () => ({ routes: {
 	"/contact": {
 		filePath: "E:/Cruizr/cruizr/src/routes/contact.tsx",
 		children: void 0,
-		preloads: ["/assets/contact-399F0fq1.js", "/assets/check-BCrbOwvW.js"]
+		preloads: ["/assets/contact-s_ND6JCY.js", "/assets/check-BCrbOwvW.js"]
+	},
+	"/delete-account": {
+		filePath: "E:/Cruizr/cruizr/src/routes/delete-account.tsx",
+		children: void 0,
+		preloads: ["/assets/delete-account-BnsjftRg.js"]
 	},
 	"/features": {
 		filePath: "E:/Cruizr/cruizr/src/routes/features.tsx",
@@ -99,12 +105,12 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "E:/Cruizr/cruizr/src/routes/blog.$postSlug.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/blog._postSlug-Bi1Z0lmj.js",
+			"/assets/blog._postSlug-BTad3fB2.js",
 			"/assets/shield-alert-CVpdNueO.js",
 			"/assets/compass-C0oTiA7g.js",
 			"/assets/map-pin-DqgDwBXg.js",
 			"/assets/Reveal-BjZXm-z_.js",
-			"/assets/WaitlistForm-CuH_Weg6.js"
+			"/assets/WaitlistForm-jD1RmIio.js"
 		]
 	}
 } });

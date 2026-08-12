@@ -8,27 +8,63 @@ import { StoreBadges } from "../components/StoreBadges";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — CRUIZR: The Free Motorcycle Riding Community App" },
+      { title: "About CRUIZR — India's Premier Motorcycle Community App & Rider Network Story" },
       {
         name: "description",
-        content: "Discover why we built CRUIZR. We are building the ultimate Indian motorcycle community app and rider networking platform. Join us to find weekend bike rides near you.",
+        content: "Learn how CRUIZR was built by motorcycle riders for riders. India's fastest-growing bike community app with live GPS tracking, free intercom, club management, and group ride planning. Built by a passionate Java developer who wanted to stop riding alone.",
       },
       {
         name: "keywords",
         content:
-          "free motorcycle riding community app, motorcycle rider networking app, best app to meet motorcycle riders, Indian motorcycle community app, motorcycle club app India, bike riders app Delhi",
+          "about CRUIZR, CRUIZR app story, who built CRUIZR, best free bike riding social app India, motorcycle riding app founder India, Indian motorcycle community app, motorcycle rider networking app, best app to meet motorcycle riders, motorcycle club app India, bike riders social app India, CRUIZR mission, motorcycle community India",
       },
-      { property: "og:title", content: "About CRUIZR — Indian Motorcycle Community & Biker Network" },
-      { property: "og:description", content: "Discover why we built CRUIZR. We are building the ultimate Indian motorcycle community app and rider networking platform." },
+      { property: "og:title", content: "About CRUIZR — India's Premier Motorcycle Community App & Biker Network" },
+      { property: "og:description", content: "Learn how CRUIZR was built by a rider for riders. India's fastest-growing motorcycle community app with GPS tracking, free intercom, and group ride planning." },
       { property: "og:url", content: "https://www.cruizr.in/about" },
-      { property: "og:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+      { property: "og:image:alt", content: "CRUIZR About — India's Motorcycle Community App Story" },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "About CRUIZR — Biker Social Network" },
-      { name: "twitter:description", content: "Connecting motorcycle riders across India. Join the ultimate biker community." },
-      { name: "twitter:image", content: "https://www.cruizr.in/assets/hero-riders.jpg" },
+      { name: "twitter:title", content: "About CRUIZR — India's Top Motorcycle Community App" },
+      { name: "twitter:description", content: "Discover how CRUIZR was built from a solo rider's frustration. Connecting India's motorcycle community with live GPS, free intercom, and group rides." },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
     ],
     links: [{ rel: "canonical", href: "https://www.cruizr.in/about" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "AboutPage",
+              "@id": "https://www.cruizr.in/about#webpage",
+              url: "https://www.cruizr.in/about",
+              name: "About CRUIZR — India's Premier Motorcycle Community App",
+              description: "Learn how CRUIZR was built by a motorcycle rider for riders across India.",
+              isPartOf: { "@id": "https://www.cruizr.in/#website" },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                  { "@type": "ListItem", position: 2, name: "About", item: "https://www.cruizr.in/about" },
+                ],
+              },
+            },
+            {
+              "@type": "Person",
+              name: "Abhishek",
+              jobTitle: "Founder & Full-Stack Developer",
+              worksFor: { "@id": "https://www.cruizr.in/#organization" },
+              description: "Full-stack Java developer and motorcycle enthusiast. Built CRUIZR to solve the real problem of finding compatible riding partners in India.",
+              email: "abhishek@cruizr.in",
+              sameAs: ["https://www.instagram.com/cruizrapp"],
+            },
+          ],
+        }),
+      },
+    ],
   }),
   component: AboutPage,
 });
