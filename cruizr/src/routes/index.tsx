@@ -219,7 +219,7 @@ function Home() {
               Ride-partner discovery
             </div>
             <h1
-              className="mt-6 font-heading text-5xl font-black leading-[1.05] text-white md:text-7xl lg:text-8xl"
+              className="mt-6 font-heading text-4xl font-black leading-[1.05] text-white md:text-7xl lg:text-8xl"
               style={{ animation: "fade-up 0.9s ease-out 0.1s both" }}
             >
               Never{" "}
@@ -228,7 +228,7 @@ function Home() {
               Alone.
             </h1>
             <p
-              className="mt-6 max-w-xl text-lg text-white/70 md:text-xl"
+              className="mt-6 max-w-xl text-base md:text-lg text-white/70 lg:text-xl"
               style={{ animation: "fade-up 0.9s ease-out 0.25s both" }}
             >
               Find your perfect riding partner. Match on bike, pace, and style. Ride together. Stay connected on every mile.
@@ -261,7 +261,7 @@ function Home() {
       </section>
 
       {/* PROBLEM */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-background py-16 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal>
             <SectionHeading
@@ -275,13 +275,13 @@ function Home() {
             />
           </Reveal>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-3">
+          <div className="mt-16 flex gap-6 overflow-x-auto snap-x no-scrollbar md:grid md:grid-cols-3 pb-4">
             {[
               { stat: "68%", label: "of riders quit early because they had no partner to ride with." },
               { stat: "3.2×", label: "safer riding in a group of 3+ vs. riding solo (industry study)." },
               { stat: "82%", label: "of riders want a way to find compatible partners nearby." },
             ].map((s, i) => (
-              <Reveal key={s.stat} delay={i * 120}>
+              <Reveal key={s.stat} delay={i * 120} className="shrink-0 w-[85vw] sm:w-[45vw] md:w-auto snap-center">
                 <div className="rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-[var(--orange)]/40 hover:shadow-[var(--shadow-elegant)]">
                   <div className="font-heading text-5xl font-black text-gradient">{s.stat}</div>
                   <p className="mt-4 text-muted-foreground">{s.label}</p>
@@ -293,7 +293,7 @@ function Home() {
       </section>
 
       {/* SOLUTION */}
-      <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
           <Reveal delay={150} className="flex justify-center">
             <div className="relative flex gap-6 items-center">
@@ -342,7 +342,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
           <Reveal className="order-2 lg:order-1">
             <div>
@@ -390,7 +390,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
           <Reveal delay={150} className="flex justify-center">
             <div className="relative flex gap-6 items-center">
@@ -439,7 +439,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
 
 
@@ -490,7 +490,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
 
 
@@ -543,7 +543,7 @@ function Home() {
         </div>
       </section>
 
-      <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
 
 
@@ -599,7 +599,7 @@ function Home() {
       </section>
 
 
- <section className="bg-muted/30 py-24 md:py-32">
+      <section className="bg-muted/30 py-16 md:py-32">
         <div className="mx-auto grid max-w-7xl gap-16 px-4 md:px-8 lg:grid-cols-2 lg:items-center">
 
 
@@ -609,14 +609,17 @@ function Home() {
               <img
                 src={common}
                 alt="CRUIZR community photo gallery — riders share scenic spots, routes and destinations"
-                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-full h-auto"
+                loading="lazy"
+                width={300}
+                height={400}
+                className="relative rounded-3xl shadow-[var(--shadow-elegant)] max-w-[300px] h-auto"
               />
 
             </div>
           </Reveal>
 
           <Reveal>
-           <div>
+            <div>
               <SectionHeading
                 center={false}
                 eyebrow="Discover new routes"
@@ -648,13 +651,13 @@ function Home() {
 
         </div>
       </section>
-      
 
- 
+
+
 
 
       {/* FEATURES */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-background py-16 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal>
             <SectionHeading
@@ -663,9 +666,9 @@ function Home() {
               subtitle="Seven core features that turn strangers into your riding crew."
             />
           </Reveal>
-          <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-16 flex gap-6 overflow-x-auto snap-x no-scrollbar md:grid md:grid-cols-3 pb-4">
             {FEATURES.map((f, i) => (
-              <Reveal key={f.title} delay={i * 80}>
+              <Reveal key={f.title} delay={i * 80} className="shrink-0 w-[85vw] sm:w-[45vw] md:w-auto snap-center">
                 <div className="group relative h-full overflow-hidden rounded-2xl border border-border bg-card p-8 transition-all hover:-translate-y-1 hover:border-[var(--orange)]/40 hover:shadow-[var(--shadow-elegant)]">
                   <div className="mb-5 grid h-12 w-12 place-items-center rounded-xl bg-gradient-to-br from-[var(--orange)] to-[var(--cyan)] text-white transition-transform group-hover:scale-110">
                     <f.icon size={22} />
@@ -688,7 +691,7 @@ function Home() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="bg-dark py-24 md:py-32">
+      <section className="bg-dark py-16 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal>
             <SectionHeading
@@ -697,10 +700,10 @@ function Home() {
               title={<span className="text-white">Three steps to your next ride.</span>}
             />
           </Reveal>
-          <div className="mt-16 grid gap-8 md:grid-cols-3">
+          <div className="mt-16 flex gap-8 overflow-x-auto snap-x no-scrollbar md:grid md:grid-cols-3 pb-4">
             {STEPS.map((s, i) => (
-              <Reveal key={s.n} delay={i * 150}>
-                <motion.div 
+              <Reveal key={s.n} delay={i * 150} className="shrink-0 w-[85vw] sm:w-[45vw] md:w-auto snap-center">
+                <motion.div
                   whileHover={{ y: -8 }}
                   transition={{ type: "spring", stiffness: 300 }}
                   className="relative h-full rounded-2xl border border-white/10 bg-white/5 p-8 backdrop-blur"
@@ -716,7 +719,7 @@ function Home() {
       </section>
 
       {/* SOCIAL PROOF 
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-background py-16 md:py-32">
         <div className="mx-auto max-w-7xl px-4 md:px-8">
           <Reveal>
             <SectionHeading
@@ -745,7 +748,7 @@ function Home() {
       */}
 
       {/* FAQ SECTION */}
-      <section className="bg-background py-24 md:py-32">
+      <section className="bg-background py-16 md:py-32">
         <div className="mx-auto max-w-4xl px-4 md:px-8">
           <Reveal>
             <SectionHeading
@@ -758,7 +761,7 @@ function Home() {
               subtitle="Everything you need to know about the best companion app for motorbike clubs, offriding, safety, and rider networking."
             />
           </Reveal>
-          
+
           <Reveal delay={150}>
             <div className="mt-16 rounded-2xl border border-border bg-card p-6 md:p-8">
               <Accordion type="single" collapsible className="w-full space-y-4">
@@ -822,7 +825,7 @@ function Home() {
       </section>
 
       {/* FINAL CTA */}
-      <section className="relative overflow-hidden bg-dark py-24 md:py-32">
+      <section className="relative overflow-hidden bg-dark py-16 md:py-32">
         <div
           className="absolute inset-0"
           style={{ background: "var(--gradient-radial)" }}
