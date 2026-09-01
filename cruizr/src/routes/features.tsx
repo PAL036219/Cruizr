@@ -9,10 +9,6 @@ import {
   MessageSquare,
   BarChart3,
   HeartHandshake,
-  Bike,
-  Coffee,
-  Compass,
-  Zap,
   Video,
   MessageCircle,
   Target,
@@ -68,25 +64,6 @@ export const Route = createFileRoute("/features")({
                   { "@type": "ListItem", position: 2, name: "Features", item: "https://www.cruizr.in/features" },
                 ],
               },
-            },
-            {
-              "@type": "ItemList",
-              name: "CRUIZR Motorcycle App Features",
-              description: "Complete list of features in India's #1 motorcycle companion app CRUIZR.",
-              itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Smart Rider Matching", url: "https://www.cruizr.in/features#smart-matching" },
-                { "@type": "ListItem", position: 2, name: "Live GPS Group Tracking", url: "https://www.cruizr.in/features#live-tracking" },
-                { "@type": "ListItem", position: 3, name: "Free Built-in Motorcycle Intercom", url: "https://www.cruizr.in/features#walkie-talkie" },
-                { "@type": "ListItem", position: 4, name: "OTP Rider Verification", url: "https://www.cruizr.in/features#otp-verification" },
-                { "@type": "ListItem", position: 5, name: "Private & Invite-Only Rides", url: "https://www.cruizr.in/features#private-rides" },
-                { "@type": "ListItem", position: 6, name: "Motorcycle Club Management", url: "https://www.cruizr.in/features#clubs" },
-                { "@type": "ListItem", position: 7, name: "Community Feed & Route Sharing", url: "https://www.cruizr.in/features#community-feed" },
-                { "@type": "ListItem", position: 8, name: "Ride History & Stats", url: "https://www.cruizr.in/features#ride-history" },
-                { "@type": "ListItem", position: 9, name: "Crash Detection & Emergency SOS", url: "https://www.cruizr.in/features#safety" },
-                { "@type": "ListItem", position: 10, name: "Direct & Group Chat", url: "https://www.cruizr.in/features#group-chat" },
-                { "@type": "ListItem", position: 11, name: "Live Ride Broadcasting", url: "https://www.cruizr.in/features#live-broadcasting" },
-                { "@type": "ListItem", position: 12, name: "Daily Rider Challenges", url: "https://www.cruizr.in/features#challenges" },
-              ],
             },
           ],
         }),
@@ -159,84 +136,61 @@ const ALL = [
   },
 ];
 
-// ⭐ NEW: Quick Stats Section
-const STATS = [
-  { number: "50K+", label: "Rides Created" },
-  { number: "10K+", label: "Active Riders" },
-  { number: "98%", label: "Match Rate" },
-  { number: "4.9⭐", label: "Average Rating" },
-];
-
-// ⭐ NEW: Testimonial
-const TESTIMONIAL = {
-  quote: "CRUIZR completely changed how I ride. I went from riding solo every weekend to having a crew of 8 regular riding partners. The matching is unreal.",
-  author: "Rahul S.",
-  role: "Interceptor 650 Rider, Bangalore",
-};
-
 function FeaturesPage() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-dark py-24 md:py-32">
+      <section className="relative overflow-hidden bg-dark py-16 sm:py-20 md:py-32">
         <div
           className="absolute inset-0"
           style={{ background: "var(--gradient-radial)" }}
           aria-hidden
         />
-        <div className="relative mx-auto max-w-4xl px-4 text-center md:px-8">
-          <div className="mb-4 inline-block rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-[var(--orange)]">
+        <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 md:px-8">
+          <div className="mb-4 inline-block rounded-full border border-white/20 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-[var(--orange)] md:text-sm">
             Features
           </div>
-          <h1 className="font-heading text-5xl font-black leading-tight text-white md:text-7xl">
-            Every tool a rider <span className="text-gradient">actually needs.</span>
+          <h1 className="font-heading text-4xl font-black leading-tight text-white sm:text-5xl md:text-7xl">
+            Every tool a rider <span className="text-gradient block sm:inline">actually needs.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-lg text-white/70">
+          <p className="mx-auto mt-6 max-w-2xl text-base text-white/70 sm:text-lg">
             Built ground-up for motorcycle and bicycle riders — not adapted from some generic social app.
           </p>
         </div>
       </section>
 
-      {/* ⭐ STATS SECTION - NEW 
-      <section className="bg-background border-b border-border py-16">
-        <div className="mx-auto max-w-6xl px-4 md:px-8">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
-            {STATS.map((stat, i) => (
-              <Reveal key={stat.label} delay={i * 100}>
-                <div className="text-center">
-                  <div className="font-heading text-3xl font-black text-[var(--orange)] md:text-4xl">
-                    {stat.number}
-                  </div>
-                  <div className="mt-1 text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-      */}
-
       {/* FEATURES LIST */}
-      <section className="bg-background py-24 md:py-32">
-        <div className="mx-auto max-w-6xl space-y-16 px-4 md:px-8 md:space-y-24">
+      <section className="bg-background py-16 sm:py-24 md:py-32">
+        <div className="mx-auto max-w-6xl space-y-12 px-4 sm:space-y-16 sm:px-6 md:px-8 md:space-y-24">
           {ALL.map((f, i) => (
             <Reveal key={f.title} direction={i % 2 === 0 ? "left" : "right"}>
               <article
-                className={`grid gap-10 md:grid-cols-2 md:items-center ${
+                className={`flex flex-col gap-6 sm:gap-8 md:grid md:grid-cols-2 md:items-center md:gap-12 ${
                   i % 2 ? "md:[&>*:first-child]:order-2" : ""
                 }`}
               >
-                <div>
-                  <div className="mb-5 grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-[var(--orange)] to-[var(--cyan)] text-white">
-                    <f.icon size={26} />
+                <div className="flex flex-col md:block">
+                  {/* Icon & Title Row on Mobile */}
+                  <div className="flex items-center gap-4 md:block">
+                    <div className="grid h-12 w-12 flex-shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-[var(--orange)] to-[var(--cyan)] text-white sm:h-14 sm:w-14 md:mb-6">
+                      <f.icon size={24} className="sm:h-7 sm:w-7" />
+                    </div>
+                    <h2 className="font-heading text-2xl font-extrabold text-foreground sm:text-3xl md:text-4xl">
+                      {f.title}
+                    </h2>
                   </div>
-                  <h2 className="font-heading text-3xl font-extrabold md:text-4xl">{f.title}</h2>
-                  <p className="mt-4 text-lg text-muted-foreground">{f.body}</p>
+                  
+                  {/* Body Text */}
+                  <p className="mt-3 text-base leading-relaxed text-muted-foreground sm:text-lg md:mt-5">
+                    {f.body}
+                  </p>
                 </div>
-                <div className="relative">
-                  <div className="aspect-[4/3] rounded-3xl border border-border bg-gradient-to-br from-[var(--orange)]/10 via-background to-[var(--cyan)]/10 p-8">
-                    <div className="grid h-full place-items-center">
-                      <f.icon size={96} className="text-[var(--orange)] opacity-60" />
+
+                {/* Decorative Box / Placeholder */}
+                <div className="relative mt-4 md:mt-0">
+                  <div className="aspect-video w-full rounded-3xl border border-border bg-gradient-to-br from-[var(--orange)]/10 via-background to-[var(--cyan)]/10 p-4 sm:p-6 md:aspect-[4/3] md:p-8">
+                    <div className="grid h-full place-items-center rounded-2xl bg-background/40 backdrop-blur-sm border border-white/5 transition-all duration-300 hover:bg-background/20 hover:scale-[1.02]">
+                      <f.icon size={64} className="text-[var(--orange)] opacity-40 transition-opacity duration-300 hover:opacity-70 md:h-[96px] md:w-[96px]" />
                     </div>
                   </div>
                 </div>
@@ -246,34 +200,15 @@ function FeaturesPage() {
         </div>
       </section>
 
-      {/* ⭐ TESTIMONIAL SECTION - NEW 
-      <section className="bg-muted/30 py-16 md:py-24">
-        <div className="mx-auto max-w-3xl px-4 text-center md:px-8">
-          <Reveal>
-            <div className="rounded-3xl border border-border bg-card p-8 md:p-12">
-              <div className="mb-4 text-6xl text-[var(--orange)]">"</div>
-              <p className="text-xl font-medium leading-relaxed md:text-2xl">
-                {TESTIMONIAL.quote}
-              </p>
-              <div className="mt-6">
-                <div className="font-heading text-lg font-bold">{TESTIMONIAL.author}</div>
-                <div className="text-sm text-muted-foreground">{TESTIMONIAL.role}</div>
-              </div>
-            </div>
-          </Reveal>
-        </div>
-      </section>
-      */}
-
       {/* CTA SECTION */}
-      <section className="bg-dark py-24 md:py-32">
-        <div className="mx-auto max-w-4xl px-4 text-center md:px-8">
+      <section className="bg-dark py-16 sm:py-20 md:py-32">
+        <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 md:px-8">
           <SectionHeading 
             invert 
             title={<span className="text-white">Try every feature free.</span>} 
             subtitle={<span className="text-white/70">CRUIZR is coming soon. Get ready to start riding with your crew.</span>} 
           />
-          <div className="mt-10 flex justify-center">
+          <div className="mt-8 flex justify-center sm:mt-10">
             <StoreBadges dark />
           </div>
         </div>

@@ -10,8 +10,10 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as RoadmapRouteImport } from './routes/roadmap'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
+import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as FeaturesRouteImport } from './routes/features'
 import { Route as DeleteAccountRouteImport } from './routes/delete-account'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -25,6 +27,11 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RoadmapRoute = RoadmapRouteImport.update({
+  id: '/roadmap',
+  path: '/roadmap',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
@@ -33,6 +40,11 @@ const PrivacyRoute = PrivacyRouteImport.update({
 const PricingRoute = PricingRouteImport.update({
   id: '/pricing',
   path: '/pricing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FeedbackRoute = FeedbackRouteImport.update({
+  id: '/feedback',
+  path: '/feedback',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FeaturesRoute = FeaturesRouteImport.update({
@@ -78,8 +90,10 @@ export interface FileRoutesByFullPath {
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
   '/features': typeof FeaturesRoute
+  '/feedback': typeof FeedbackRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/roadmap': typeof RoadmapRoute
   '/terms': typeof TermsRoute
   '/blog/$postSlug': typeof BlogPostSlugRoute
 }
@@ -90,8 +104,10 @@ export interface FileRoutesByTo {
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
   '/features': typeof FeaturesRoute
+  '/feedback': typeof FeedbackRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/roadmap': typeof RoadmapRoute
   '/terms': typeof TermsRoute
   '/blog/$postSlug': typeof BlogPostSlugRoute
 }
@@ -103,8 +119,10 @@ export interface FileRoutesById {
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
   '/features': typeof FeaturesRoute
+  '/feedback': typeof FeedbackRoute
   '/pricing': typeof PricingRoute
   '/privacy': typeof PrivacyRoute
+  '/roadmap': typeof RoadmapRoute
   '/terms': typeof TermsRoute
   '/blog/$postSlug': typeof BlogPostSlugRoute
 }
@@ -117,8 +135,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/delete-account'
     | '/features'
+    | '/feedback'
     | '/pricing'
     | '/privacy'
+    | '/roadmap'
     | '/terms'
     | '/blog/$postSlug'
   fileRoutesByTo: FileRoutesByTo
@@ -129,8 +149,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/delete-account'
     | '/features'
+    | '/feedback'
     | '/pricing'
     | '/privacy'
+    | '/roadmap'
     | '/terms'
     | '/blog/$postSlug'
   id:
@@ -141,8 +163,10 @@ export interface FileRouteTypes {
     | '/contact'
     | '/delete-account'
     | '/features'
+    | '/feedback'
     | '/pricing'
     | '/privacy'
+    | '/roadmap'
     | '/terms'
     | '/blog/$postSlug'
   fileRoutesById: FileRoutesById
@@ -154,8 +178,10 @@ export interface RootRouteChildren {
   ContactRoute: typeof ContactRoute
   DeleteAccountRoute: typeof DeleteAccountRoute
   FeaturesRoute: typeof FeaturesRoute
+  FeedbackRoute: typeof FeedbackRoute
   PricingRoute: typeof PricingRoute
   PrivacyRoute: typeof PrivacyRoute
+  RoadmapRoute: typeof RoadmapRoute
   TermsRoute: typeof TermsRoute
   BlogPostSlugRoute: typeof BlogPostSlugRoute
 }
@@ -167,6 +193,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/roadmap': {
+      id: '/roadmap'
+      path: '/roadmap'
+      fullPath: '/roadmap'
+      preLoaderRoute: typeof RoadmapRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -181,6 +214,13 @@ declare module '@tanstack/react-router' {
       path: '/pricing'
       fullPath: '/pricing'
       preLoaderRoute: typeof PricingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/feedback': {
+      id: '/feedback'
+      path: '/feedback'
+      fullPath: '/feedback'
+      preLoaderRoute: typeof FeedbackRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/features': {
@@ -242,8 +282,10 @@ const rootRouteChildren: RootRouteChildren = {
   ContactRoute: ContactRoute,
   DeleteAccountRoute: DeleteAccountRoute,
   FeaturesRoute: FeaturesRoute,
+  FeedbackRoute: FeedbackRoute,
   PricingRoute: PricingRoute,
   PrivacyRoute: PrivacyRoute,
+  RoadmapRoute: RoadmapRoute,
   TermsRoute: TermsRoute,
   BlogPostSlugRoute: BlogPostSlugRoute,
 }
