@@ -96,10 +96,15 @@ function Roadmap() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 md:px-8">
         <Reveal>
           <div className="text-center">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-white/5 px-3 py-1.5 text-xs font-semibold text-[var(--orange)] shadow-sm md:px-4">
-              <Rocket size={14} className="animate-pulse" />
-              <span>Coming Soon</span>
-            </div>
+            <a 
+              href="https://groups.google.com/g/cruizr-beta-testers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border border-[var(--orange)]/30 bg-[var(--orange)]/10 px-4 py-2 text-sm font-bold text-[var(--orange)] shadow-sm transition-all hover:scale-105 hover:bg-[var(--orange)]/20 hover:shadow-[0_0_15px_rgba(255,107,43,0.3)] md:px-5"
+            >
+              <Rocket size={16} className="animate-pulse" />
+              <span>Join Early Access</span>
+            </a>
             <h1 className="mt-5 font-heading text-4xl font-black tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-[4rem]">
               The <span className="text-gradient">Roadmap</span>
             </h1>

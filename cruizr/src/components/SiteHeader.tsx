@@ -137,13 +137,15 @@ export function SiteHeader() {
           {/* ── CTA Button ── */}
           <div className="hidden md:block">
             <a
-              href="#download"
+              href="https://groups.google.com/g/cruizr-beta-testers"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-2 overflow-hidden rounded-full px-5 py-2 text-sm font-semibold text-white transition-all duration-300 hover:shadow-[0_8px_24px_oklch(0.7_0.19_40/0.35)]"
               style={{
                 background: "linear-gradient(135deg, var(--orange) 0%, #ff8f5c 100%)",
               }}
             >
-              <span className="relative z-10">Coming Soon</span>
+              <span className="relative z-10">Join Early Access</span>
               <ArrowRight size={14} className="relative z-10 transition-transform duration-300 group-hover:translate-x-0.5" />
               {/* Shimmer sweep on hover */}
               <span
@@ -241,11 +243,13 @@ export function SiteHeader() {
                 className="mt-6 w-full max-w-sm"
               >
                 <a
-                  href="#download"
+                  href="https://groups.google.com/g/cruizr-beta-testers"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={() => setOpen(false)}
                   className="flex items-center justify-center gap-2 rounded-full bg-[var(--orange)] py-4 text-base font-bold text-white shadow-[0_8px_32px_oklch(0.7_0.19_40/0.4)]"
                 >
-                  Coming Soon
+                  Join Early Access
                   <ArrowRight size={16} />
                 </a>
               </motion.div>
