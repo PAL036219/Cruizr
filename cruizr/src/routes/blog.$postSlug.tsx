@@ -18,9 +18,18 @@ const fetchBlogPost = createServerFn({ method: "GET" })
   .validator((slug: string) => slug)
   .handler(async ({ data: slug }) => {
     try {
-      const filePath = path.resolve(process.cwd(), `src/content/blog/${slug}.md`);
-      const fileContent = await fs.readFile(filePath, "utf-8");
-      const { data, content } = matter(fileContent);
+      // Use import.meta.glob to ensure Vite bundles the markdown files for Vercel production
+      const allFiles = import.meta.glob('../content/blog/*.md', { query: '?raw', import: 'default' });
+      const filePath = `../content/blog/${slug}.md`;
+      const fileResolver = allFiles[filePath];
+      
+      if (!fileResolver) {
+        console.error(`Markdown file not found for slug: ${slug}`);
+        return null;
+      }
+      
+      const fileContent = await fileResolver();
+      const { data, content } = matter(fileContent as string);
       return {
         meta: data as Record<string, string>,
         body: content,
