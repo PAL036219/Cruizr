@@ -41,29 +41,29 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CRUIZR — India's #1 Motorcycle App | Find Riding Partners, Group Rides & Free Intercom" },
+      { title: "CRUIZR — India's #1 Motorcycle App & Trip Planner | Group Rides, GPS & Free Intercom" },
       {
         name: "description",
         content:
-          "CRUIZR is India's #1 motorcycle companion app. Find riding partners, join motorbike clubs, plan offroad & monsoon group rides, use free built-in intercom, live GPS tracking, and crash SOS alerts. Available in Bangalore, Mumbai, Pune, Delhi NCR, Hyderabad, Chennai & across India.",
+          "CRUIZR is India's #1 motorcycle companion app & trip planner. Find riding partners, join motorbike clubs, plan offroad & monsoon group rides, use free built-in intercom, live GPS tracking, and crash SOS alerts. Available across India.",
       },
       {
         name: "keywords",
         content:
-          "best app for motorbike club, best app for offriding rides, best app for group motorcycle rides, find riding partner motorcycle India, motorcycle rides near me, best motorcycle app India, motorcycle ride planning app, bike riding app Bangalore Pune Mumbai Hyderabad Chennai Delhi NCR Kolkata Goa Ladakh Himachal Pradesh, women motorcycle riders app India, women only bike rides India, monsoon bike rides India, offroad rides monsoon, winter motorcycle rides India, free motorcycle intercom app, motorcycle crash alert app, motorcycle GPS tracker India, motorcycle club management app, motorcycle live streaming app, group motorcycle GPS tracker",
+          "cruizr, cruisz, cruizer, criozr, crisere, cuizer, cruizzer, cruizers, cruiz, cruister, cruizy, cruzr e bike, scruiser, crusit, motorcycle trip planner, cruzr military discount, cruzr ebike, cruiser site, crossrider, cruzrs, web cruising, best app for motorbike club, motorcycle ride planning app, free motorcycle intercom app, motorcycle GPS tracker India",
       },
-      { property: "og:title", content: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Free Intercom" },
+      { property: "og:title", content: "CRUIZR — India's #1 Motorcycle App & Trip Planner | Group Rides, GPS & Free Intercom" },
       {
         property: "og:description",
-        content: "CRUIZR is the ultimate motorcycle companion app. Find riding partners, join motorbike clubs, plan offroad/monsoon group rides, use free intercom & live GPS. India's top bike riding app.",
+        content: "CRUIZR is the ultimate motorcycle companion app & trip planner. Find riding partners, join motorbike clubs, plan group rides, use free intercom & live GPS tracking.",
       },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
-      { property: "og:image:alt", content: "CRUIZR Motorcycle App — India's #1 Group Ride Platform" },
+      { property: "og:image:alt", content: "CRUIZR Motorcycle App — India's #1 Group Ride Platform & Trip Planner" },
       { property: "og:url", content: "https://www.cruizr.in/" },
       { property: "og:type", content: "website" },
       { property: "og:locale", content: "en_IN" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "CRUIZR — India's #1 Motorcycle App | Group Rides & Free Intercom" },
+      { name: "twitter:title", content: "CRUIZR — India's #1 Motorcycle App & Trip Planner | Group Rides & Free Intercom" },
       { name: "twitter:description", content: "Find riding partners, join motorbike clubs, plan offroad & monsoon rides, use free built-in intercom and live GPS tracking across India." },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
     ],
@@ -78,8 +78,8 @@ export const Route = createFileRoute("/")({
               "@type": "WebPage",
               "@id": "https://www.cruizr.in/#webpage",
               url: "https://www.cruizr.in/",
-              name: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Free Intercom",
-              description: "India's #1 motorcycle companion app. Find riding partners, join motorbike clubs, plan group rides, use free intercom and live GPS tracking across India.",
+              name: "CRUIZR — India's #1 Motorcycle App & Trip Planner | Group Rides, GPS & Free Intercom",
+              description: "India's #1 motorcycle companion app & trip planner. Find riding partners, join motorbike clubs, plan group rides, use free intercom and live GPS tracking across India.",
               isPartOf: { "@id": "https://www.cruizr.in/#website" },
               about: { "@id": "https://www.cruizr.in/#app" },
               primaryImageOfPage: {
@@ -140,10 +140,26 @@ export const Route = createFileRoute("/")({
                 },
                 {
                   "@type": "Question",
-                  name: "How do I find a motorcycle riding partner near me in India?",
+                  name: "How does CRUIZR work as a motorcycle trip planner app?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "CRUIZR's smart rider matching algorithm finds compatible motorcycle riding partners near you based on your bike type, riding pace, experience level, and preferred terrain. Create your profile, browse rides near you, or post your own ride — CRUIZR instantly matches you with like-minded riders in your city.",
+                    text: "CRUIZR is the ultimate motorcycle trip planner app for long-distance highway tours, offroad trails, and weekend group rides. It helps you design detailed route itineraries, mark fuel & rest stops, share maps instantly with your group, and monitor live GPS positions so no rider gets lost.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Is CRUIZR also known as Cruizer, Cruzr, or Cruiz?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes! Whether you spell it CRUIZR, Cruizer, Cruzr, Cruiz, or Cruzrs, CRUIZR is the official motorcycle trip planner and group ride app built for Indian riders and global motorbike clubs.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Can CRUIZR be used for e-bikes, electric motorcycles, and club discounts?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes! CRUIZR supports all two-wheeler enthusiasts including e-bikes, electric motorcycles, dirt bikes, and classic cruisers. CRUIZR is free for individual riders, e-bike groups, and offers special verified club features and military community recognition.",
                   },
                 },
                 {
@@ -446,7 +462,25 @@ function Home() {
                   </AccordionContent>
                 </AccordionItem>
 
-                <AccordionItem value="item-6" className="border-b-0">
+                <AccordionItem value="item-6" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    How does CRUIZR work as a motorcycle trip planner app?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    CRUIZR is built as a complete motorcycle trip planner app. You can map out detailed tour routes, set meeting waypoints and fuel stops, sync routes instantly with all group members, and track everyone's live GPS position on long-distance highway or offroad rides.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-7" className="border-b border-border/50">
+                  <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
+                    Is CRUIZR also spelled as Cruizer, Cruzr, or Cruiz?
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground leading-relaxed text-sm md:text-base">
+                    Yes! Whether you spell it CRUIZR, Cruizer, Cruzr, Cruiz, or Cruzrs, CRUIZR is the official name of India's premier motorcycle companion app and trip planner for biker clubs, solo tourers, and e-bike riders.
+                  </AccordionContent>
+                </AccordionItem>
+
+                <AccordionItem value="item-8" className="border-b-0">
                   <AccordionTrigger className="text-base font-semibold hover:text-[var(--orange)] md:text-lg">
                     Which major cities in India are supported by CRUIZR?
                   </AccordionTrigger>
