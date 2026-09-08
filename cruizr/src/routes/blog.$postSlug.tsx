@@ -180,6 +180,9 @@ function BlogPostPage() {
                       <span className="flex-1">{props.children}</span>
                     </li>
                   ),
+                  a: ({node, ...props}) => (
+                    <a className="text-blue-500 hover:text-blue-400 font-semibold underline underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" {...props} />
+                  ),
                 }}
               >
                 {body}

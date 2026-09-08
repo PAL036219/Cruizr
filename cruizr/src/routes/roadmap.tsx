@@ -5,7 +5,8 @@ import {
   Trophy, 
   CreditCard, 
   Ambulance,
-  Rocket
+  Rocket,
+  Compass
 } from "lucide-react";
 import { Reveal } from "../components/Reveal";
 
@@ -15,6 +16,21 @@ export const Route = createFileRoute("/roadmap")({
 
 function Roadmap() {
   const features = [
+    {
+      icon: Compass,
+      title: "Explore Rides & Route Discovery 🗺️",
+      subtitle: "Dedicated discovery screen & cards",
+      description: "A dedicated Explore Rides screen designed for seamless route and group ride discovery in your area with custom ride cards.",
+      bullets: [
+        "Featured & Near You Cards: Visual preview cards with route path, distance, difficulty level, rider avatars, and dates.",
+        "Smart Filtering: Filter upcoming rides by Near Me, This Weekend, Popular, Long Ride, or Short Ride.",
+        "One-Tap Join & Map View: Direct 'Join Ride' action buttons and an integrated 'Explore on Map' view."
+      ],
+      color: "text-purple-500",
+      bg: "bg-purple-500/10",
+      border: "hover:border-purple-500/30",
+      glow: "group-hover:shadow-purple-500/10"
+    },
     {
       icon: WifiOff,
       title: "The Offline P2P Mesh Network",
