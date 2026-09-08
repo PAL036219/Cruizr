@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { 
   Compass, 
   MapPin, 
@@ -523,6 +523,9 @@ export const Route = createFileRoute("/$slug")({
     };
   },
   loader: ({ params }) => {
+    if (params.slug === "royal-enfield-himalayan-440") {
+      throw redirect({ to: "/blog/$postSlug", params: { postSlug: "royal-enfield-himalayan-440" } });
+    }
     const data = SLUG_CONTENT_MAP[params.slug] || generateStateContent(params.slug);
     if (!data) {
       throw notFound();
