@@ -8,6 +8,7 @@
     "build": "node scripts/generate-sitemap.js && vite build",
     "build:dev": "node scripts/generate-sitemap.js && vite build --mode development",
     "sitemap": "node scripts/generate-sitemap.js",
+    "indexnow": "node scripts/submit-indexnow.js",
     "preview": "vite preview",
     "lint": "oxlint",
     "format": "prettier --write ."
