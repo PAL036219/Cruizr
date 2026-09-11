@@ -1,8 +1,6 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { Home, Compass, DollarSign, Menu } from "lucide-react";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { SiteHeader } from "./SiteHeader"; // Or we can trigger a generic menu overlay from here
+import { Home, Compass, DollarSign } from "lucide-react";
+import { motion } from "framer-motion";
 
 const NAV = [
   { to: "/", label: "Home", icon: Home },

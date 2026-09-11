@@ -11,6 +11,61 @@ import {
 import { Reveal } from "../components/Reveal";
 
 export const Route = createFileRoute("/roadmap")({
+  head: () => ({
+    meta: [
+      { title: "CRUIZR Product Roadmap — Future Features for Motorcycle Riders" },
+      {
+        name: "description",
+        content: "Explore the CRUIZR development roadmap. Discover upcoming features including Explore Rides discovery, offline P2P mesh network, video telemetry overlays, and gamified rider badges.",
+      },
+      {
+        name: "keywords",
+        content: "CRUIZR roadmap, motorcycle app development, upcoming motorcycle features, offline mesh walkie talkie, motorcycle route discovery",
+      },
+      { property: "og:title", content: "CRUIZR Product Roadmap — What We're Building for Motorcyclists" },
+      {
+        property: "og:description",
+        content: "See what's coming next on CRUIZR: Offline P2P mesh walkie-talkie, ride discovery, telemetry overlays, and community milestones.",
+      },
+      { property: "og:url", content: "https://www.cruizr.in/roadmap" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+      { property: "og:image:alt", content: "CRUIZR Product Roadmap" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_IN" },
+      { property: "og:site_name", content: "CRUIZR" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@cruizrapp" },
+      { name: "twitter:title", content: "CRUIZR Product Roadmap — Upcoming Features" },
+      { name: "twitter:description", content: "See upcoming innovations for Indian motorcyclists: Offline mesh intercom, ride discovery, and telemetry overlays." },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+    ],
+    links: [{ rel: "canonical", href: "https://www.cruizr.in/roadmap" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.cruizr.in/roadmap#webpage",
+              url: "https://www.cruizr.in/roadmap",
+              name: "CRUIZR Product Roadmap",
+              description: "The product roadmap and upcoming features for CRUIZR motorcycle app.",
+              isPartOf: { "@id": "https://www.cruizr.in/#website" },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                  { "@type": "ListItem", position: 2, name: "Roadmap", item: "https://www.cruizr.in/roadmap" },
+                ],
+              },
+            },
+          ],
+        }),
+      },
+    ],
+  }),
   component: Roadmap,
 });
 

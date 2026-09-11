@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Instagram, Twitter, Youtube, Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import logo from "../assets/cruizr-logo.png";
 
 
@@ -32,6 +32,9 @@ export function SiteFooter() {
             <h4 className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-white">Product</h4>
             <ul className="space-y-3 text-sm text-white/60">
               <li><Link to="/features" className="hover:text-[var(--orange)]">Features</Link></li>
+              <li><Link to="/pricing" className="hover:text-[var(--orange)]">Pricing</Link></li>
+              <li><Link to="/roadmap" className="hover:text-[var(--orange)]">Roadmap</Link></li>
+              <li><Link to="/feedback" className="hover:text-[var(--orange)]">Feedback</Link></li>
               <li><Link to="/about" className="hover:text-[var(--orange)]">About</Link></li>
               <li><Link to="/contact" className="hover:text-[var(--orange)]">Contact</Link></li>
             </ul>
@@ -49,71 +52,127 @@ export function SiteFooter() {
         </div>
 
         {/* SEO DIRECTORY LINKS */}
-        <div className="mt-12 border-t border-white/5 pt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3 text-xs text-white/50">
+        <div className="mt-12 border-t border-white/5 pt-8 grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 text-xs text-white/50">
           <div>
-            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Popular Biker Cities</h5>
+            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Biker Cities</h5>
             <div className="flex flex-wrap gap-x-3 gap-y-2">
-              <Link to="/motorcycle-app-delhi" className="hover:text-[var(--orange)]">Delhi NCR</Link>
+              <Link to={"/motorcycle-app-delhi" as any} className="hover:text-[var(--orange)]">Delhi NCR</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-bangalore" className="hover:text-[var(--orange)]">Bangalore</Link>
+              <Link to={"/motorcycle-app-bangalore" as any} className="hover:text-[var(--orange)]">Bangalore</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-mumbai" className="hover:text-[var(--orange)]">Mumbai</Link>
+              <Link to={"/motorcycle-app-mumbai" as any} className="hover:text-[var(--orange)]">Mumbai</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-pune" className="hover:text-[var(--orange)]">Pune</Link>
+              <Link to={"/motorcycle-app-pune" as any} className="hover:text-[var(--orange)]">Pune</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-hyderabad" className="hover:text-[var(--orange)]">Hyderabad</Link>
+              <Link to={"/motorcycle-app-hyderabad" as any} className="hover:text-[var(--orange)]">Hyderabad</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-chennai" className="hover:text-[var(--orange)]">Chennai</Link>
+              <Link to={"/motorcycle-app-chennai" as any} className="hover:text-[var(--orange)]">Chennai</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-kolkata" className="hover:text-[var(--orange)]">Kolkata</Link>
+              <Link to={"/motorcycle-app-kolkata" as any} className="hover:text-[var(--orange)]">Kolkata</Link>
             </div>
           </div>
           <div>
-            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Rider States & Trails</h5>
+            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Rider States</h5>
             <div className="flex flex-wrap gap-x-3 gap-y-2">
-              <Link to="/motorcycle-app-goa" className="hover:text-[var(--orange)]">Goa</Link>
+              <Link to={"/motorcycle-app-goa" as any} className="hover:text-[var(--orange)]">Goa</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-maharashtra" className="hover:text-[var(--orange)]">Maharashtra</Link>
+              <Link to={"/motorcycle-app-maharashtra" as any} className="hover:text-[var(--orange)]">Maharashtra</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-karnataka" className="hover:text-[var(--orange)]">Karnataka</Link>
+              <Link to={"/motorcycle-app-karnataka" as any} className="hover:text-[var(--orange)]">Karnataka</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-tamil-nadu" className="hover:text-[var(--orange)]">Tamil Nadu</Link>
+              <Link to={"/motorcycle-app-tamil-nadu" as any} className="hover:text-[var(--orange)]">Tamil Nadu</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-kerala" className="hover:text-[var(--orange)]">Kerala</Link>
+              <Link to={"/motorcycle-app-kerala" as any} className="hover:text-[var(--orange)]">Kerala</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-telangana" className="hover:text-[var(--orange)]">Telangana</Link>
+              <Link to={"/motorcycle-app-telangana" as any} className="hover:text-[var(--orange)]">Telangana</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-gujarat" className="hover:text-[var(--orange)]">Gujarat</Link>
+              <Link to={"/motorcycle-app-rajasthan" as any} className="hover:text-[var(--orange)]">Rajasthan</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-rajasthan" className="hover:text-[var(--orange)]">Rajasthan</Link>
+              <Link to={"/motorcycle-app-himachal-pradesh" as any} className="hover:text-[var(--orange)]">Himachal</Link>
               <span>•</span>
-              <Link to="/motorcycle-app-west-bengal" className="hover:text-[var(--orange)]">West Bengal</Link>
-              <span>•</span>
-              <Link to="/motorcycle-app-himachal-pradesh" className="hover:text-[var(--orange)]">Himachal</Link>
-              <span>•</span>
-              <Link to="/motorcycle-app-ladakh" className="hover:text-[var(--orange)]">Ladakh</Link>
+              <Link to={"/motorcycle-app-ladakh" as any} className="hover:text-[var(--orange)]">Ladakh</Link>
             </div>
           </div>
           <div>
-            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Riding Resources</h5>
+            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Bike Models</h5>
             <div className="flex flex-wrap gap-x-3 gap-y-2">
-              <Link to="/group-motorcycle-rides" className="hover:text-[var(--orange)]">Group Rides</Link>
+              <Link to={"/royal-enfield-himalayan-rides" as any} className="hover:text-[var(--orange)]">Himalayan</Link>
               <span>•</span>
-              <Link to="/motorcycle-ride-planning" className="hover:text-[var(--orange)]">Ride Planner</Link>
+              <Link to={"/royal-enfield-classic-350-rides" as any} className="hover:text-[var(--orange)]">Classic 350</Link>
               <span>•</span>
-              <Link to="/offroad-motorcycle-rides" className="hover:text-[var(--orange)]">Offroad Rides</Link>
+              <Link to={"/royal-enfield-hunter-350-rides" as any} className="hover:text-[var(--orange)]">Hunter 350</Link>
               <span>•</span>
-              <Link to="/motorcycle-clubs" className="hover:text-[var(--orange)]">Motorbike Clubs</Link>
+              <Link to={"/royal-enfield-continental-gt-650-rides" as any} className="hover:text-[var(--orange)]">GT 650</Link>
               <span>•</span>
-              <Link to="/motorcycle-tracking" className="hover:text-[var(--orange)]">GPS Tracker</Link>
+              <Link to={"/ktm-duke-390-rides" as any} className="hover:text-[var(--orange)]">Duke 390</Link>
               <span>•</span>
-              <Link to="/motorcycle-intercom" className="hover:text-[var(--orange)]">Intercom App</Link>
+              <Link to={"/ktm-adventure-390-rides" as any} className="hover:text-[var(--orange)]">ADV 390</Link>
               <span>•</span>
-              <Link to="/motorcycle-safety" className="hover:text-[var(--orange)]">Safety App</Link>
+              <Link to={"/triumph-speed-400-rides" as any} className="hover:text-[var(--orange)]">Speed 400</Link>
               <span>•</span>
-              <Link to="/women-motorcycle-riders" className="hover:text-[var(--orange)]">Women Bikers</Link>
+              <Link to={"/hero-xpulse-200-rides" as any} className="hover:text-[var(--orange)]">XPulse 200</Link>
               <span>•</span>
-              <Link to="/best-motorcycle-app-india" className="hover:text-[var(--orange)]">Best App India</Link>
+              <Link to={"/bmw-g310-gs-rides" as any} className="hover:text-[var(--orange)]">G 310 GS</Link>
+              <span>•</span>
+              <Link to={"/bajaj-dominor-400-rides" as any} className="hover:text-[var(--orange)]">Dominar</Link>
+            </div>
+          </div>
+          <div>
+            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Accessories & Gear</h5>
+            <div className="flex flex-wrap gap-x-3 gap-y-2">
+              <Link to={"/motorcycle-intercom-headset-app" as any} className="hover:text-[var(--orange)]">Free Intercom</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-helmet-bluetooth-intercom" as any} className="hover:text-[var(--orange)]">Helmet Audio</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-gps-tracker-accessories" as any} className="hover:text-[var(--orange)]">GPS Tracker</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-mobile-phone-mount-guide" as any} className="hover:text-[var(--orange)]">Phone Mounts</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-riding-gear-accessories" as any} className="hover:text-[var(--orange)]">Riding Gear</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-action-camera-mounts" as any} className="hover:text-[var(--orange)]">Action Cam</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-saddlebags-luggage-touring" as any} className="hover:text-[var(--orange)]">Saddlebags</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-fog-lights-auxiliary" as any} className="hover:text-[var(--orange)]">Fog Lights</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-crash-guard-accessories" as any} className="hover:text-[var(--orange)]">Crash Guards</Link>
+            </div>
+          </div>
+          <div>
+            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Bike Apps</h5>
+            <div className="flex flex-wrap gap-x-3 gap-y-2">
+              <Link to={"/group-motorcycle-rides" as any} className="hover:text-[var(--orange)]">Group Rides</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-rides-near-me" as any} className="hover:text-[var(--orange)]">Rides Near Me</Link>
+              <span>•</span>
+              <Link to={"/find-riding-partner" as any} className="hover:text-[var(--orange)]">Find Partner</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-trip-planner" as any} className="hover:text-[var(--orange)]">Trip Planner</Link>
+              <span>•</span>
+              <Link to={"/biker-emergency-sos-app" as any} className="hover:text-[var(--orange)]">Crash SOS</Link>
+              <span>•</span>
+              <Link to={"/motorcycle-speedometer-gps-app" as any} className="hover:text-[var(--orange)]">Speedometer</Link>
+              <span>•</span>
+              <Link to={"/bike-club-management-app" as any} className="hover:text-[var(--orange)]">Club Portal</Link>
+              <span>•</span>
+              <Link to={"/women-biker-safety-riding-app" as any} className="hover:text-[var(--orange)]">Women Bikers</Link>
+            </div>
+          </div>
+          <div>
+            <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Guides & Blogs</h5>
+            <div className="flex flex-wrap gap-x-3 gap-y-2">
+              <Link to={"/blog/royal-enfield-himalayan-440" as any} className="hover:text-[var(--orange)]">Himalayan 440</Link>
+              <span>•</span>
+              <Link to={"/blog/best-monsoon-motorcycle-rides-india" as any} className="hover:text-[var(--orange)]">Monsoon Rides</Link>
+              <span>•</span>
+              <Link to={"/blog/motorcycle-trip-planner-app" as any} className="hover:text-[var(--orange)]">Trip Planner Guide</Link>
+              <span>•</span>
+              <Link to={"/blog/how-to-start-motorcycle-club-india" as any} className="hover:text-[var(--orange)]">Start a Club</Link>
+              <span>•</span>
+              <Link to={"/blog/how-to-find-motorcycle-rides-near-me" as any} className="hover:text-[var(--orange)]">Find Rides</Link>
+              <span>•</span>
+              <Link to={"/blog/motorcycle-safety-tips" as any} className="hover:text-[var(--orange)]">Safety Tips</Link>
             </div>
           </div>
         </div>

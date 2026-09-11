@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Check, X, Globe, Crown, Siren, Video, Map as MapIcon, Badge, Star, Ticket } from "lucide-react";
+import { Check, X, Globe, Crown, Siren, Map as MapIcon, Badge, Ticket } from "lucide-react";
 import { SectionHeading } from "../components/SectionHeading";
 import { Reveal } from "../components/Reveal";
 import { StoreBadges } from "../components/StoreBadges";
@@ -7,8 +7,57 @@ import { StoreBadges } from "../components/StoreBadges";
 export const Route = createFileRoute("/pricing")({
   head: () => ({
     meta: [
-      { title: "Pricing | CRUIZR" },
-      { name: "description", content: "Choose the perfect CRUIZR plan for your rides." },
+      { title: "CRUIZR Pricing & Plans — Free Motorcycle App, Day Pass & Pro Features" },
+      {
+        name: "description",
+        content: "Explore CRUIZR pricing plans. Enjoy free cellular walkie-talkie and live group tracking, or upgrade to Pro for unlimited offline P2P mesh intercom, crash SOS, and offline state maps.",
+      },
+      {
+        name: "keywords",
+        content: "motorcycle app pricing, free motorcycle intercom app, mesh intercom pro, motorcycle trip planner price, CRUIZR subscription, biker app plans India",
+      },
+      { property: "og:title", content: "CRUIZR Pricing & Plans — Free Biker App & Pro Upgrades" },
+      {
+        property: "og:description",
+        content: "Start free with group tracking & cellular intercom. Upgrade for unlimited offline P2P mesh communication, crash SOS, and offline maps.",
+      },
+      { property: "og:url", content: "https://www.cruizr.in/pricing" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+      { property: "og:image:alt", content: "CRUIZR App Pricing & Membership Plans" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_IN" },
+      { property: "og:site_name", content: "CRUIZR" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@cruizrapp" },
+      { name: "twitter:title", content: "CRUIZR Pricing & Plans — Free Biker App & Pro Upgrades" },
+      { name: "twitter:description", content: "Start free with group tracking & cellular intercom. Upgrade for unlimited offline P2P mesh communication." },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+    ],
+    links: [{ rel: "canonical", href: "https://www.cruizr.in/pricing" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.cruizr.in/pricing#webpage",
+              url: "https://www.cruizr.in/pricing",
+              name: "CRUIZR Pricing & Plans — Free Motorcycle App & Pro Upgrades",
+              description: "Compare free and pro plans for CRUIZR motorcycle companion app.",
+              isPartOf: { "@id": "https://www.cruizr.in/#website" },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                  { "@type": "ListItem", position: 2, name: "Pricing", item: "https://www.cruizr.in/pricing" },
+                ],
+              },
+            },
+          ],
+        }),
+      },
     ],
   }),
   component: PricingPage,

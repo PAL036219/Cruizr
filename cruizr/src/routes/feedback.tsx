@@ -18,6 +18,61 @@ import {
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/feedback")({
+  head: () => ({
+    meta: [
+      { title: "Rider Feedback & Feature Requests — Help Build CRUIZR" },
+      {
+        name: "description",
+        content: "Share your thoughts, report issues, and vote on upcoming motorcycle features with the CRUIZR team. We build the app based on real biker feedback.",
+      },
+      {
+        name: "keywords",
+        content: "CRUIZR feedback, motorcycle app feedback, request motorcycle features, biker community suggestions",
+      },
+      { property: "og:title", content: "Rider Feedback & Feature Requests — CRUIZR" },
+      {
+        property: "og:description",
+        content: "Help us shape the ultimate motorcycle companion app. Submit feature suggestions and report bugs directly to our development team.",
+      },
+      { property: "og:url", content: "https://www.cruizr.in/feedback" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+      { property: "og:image:alt", content: "CRUIZR Rider Feedback" },
+      { property: "og:type", content: "website" },
+      { property: "og:locale", content: "en_IN" },
+      { property: "og:site_name", content: "CRUIZR" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@cruizrapp" },
+      { name: "twitter:title", content: "Rider Feedback & Feature Requests — CRUIZR" },
+      { name: "twitter:description", content: "Help us shape the ultimate motorcycle companion app. Submit feature suggestions and feedback." },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
+    ],
+    links: [{ rel: "canonical", href: "https://www.cruizr.in/feedback" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://www.cruizr.in/feedback#webpage",
+              url: "https://www.cruizr.in/feedback",
+              name: "CRUIZR Rider Feedback & Feature Requests",
+              description: "Submit feedback, suggest features, and report bugs for CRUIZR app.",
+              isPartOf: { "@id": "https://www.cruizr.in/#website" },
+              breadcrumb: {
+                "@type": "BreadcrumbList",
+                itemListElement: [
+                  { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                  { "@type": "ListItem", position: 2, name: "Feedback", item: "https://www.cruizr.in/feedback" },
+                ],
+              },
+            },
+          ],
+        }),
+      },
+    ],
+  }),
   component: Feedback,
 });
 

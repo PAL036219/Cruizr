@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Mail, Instagram, Twitter, Youtube, Send, Check } from "lucide-react";
+import { Mail, Instagram, Send, Check } from "lucide-react";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

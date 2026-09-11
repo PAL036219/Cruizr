@@ -1,37 +1,52 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { createServerFn } from "@tanstack/react-start";
-import { 
-  Calendar, 
-  User, 
-  Clock, 
+import {
+  Calendar,
+  User,
+  Clock,
   ArrowLeft,
   CheckCircle2,
 } from "lucide-react";
 import { WaitlistForm } from "../components/WaitlistForm";
 import { Reveal } from "../components/Reveal";
-import fs from "node:fs/promises";
-import path from "node:path";
 import matter from "gray-matter";
 import ReactMarkdown from "react-markdown";
 
+interface BlogPostMeta {
+  title?: string;
+  metaTitle?: string;
+  metaDesc?: string;
+  metaKeywords?: string;
+  author?: string;
+  date?: string;
+  readTime?: string;
+  category?: string;
+  [key: string]: any;
+}
+
+interface BlogPost {
+  meta: BlogPostMeta;
+  body: string;
+}
+
 const fetchBlogPost = createServerFn({ method: "GET" })
   .validator((slug: string) => slug)
-  .handler(async ({ data: slug }) => {
+  .handler(async ({ data: slug }): Promise<BlogPost | null> => {
     try {
       // Use import.meta.glob to ensure Vite bundles the markdown files for Vercel production
       const allFiles = import.meta.glob('../content/blog/*.md', { query: '?raw', import: 'default' });
       const filePath = `../content/blog/${slug}.md`;
       const fileResolver = allFiles[filePath];
-      
+
       if (!fileResolver) {
         console.error(`Markdown file not found for slug: ${slug}`);
         return null;
       }
-      
+
       const fileContent = await fileResolver();
       const { data, content } = matter(fileContent as string);
       return {
-        meta: data as Record<string, string>,
+        meta: data as BlogPostMeta,
         body: content,
       };
     } catch (error) {
@@ -41,7 +56,7 @@ const fetchBlogPost = createServerFn({ method: "GET" })
   });
 
 export const Route = createFileRoute("/blog/$postSlug")({
-  head: ({ loaderData }) => {
+  head: ({ loaderData }: { loaderData?: { post: BlogPost; slug: string } }) => {
     if (!loaderData) {
       return {
         meta: [
@@ -51,7 +66,7 @@ export const Route = createFileRoute("/blog/$postSlug")({
       };
     }
     const { post: { meta }, slug } = loaderData;
-    
+
     return {
       meta: [
         { title: meta.metaTitle },
@@ -170,17 +185,17 @@ function BlogPostPage() {
             <div className="space-y-6">
               <ReactMarkdown
                 components={{
-                  p: ({node, ...props}) => <p className="text-muted-foreground leading-relaxed text-[1.05rem]" {...props} />,
-                  h2: ({node, ...props}) => <h2 className="font-heading text-2xl font-bold mt-10 mb-4 text-foreground flex items-center gap-2 border-b border-border/30 pb-2" {...props} />,
-                  h3: ({node, ...props}) => <h3 className="font-heading text-xl font-bold mt-8 mb-3 text-foreground" {...props} />,
-                  ul: ({node, ...props}) => <ul className="space-y-3 mt-4 mb-6" {...props} />,
-                  li: ({node, ...props}) => (
+                  p: ({ node, ...props }) => <p className="text-muted-foreground leading-relaxed text-[1.05rem]" {...props} />,
+                  h2: ({ node, ...props }) => <h2 className="font-heading text-2xl font-bold mt-10 mb-4 text-foreground flex items-center gap-2 border-b border-border/30 pb-2" {...props} />,
+                  h3: ({ node, ...props }) => <h3 className="font-heading text-xl font-bold mt-8 mb-3 text-foreground" {...props} />,
+                  ul: ({ node, ...props }) => <ul className="space-y-3 mt-4 mb-6" {...props} />,
+                  li: ({ node, ...props }) => (
                     <li className="flex items-start gap-3 text-[0.95rem] text-foreground/95">
                       <CheckCircle2 className="mt-0.5 h-5 w-5 text-[var(--orange)] shrink-0" />
                       <span className="flex-1">{props.children}</span>
                     </li>
                   ),
-                  a: ({node, ...props}) => (
+                  a: ({ node, ...props }) => (
                     <a className="text-blue-500 hover:text-blue-400 font-semibold underline underline-offset-4 transition-colors" target="_blank" rel="noopener noreferrer" {...props} />
                   ),
                 }}

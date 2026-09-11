@@ -1,14 +1,14 @@
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
-import { 
-  Compass, 
-  MapPin, 
-  Radio, 
-  ShieldAlert, 
-  Users, 
-  ArrowRight, 
+import {
+  Compass,
+  MapPin,
+  Radio,
+  ShieldAlert,
+  Users,
+  ArrowRight,
   Calendar,
-  CheckCircle2, 
-  Bike 
+  CheckCircle2,
+  Bike
 } from "lucide-react";
 import { WaitlistForm } from "../components/WaitlistForm";
 import { Reveal } from "../components/Reveal";
@@ -447,10 +447,9 @@ const SLUG_CONTENT_MAP: Record<string, PageContent> = {
 
 function generateStateContent(slug: string): PageContent | null {
   if (!slug.startsWith("motorcycle-app-")) return null;
-  
+
   const rawState = slug.replace("motorcycle-app-", "");
-  
-  // Custom mapping for beautiful formatting of state names or union territories
+
   const stateMappings: Record<string, string> = {
     "andaman-nicobar": "Andaman and Nicobar Islands",
     "andhra-pradesh": "Andhra Pradesh",
@@ -488,9 +487,386 @@ function generateStateContent(slug: string): PageContent | null {
   };
 }
 
+// ── Bike Models Programmatic SEO Generator ──
+const BIKE_MODELS_DB: Record<string, { name: string; brand: string; type: string; highlight: string }> = {
+  "royal-enfield-himalayan-rides": { name: "Royal Enfield Himalayan", brand: "Royal Enfield", type: "Adventure Tourer", highlight: "Conquer Ladakh, Spiti, and offroad mountain passes with fellow Himalayan owners." },
+  "royal-enfield-classic-350-rides": { name: "Royal Enfield Classic 350", brand: "Royal Enfield", type: "Retro Cruiser", highlight: "Join weekend highway thumper breakfast rides and retro cruiser clubs across India." },
+  "royal-enfield-hunter-350-rides": { name: "Royal Enfield Hunter 350", brand: "Royal Enfield", type: "Urban Roadster", highlight: "Match with agile city riders, night cruise groups, and weekend breakfast runs." },
+  "royal-enfield-continental-gt-650-rides": { name: "Continental GT 650", brand: "Royal Enfield", type: "Cafe Racer", highlight: "Experience high-speed highway convoys and twisty ghat runs with twin-cylinder enthusiasts." },
+  "royal-enfield-interceptor-650-rides": { name: "Royal Enfield Interceptor 650", brand: "Royal Enfield", type: "Classic Twin", highlight: "Cruise coastlines and long-distance highways with fellow 650 Twin owners." },
+  "royal-enfield-super-meteor-650-rides": { name: "Super Meteor 650", brand: "Royal Enfield", type: "Grand Tourer", highlight: "Plan seamless multi-day luxury highway tours with live GPS and group intercom." },
+  "ktm-duke-390-rides": { name: "KTM Duke 390", brand: "KTM", type: "Street Naked", highlight: "Organize high-octane twisty canyon runs, track days, and cornering squad meetups." },
+  "ktm-adventure-390-rides": { name: "KTM 390 Adventure", brand: "KTM", type: "Dual Sport ADV", highlight: "Tackle technical gravel trails, river crossings, and off-grid mountain trails." },
+  "triumph-speed-400-rides": { name: "Triumph Speed 400", brand: "Triumph", type: "Modern Classic", highlight: "Join premium modern-classic riding squads for scenic breakfast and highway runs." },
+  "triumph-scrambler-400x-rides": { name: "Triumph Scrambler 400X", brand: "Triumph", type: "Scrambler", highlight: "Explore unpaved trails, forest backroads, and mixed-terrain weekend expeditions." },
+  "bmw-g310-gs-rides": { name: "BMW G 310 GS", brand: "BMW Motorrad", type: "Adventure", highlight: "Connect with GS riders across India for mountain tours and highway cruises." },
+  "hero-xpulse-200-rides": { name: "Hero XPulse 200 4V", brand: "Hero MotoCorp", type: "Offroad & Dirt", highlight: "Find dirt trail buddies, rally raid practice groups, and technical trail rides." },
+  "harley-davidson-x440-rides": { name: "Harley-Davidson X440", brand: "Harley-Davidson", type: "Cruiser Roadster", highlight: "Ride with modern cruiser clubs, sunset packs, and long-distance highway squads." },
+  "yamaha-r15-rides": { name: "Yamaha R15 V4", brand: "Yamaha", type: "Supersport", highlight: "Connect with aerodynamic track enthusiasts, track day riders, and Sunday cornering groups." },
+  "yamaha-mt-15-rides": { name: "Yamaha MT-15", brand: "Yamaha", type: "Hyper Naked", highlight: "Organize agile urban night rides, street meets, and quick weekend highway runs." },
+  "kawasaki-ninja-300-rides": { name: "Kawasaki Ninja 300", brand: "Kawasaki", type: "Sportbike", highlight: "Ride with green-team sportbike convoys, high-speed tours, and expressway runs." },
+  "bajaj-dominor-400-rides": { name: "Bajaj Dominar 400", brand: "Bajaj", type: "Power Cruiser", highlight: "Hyper-tour across Indian states with long-distance endurance riding buddies." },
+  "tvs-apache-rr310-rides": { name: "TVS Apache RR310", brand: "TVS Racing", type: "Race Replica", highlight: "Match with sport performance riders for weekend twisties and track day meetups." },
+  "yezdi-adventure-rides": { name: "Yezdi Adventure", brand: "Yezdi", type: "Adventure", highlight: "Explore uncharted terrains, rugged trails, and offbeat camping spots with Yezdi riders." },
+  "jawa-42-rides": { name: "Jawa 42 & Bobber", brand: "Jawa", type: "Classic Cruiser", highlight: "Connect with classic heritage thumper circles for laid-back weekend tours." },
+  "suzuki-v-strom-sx-rides": { name: "Suzuki V-Strom SX 250", brand: "Suzuki", type: "Sport Adventure Tourer", highlight: "Plan smooth highway cruises and light-trail adventures with fellow V-Strom riders." },
+  "honda-cb350-rides": { name: "Honda H'ness CB350", brand: "Honda BigWing", type: "Modern Classic", highlight: "Join BigWing owner clubs, butter-smooth highway runs, and heritage tours." },
+};
+
+function generateBikeContent(slug: string): PageContent | null {
+  const match = BIKE_MODELS_DB[slug];
+  if (!match) {
+    if (!slug.includes("-rides") && !slug.includes("-motorcycle-app")) return null;
+    const cleanName = slug.replace("-rides", "").replace("-motorcycle-app", "").replace(/-/g, " ");
+    const formatted = cleanName.split(" ").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+    return {
+      title: `${formatted} Rider Community & Rides`,
+      metaTitle: `${formatted} Motorcycle App & Group Rides — CRUIZR`,
+      metaDesc: `Find ${formatted} riders near you in India. Join brand-specific clubs, coordinate weekend group tours, track convoys with live GPS, and talk via free intercom.`,
+      metaKeywords: `${cleanName} bike app, ${cleanName} group rides, ${cleanName} community India, ${cleanName} riding club, best app for ${cleanName}`,
+      heroBadge: `${formatted} Rider Hub`,
+      headline: `The Ultimate App for ${formatted} Owners & Riders`,
+      subheadline: `Connect with fellow ${formatted} riders in your city. Plan weekend group tours, track live convoys, and talk hands-free.`,
+      introText: `Own a ${formatted}? CRUIZR connects you with compatible riders in your city who ride the exact same machine. Plan scenic tours, navigate offroad trails, talk via built-in free voice intercom, and keep everyone accounted for with real-time GPS tracking.`,
+      features: [
+        { title: `${formatted} Clubs`, desc: `Join verified ${formatted} owner circles and club channels in your city.`, icon: "users" },
+        { title: "Live Convoy GPS", desc: "Never lose the pack on winding roads, highway bends, or mountain trails.", icon: "mappin" },
+        { title: "Hands-Free Voice Intercom", desc: "Talk with fellow riders hands-free without buying expensive Bluetooth intercoms.", icon: "radio" },
+      ],
+      ctaTitle: `Ride with ${formatted} groups today`,
+    };
+  }
+
+  return {
+    title: `${match.name} Rider Community & App`,
+    metaTitle: `${match.name} Motorcycle App & Group Rides — CRUIZR`,
+    metaDesc: `Join India's top ${match.name} rider community. ${match.highlight} Live GPS tracking, free voice intercom, and club management.`,
+    metaKeywords: `${match.name} app, ${match.name} group rides, ${match.name} bike club India, ${match.name} touring routes, ${match.brand} riders app`,
+    heroBadge: `${match.brand} Club Hub`,
+    headline: `The Best Motorcycle App for ${match.name} Riders`,
+    subheadline: match.highlight,
+    introText: `Whether you ride the ${match.name} through daily city traffic, highway cruises, or rugged mountain trails, CRUIZR connects you with riders who share your passion. Replace scattered WhatsApp groups with live convoy GPS tracking, 100% free voice intercom, and automated crash alerts.`,
+    features: [
+      { title: `${match.name} Squads`, desc: `Connect with local ${match.name} owners matching your riding discipline.`, icon: "users" },
+      { title: "Turn-by-Turn Group GPS", desc: "Live formation map showing speed, distance, and turns for every member.", icon: "mappin" },
+      { title: "Zero-Cost Voice Intercom", desc: "Push-to-talk voice communication that works with any standard helmet headset.", icon: "radio" },
+    ],
+    ctaTitle: `Connect with ${match.name} riders now`,
+  };
+}
+
+// ── Bike Accessories Programmatic SEO Generator ──
+const ACCESSORIES_DB: Record<string, { title: string; metaTitle: string; metaDesc: string; keywords: string; badge: string; headline: string; subtitle: string; intro: string; f1: string; f2: string; f3: string }> = {
+  "motorcycle-intercom-headset-app": {
+    title: "Free Motorcycle Intercom Headset Alternative",
+    metaTitle: "Free Motorcycle Intercom App vs Expensive Bluetooth Headsets — CRUIZR",
+    metaDesc: "Looking for motorcycle intercoms? Skip ₹25,000 Sena/Cardo headsets. CRUIZR gives you free push-to-talk group intercom and offline P2P mesh voice using your phone.",
+    keywords: "motorcycle intercom app, bluetooth intercom for bike helmet, cardo alternative app, sena alternative free, helmet walkie talkie app, bike rider communication",
+    badge: "Free Intercom Alternative",
+    headline: "Skip ₹25,000 Helmet Intercoms — Use CRUIZR Free",
+    subtitle: "Crystal clear hands-free voice communication with your entire riding convoy directly from your smartphone.",
+    intro: "Why spend tens of thousands on standalone Bluetooth intercom hardware with limited 4-rider range? CRUIZR delivers unlimited rider voice intercom over cellular networks, plus an offline P2P mesh driver for zero-network mountain passes like Ladakh and Spiti.",
+    f1: "Universal Headset Support: Works with Apple AirPods, standard Bluetooth earphones, and generic helmet liners.",
+    f2: "Unlimited Convoy Capacity: Connect 5, 20, or 50 riders in one seamless group voice room.",
+    f3: "Offline Mountain Mesh: Phone-to-phone direct communication when cell towers disappear.",
+  },
+  "motorcycle-helmet-bluetooth-intercom": {
+    title: "Motorcycle Helmet Bluetooth Intercom App",
+    metaTitle: "Helmet Bluetooth Intercom App for Motorcyclists — CRUIZR",
+    metaDesc: "Turn any helmet into a smart Bluetooth communicator. CRUIZR connects your phone & headset for free push-to-talk voice intercom with your convoy.",
+    keywords: "helmet bluetooth intercom, motorcycle helmet communicator app, helmet intercom price India, best intercom for motorcycle helmet",
+    badge: "Smart Helmet Audio",
+    headline: "Turn Any Helmet into a Connected Smart Intercom",
+    subtitle: "Push-to-talk voice, automated safety warnings, and live group tracking in your ears.",
+    intro: "CRUIZR integrates with any Bluetooth helmet, intercom unit, or earbuds to provide crystal-clear group voice chat. Plan lane shifts, signal road hazards, and coordinate fuel stops without taking your hands off the handlebars.",
+    f1: "Voice Activation & Push-to-Talk: Lock mic open or use convenient handlebar/headset controls.",
+    f2: "Low-Bandwidth Encoding: Engineered to transmit crisp voice even on weak 2G/3G rural Indian networks.",
+    f3: "Safety Override: Automated crash alerts and convoy split warnings override chat immediately.",
+  },
+  "motorcycle-gps-tracker-accessories": {
+    title: "Motorcycle GPS Tracker & Live Navigation Guide",
+    metaTitle: "Best Motorcycle GPS Tracker App & Hardware Alternative — CRUIZR",
+    metaDesc: "Compare motorcycle GPS tracking devices vs mobile GPS apps. CRUIZR provides real-time convoy tracking, anti-theft sharing, speed monitoring, and crash detection.",
+    keywords: "motorcycle GPS tracker, best GPS tracker for bike India, motorcycle tracking device, bike navigation accessory, live group GPS map",
+    badge: "GPS Tracking Companion",
+    headline: "Real-Time Motorcycle GPS Tracking — Zero Hardware Required",
+    subtitle: "Monitor every rider's live location, speed, distance, and turn cues on an interactive group map.",
+    intro: "Forget bulky standalone GPS tracking units that require expensive SIM subscriptions and complex wiring. CRUIZR transforms your smartphone into a high-precision motorcycle GPS tracker with low battery draw and group convoy sync.",
+    f1: "Interactive Convoy Map: Watch your pack's exact positions update smoothly in real time.",
+    f2: "Split-Convoy Alerts: Instant visual notifications if someone takes a wrong exit or falls behind.",
+    f3: "Battery Optimized Engine: Engineered for 8+ hour continuous touring days without overheating.",
+  },
+  "motorcycle-mobile-phone-mount-guide": {
+    title: "Motorcycle Mobile Phone Mounts & Navigation Mode",
+    metaTitle: "Best Bike Mobile Phone Mount Guide & HUD Screen Mode — CRUIZR",
+    metaDesc: "Find the best vibration-dampened mobile holders for motorcycles and turn your phone into a high-visibility cockpit HUD with CRUIZR live navigation.",
+    keywords: "mobile holder for bike, anti vibration bike phone mount, motorcycle phone mount India, bike navigation cockpit app",
+    badge: "Cockpit Navigation",
+    headline: "Maximize Your Bike Phone Mount with CRUIZR Cockpit HUD",
+    subtitle: "High-contrast daylight mode, glove-friendly large buttons, and live group radar on your handlebars.",
+    intro: "Pair your vibration-dampened motorcycle phone mount with CRUIZR's dedicated riding cockpit mode. Designed with high-contrast sunlight visibility, big touch targets for riding gloves, and real-time convoy distance indicators.",
+    f1: "Glove-Friendly Interface: Huge buttons for push-to-talk, waypoint check-ins, and emergency SOS.",
+    f2: "High-Contrast Sunlight UI: Ultra-clear readability even under intense Indian midday sun.",
+    f3: "Speed & Group Radar: Instantly view leader distance, sweeper status, and upcoming waypoint ETAs.",
+  },
+  "motorcycle-riding-gear-accessories": {
+    title: "Motorcycle Riding Gear & Safety Systems",
+    metaTitle: "Motorcycle Riding Gear Guide & Digital Safety Companion — CRUIZR",
+    metaDesc: "Essential motorcycle riding gear guide: CE-level jackets, helmets, gloves, boots, and how CRUIZR's automated crash detection keeps you protected on every ride.",
+    keywords: "motorcycle riding gear, bike riding accessories India, essential biker gear, motorcycle crash detection, biker safety gear guide",
+    badge: "Rider Safety & Armor",
+    headline: "Combine Premium Riding Gear with Digital Safety Tech",
+    subtitle: "From CE-armored jackets to automated gyroscopic crash detection and instant emergency SOS.",
+    intro: "Physical armor protects your body on impact; CRUIZR protects you before and after an incident. Equipping you with smart crash sensor algorithms that notify your pack and emergency contacts with your exact coordinates if you go down.",
+    f1: "Automated Gyro Crash Detection: Detects sudden deceleration and tip-overs to trigger safety timers.",
+    f2: "One-Tap Emergency SOS: Broadcasts GPS coordinates to your group and family contacts instantly.",
+    f3: "Rider Accountability Check-ins: Automated verification at rest stops to ensure zero riders are left behind.",
+  },
+  "motorcycle-action-camera-mounts": {
+    title: "Motorcycle Action Camera Mounts & Live Motovlog App",
+    metaTitle: "Motorcycle Action Camera Setup Guide & Telemetry Overlays — CRUIZR",
+    metaDesc: "Discover the best action camera helmet chin mounts, handlebar setups for GoPro & Insta360, and how CRUIZR telemetry overlays enhance your motovlog videos.",
+    keywords: "motorcycle action camera mounts, helmet chin mount GoPro, motorcycle motovlog setup, bike telemetry overlay app",
+    badge: "Motovlog & Telemetry",
+    headline: "Supercharge Your Motovlogs with CRUIZR Ride Telemetry",
+    subtitle: "Sync GPS route data, speed overlays, convoy positions, and live ride streaming.",
+    intro: "Whether running a chin mount GoPro or an Insta360 selfie boom, CRUIZR is the companion app for motovloggers. Export route elevation profiles, live telemetry data, and invite followers to track your expedition in real time.",
+    f1: "Live Ride Streaming: Share private or public live ride radar links with your community.",
+    f2: "GPS Route Export: Export high-accuracy GPX routes with elevation, speed, and corner angles.",
+    f3: "Convoy Photo Sync: Pool high-resolution group ride photos automatically into one shared album.",
+  },
+  "motorcycle-saddlebags-luggage-touring": {
+    title: "Motorcycle Saddlebags, Luggage & Tour Planning",
+    metaTitle: "Motorcycle Saddlebags & Touring Luggage Guide — CRUIZR Planner",
+    metaDesc: "Plan long-distance motorcycle tours with the right saddlebags, tank bags, and tail packs. Use CRUIZR's multi-day itinerary planner and fuel stop coordinator.",
+    keywords: "motorcycle saddlebags, bike luggage bags touring India, waterproof tank bag motorcycle, motorcycle touring trip planner",
+    badge: "Touring & Luggage",
+    headline: "Pack Your Saddlebags & Plan the Ultimate Motorcycle Tour",
+    subtitle: "Multi-day itineraries, fuel stop calculations, and scenic trail waypoints with CRUIZR.",
+    intro: "Long-distance motorcycle touring requires reliable luggage and bulletproof route planning. CRUIZR helps you calculate fuel ranges, coordinate hotel halts, mark repair workshops along the highway, and sync itineraries with your convoy.",
+    f1: "Multi-Day Tour Itineraries: Add fuel stops, scenic viewpoints, and hotel check-ins.",
+    f2: "Offline Route Maps: Keep access to your full trip itinerary even without internet connectivity.",
+    f3: "Pack Fuel & Break Sync: Synchronize rest stops based on the lowest fuel range in your group.",
+  },
+  "motorcycle-fog-lights-auxiliary": {
+    title: "Motorcycle Auxiliary Fog Lights & Night Ride Safety",
+    metaTitle: "Motorcycle Fog Lights Guide & Night Tour Safety App — CRUIZR",
+    metaDesc: "Best auxiliary fog lights guide for touring bikes and how CRUIZR's night ride radar and fog alerts keep motorcycle convoys safe in low-visibility conditions.",
+    keywords: "fog lights for bike, auxiliary motorcycle lights India, night motorcycle ride safety, Himalayan fog lamps",
+    badge: "Night & Weather Safety",
+    headline: "Conquer Dense Fog & Night Rides with High Visibility",
+    subtitle: "Auxiliary lighting tips combined with live convoy radar and weather hazard alerts.",
+    intro: "Monsoon fog in Tamhini Ghat or night cruising through Rajasthan requires top-tier auxiliary lights and live radar tracking. CRUIZR displays rider positions through zero-visibility fog so convoys never separate.",
+    f1: "Zero-Visibility Convoy Radar: Follow member dots on your map when headlights are blinded by fog.",
+    f2: "Live Hazard Warnings: Front scouts flag potholes, waterlogging, and cattle on the road via intercom.",
+    f3: "Safe Convoy Spacing: Visual distance meters ensure proper safe-following gaps at night.",
+  },
+  "motorcycle-crash-guard-accessories": {
+    title: "Motorcycle Crash Guards & Engine Protection Guide",
+    metaTitle: "Motorcycle Crash Guards & Slider Guide — CRUIZR Safety App",
+    metaDesc: "Engine crash guards, frame sliders, and bash plates guide. Pair your bike armor with CRUIZR's smart crash detection and emergency assistance network.",
+    keywords: "motorcycle crash guard, engine bash plate, frame slider bike, motorcycle protection accessories India",
+    badge: "Engine Protection & Safety",
+    headline: "Protect Your Machine & Yourself with CRUIZR Safety",
+    subtitle: "From heavy-duty steel crash guards to intelligent fall-detection sensors and SOS alerts.",
+    intro: "Engine guards and frame sliders absorb the physical shock of an off-road drop or highway slide. CRUIZR provides the digital safety net: automatically sensing the incident and alerting nearby convoy members with your exact coordinates.",
+    f1: "Instant Drop Notification: Nearby group members receive immediate audio and visual alerts.",
+    f2: "Nearest Mechanic & Hospital: Quick emergency lookup for roadside repair and medical facilities.",
+    f3: "Rider Pace Audits: Keeps group pace within safe limits on technical gravel and wet tarmac.",
+  },
+  "motorcycle-tyre-inflator-puncture-kit": {
+    title: "Motorcycle Tyre Inflator, Puncture Kits & Trail Assist",
+    metaTitle: "Bike Tyre Inflator & Puncture Kit Guide — CRUIZR Roadside SOS",
+    metaDesc: "Essential portable tyre inflators and tubeless puncture kits for motorcycle touring, paired with CRUIZR's roadside rider assist and emergency location sharing.",
+    keywords: "portable tyre inflator for bike, tubeless puncture repair kit, motorcycle breakdown assist, roadside SOS bike",
+    badge: "Breakdown & Puncture Assist",
+    headline: "Never Get Stranded by a Flat Tyre on the Highway",
+    subtitle: "Carry the right puncture kit and use CRUIZR to signal nearby riders for emergency assistance.",
+    intro: "A puncture in a remote ghat or forest pass can ruin a tour. CRUIZR includes a direct Roadside Assist & SOS broadcast feature that pings verified riders within a 20km radius to lend tyre inflators, tools, or fuel.",
+    f1: "Community Breakdown SOS: Alert fellow riders in the area when you need tools or spare tubes.",
+    f2: "Puncture Location Marker: Mark tyre repair shops and puncture stalls on the shared map.",
+    f3: "Emergency Contact Ping: Sends automated SMS coordinates to your emergency family list.",
+  },
+};
+
+function generateAccessoryContent(slug: string): PageContent | null {
+  const match = ACCESSORIES_DB[slug];
+  if (!match) return null;
+
+  return {
+    title: match.title,
+    metaTitle: match.metaTitle,
+    metaDesc: match.metaDesc,
+    metaKeywords: match.keywords,
+    heroBadge: match.badge,
+    headline: match.headline,
+    subheadline: match.subtitle,
+    introText: match.intro,
+    features: [
+      { title: match.f1.split(":")[0], desc: match.f1.split(":")[1] || match.f1, icon: "radio" },
+      { title: match.f2.split(":")[0], desc: match.f2.split(":")[1] || match.f2, icon: "mappin" },
+      { title: match.f3.split(":")[0], desc: match.f3.split(":")[1] || match.f3, icon: "shieldalert" },
+    ],
+    ctaTitle: `Upgrade your ride with CRUIZR`,
+  };
+}
+
+// ── Bike Apps & Software Category Generator ──
+const APPS_DB: Record<string, { title: string; metaTitle: string; metaDesc: string; keywords: string; badge: string; headline: string; subtitle: string; intro: string; f1: string; f2: string; f3: string }> = {
+  "best-bike-riding-app-india": {
+    title: "Best Bike Riding App in India",
+    metaTitle: "Best Bike Riding App in India — CRUIZR Companion for Motorcyclists",
+    metaDesc: "Discover why CRUIZR is rated India's #1 bike riding app. Plan group rides, find riding partners, use free intercom, and track groups live with GPS.",
+    keywords: "best bike riding app India, motorcycle riding partner app, bike group ride app India, top biker apps, motorcycle GPS tracker app",
+    badge: "India's #1 Biker App",
+    headline: "The Best Bike Riding App for Indian Motorcyclists",
+    subtitle: "From Bangalore breakfast runs to Himalayan expeditions, CRUIZR is your all-in-one co-rider.",
+    intro: "CRUIZR was created specifically for Indian road conditions, local motorbike clubs, and passionate solo tourers. Unifying rider matching, live GPS mapping, free hands-free intercom, and automated crash safety into one stunning app.",
+    f1: "Smart Rider Matching: Connect with local riders matching your machine, pace, and riding discipline.",
+    f2: "Free Group Voice Intercom: Talk with your convoy hands-free with zero hardware purchases.",
+    f3: "Live GPS Convoy Map: Real-time interactive radar keeping everyone aligned across miles.",
+  },
+  "free-motorcycle-intercom-app": {
+    title: "Free Motorcycle Intercom App",
+    metaTitle: "Free Motorcycle Intercom App for Android & iOS — CRUIZR Walkie-Talkie",
+    metaDesc: "Download CRUIZR, the 100% free motorcycle intercom app. Talk hands-free with your riding group using standard earphones or helmet Bluetooth. Zero hardware required.",
+    keywords: "free motorcycle intercom app, motorcycle walkie talkie app, bike rider voice communication, free helmet intercom",
+    badge: "Free Voice Intercom",
+    headline: "100% Free Motorcycle Intercom for Your Smartphone",
+    subtitle: "Talk hands-free with your entire riding convoy without spending a rupee on expensive hardware.",
+    intro: "CRUIZR's integrated voice engine provides low-latency, crystal-clear push-to-talk audio. Works seamlessly with wired earbuds, AirPods, or Bluetooth helmet communication kits.",
+    f1: "Zero Hardware Required: Use the phone and earphones you already own.",
+    f2: "Ultra-Low Data Usage: Optimized audio compression runs smoothly even on weak mobile signals.",
+    f3: "Offline Mesh Driver: Phone-to-phone direct communication in remote mountain passes.",
+  },
+  "motorcycle-group-ride-planner-app": {
+    title: "Motorcycle Group Ride Planner App",
+    metaTitle: "Motorcycle Group Ride Planner & Coordinator App — CRUIZR",
+    metaDesc: "Plan and coordinate safe group motorcycle rides. CRUIZR replaces messy WhatsApp chats with unified route itineraries, OTP check-ins, and live tracking.",
+    keywords: "motorcycle group ride planner, coordinate group bike ride, motorcycle ride organizer app, bike convoy coordinator",
+    badge: "Group Ride Planner",
+    headline: "Plan & Lead Group Motorcycle Rides Like a Pro",
+    subtitle: "Unified itineraries, meeting point check-ins, live GPS radar, and integrated convoy chat.",
+    intro: "Stop managing club rides across five messy WhatsApp groups and broken location pins. CRUIZR provides a dedicated group ride hub where routes, meeting times, member rosters, and live GPS positions sync effortlessly.",
+    f1: "Shared Route Itineraries: Custom waypoints for fuel stops, regroup points, and scenic halts.",
+    f2: "OTP Rider Verification: Simple check-in protocol ensuring all members reach the meetup safely.",
+    f3: "Split-Convoy Detection: Visual and audio alerts if a member takes a wrong turn or falls behind.",
+  },
+  "motorcycle-speedometer-gps-app": {
+    title: "Motorcycle Speedometer & GPS HUD App",
+    metaTitle: "Motorcycle Speedometer, GPS HUD & Ride Tracker App — CRUIZR",
+    metaDesc: "Accurate GPS speedometer, trip odometer, top speed recorder, and high-visibility cockpit HUD for motorcycles. Download CRUIZR for free.",
+    keywords: "motorcycle speedometer app, bike GPS odometer, motorcycle HUD app, top speed recorder bike",
+    badge: "Cockpit Speedometer",
+    headline: "High-Precision Motorcycle GPS Speedometer & HUD",
+    subtitle: "Live speed, distance, trip elevation, top speed recording, and daylight-optimized HUD mode.",
+    intro: "CRUIZR's speedometer cockpit provides high-accuracy GPS speed tracking, trip duration, max lean angles, and route elevation graphs. Perfect for mounting on your handlebars for clear, distraction-free monitoring.",
+    f1: "Daylight High-Contrast Mode: Large speed readouts visible under bright direct sunlight.",
+    f2: "Trip Statistics & Logs: Automatically logs top speed, average pace, distance, and elevation gain.",
+    f3: "Safe Speed Alerts: Customizable speed warnings to help keep convoys at a safe group pace.",
+  },
+  "biker-emergency-sos-app": {
+    title: "Biker Emergency SOS & Crash Alert App",
+    metaTitle: "Biker Emergency SOS & Crash Detection App India — CRUIZR Safety",
+    metaDesc: "Protect your rides with CRUIZR's automated motorcycle crash detection, emergency SOS broadcasts, and instant GPS location sharing with family and convoy.",
+    keywords: "biker emergency SOS app, motorcycle crash alert app, motorcycle accident detection, bike rider safety app India",
+    badge: "Emergency SOS Safety",
+    headline: "Automated Motorcycle Crash Detection & Emergency SOS",
+    subtitle: "Smart gyroscopic crash sensors, automated emergency contact SMS, and convoy SOS broadcasts.",
+    intro: "Motorcycle riding carries inherent risks on Indian roads and twisties. CRUIZR acts as your digital guardian angel, detecting severe impacts and notifying your group members and family with precise GPS coordinates immediately.",
+    f1: "Gyroscopic Crash Sensors: Smart deceleration algorithm distinguishes phone drops from real falls.",
+    f2: "Automated SOS Ping: Sends instant SMS alerts with exact Google Maps coordinates to emergency contacts.",
+    f3: "Convoy Audio Override: Blasts emergency siren to all group members' headsets in real time.",
+  },
+  "motorcycle-route-recorder-gps": {
+    title: "Motorcycle Route Recorder & GPX Tracker App",
+    metaTitle: "Motorcycle Route Recorder, GPX Tracker & Trail Mapper — CRUIZR",
+    metaDesc: "Record your motorcycle trips, discover hidden twisty trails, export GPX routes, and share scenic rides with the biking community using CRUIZR.",
+    keywords: "motorcycle route recorder, GPX tracker bike, record motorcycle rides, discover bike trails India",
+    badge: "Route Recorder & GPX",
+    headline: "Record, Export & Share Your Epic Motorcycle Routes",
+    subtitle: "High-accuracy GPS trail recording, elevation graphs, GPX file exports, and community discovery.",
+    intro: "Track every twist, mountain pass, and offroad trail with precision. CRUIZR creates beautiful visual route cards with elevation profiles, photos, and terrain tags for your personal riding logbook or community sharing.",
+    f1: "High-Accuracy GPS Logging: Records precise coordinates even during high-speed cornering.",
+    f2: "GPX Export & Import: Seamlessly transfer routes to Google Maps, Garmin, or fellow rider apps.",
+    f3: "Community Trail Discovery: Discover top-rated routes near you rated by real Indian motorcyclists.",
+  },
+  "bike-club-management-app": {
+    title: "Motorbike Club Management & Community Portal",
+    metaTitle: "Motorbike Club Management App & Biker Community Hub — CRUIZR",
+    metaDesc: "The ultimate app for motorbike clubs. Manage membership rosters, schedule recurring rides, collect event RSVPs, and communicate in dedicated club channels.",
+    keywords: "motorbike club management app, motorcycle club portal, bike club app India, coordinate club rides",
+    badge: "Club Management Hub",
+    headline: "The Modern Operating System for Motorbike Clubs",
+    subtitle: "Manage member rosters, schedule private runs, track club miles, and build your legacy.",
+    intro: "Whether managing a 20-member local weekend squad or a 500-member multi-city riding chapter, CRUIZR gives club leaders powerful tools to organize rides, verify members, and keep chats focused and spam-free.",
+    f1: "Permanent Club Hubs: Dedicated chat boards, ride archives, and member directories.",
+    f2: "Private & Verified Runs: Host exclusive rides visible only to approved club members.",
+    f3: "Club Mileage Leaderboards: Track cumulative club miles, attendance, and member rankings over time.",
+  },
+  "women-biker-safety-riding-app": {
+    title: "Women Biker Community & Safe Riding App",
+    metaTitle: "Women Biker Community & Safe Riding App India — CRUIZR Female Riders",
+    metaDesc: "India's premier women motorcycle riding community. Coordinate women-only rides, connect with verified female bikers, and ride safely with live tracking.",
+    keywords: "women biker app India, female motorcycle riders community, women only bike rides, women rider safety app",
+    badge: "Women Rider Network",
+    headline: "Empowering & Connecting Women Motorcyclists Across India",
+    subtitle: "Exclusive women-only group rides, verified profiles, and comprehensive safety tracking.",
+    intro: "CRUIZR supports a vibrant and secure space for female motorcyclists across Mumbai, Bangalore, Pune, Delhi NCR, and beyond. Plan private weekend runs, meet companion riders matching your pace, and ride with complete confidence.",
+    f1: "Verified Women-Only Rides: Host and join rides exclusive to verified female motorcyclists.",
+    f2: "Multi-Tier Safety Network: Continuous live location sharing with emergency contacts.",
+    f3: "Active Regional Chapters: Connect with female rider clubs across major Indian metro cities.",
+  },
+  "motorcycle-trip-cost-calculator": {
+    title: "Motorcycle Trip Cost & Mileage Calculator",
+    metaTitle: "Motorcycle Trip Cost & Fuel Expense Calculator — CRUIZR App",
+    metaDesc: "Calculate motorcycle trip fuel costs, split tour expenses among group members, and track tour budgets for Leh Ladakh, Spiti, and highway expeditions.",
+    keywords: "motorcycle trip cost calculator, bike fuel expense tracker, split motorcycle ride cost, Ladakh trip budget calculator",
+    badge: "Trip Budget Calculator",
+    headline: "Calculate Fuel Costs & Split Tour Expenses Instantly",
+    subtitle: "Estimate fuel requirements, calculate toll and stay budgets, and split convoy costs equitably.",
+    intro: "Planning a multi-day tour to Ladakh, Goa, or the Western Ghats? CRUIZR calculates estimated fuel consumption based on your bike model, current petrol rates, and distance, making group expense splitting transparent and hassle-free.",
+    f1: "Bike-Specific Fuel Calculator: Estimates range and fuel cost based on your engine displacement.",
+    f2: "Split Group Expenses: Keep track of shared food, stays, and fuel bills in one tap.",
+    f3: "Tour Budget Estimation: Pre-calculate total tour costs for long-distance Indian expeditions.",
+  },
+};
+
+function generateBikeAppContent(slug: string): PageContent | null {
+  const match = APPS_DB[slug];
+  if (!match) return null;
+
+  return {
+    title: match.title,
+    metaTitle: match.metaTitle,
+    metaDesc: match.metaDesc,
+    metaKeywords: match.keywords,
+    heroBadge: match.badge,
+    headline: match.headline,
+    subheadline: match.subtitle,
+    introText: match.intro,
+    features: [
+      { title: match.f1.split(":")[0], desc: match.f1.split(":")[1] || match.f1, icon: "radio" },
+      { title: match.f2.split(":")[0], desc: match.f2.split(":")[1] || match.f2, icon: "mappin" },
+      { title: match.f3.split(":")[0], desc: match.f3.split(":")[1] || match.f3, icon: "shieldalert" },
+    ],
+    ctaTitle: `Download CRUIZR for free`,
+  };
+}
+
+export function resolveSlugContent(slug: string): PageContent | null {
+  return (
+    SLUG_CONTENT_MAP[slug] ||
+    generateStateContent(slug) ||
+    generateBikeContent(slug) ||
+    generateAccessoryContent(slug) ||
+    generateBikeAppContent(slug)
+  );
+}
+
 export const Route = createFileRoute("/$slug")({
   head: ({ params }) => {
-    const data = SLUG_CONTENT_MAP[params.slug] || generateStateContent(params.slug);
+    const data = resolveSlugContent(params.slug);
     if (!data) {
       return {
         meta: [
@@ -520,13 +896,38 @@ export const Route = createFileRoute("/$slug")({
         { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
       ],
       links: [{ rel: "canonical", href: `https://www.cruizr.in/${params.slug}` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "WebPage",
+                "@id": `https://www.cruizr.in/${params.slug}#webpage`,
+                url: `https://www.cruizr.in/${params.slug}`,
+                name: data.metaTitle,
+                description: data.metaDesc,
+                isPartOf: { "@id": "https://www.cruizr.in/#website" },
+                breadcrumb: {
+                  "@type": "BreadcrumbList",
+                  itemListElement: [
+                    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.cruizr.in/" },
+                    { "@type": "ListItem", position: 2, name: data.title, item: `https://www.cruizr.in/${params.slug}` },
+                  ],
+                },
+              },
+            ],
+          }),
+        },
+      ],
     };
   },
-  loader: ({ params }) => {
+  loader: ({ params }): PageContent => {
     if (params.slug === "royal-enfield-himalayan-440") {
       throw redirect({ to: "/blog/$postSlug", params: { postSlug: "royal-enfield-himalayan-440" } });
     }
-    const data = SLUG_CONTENT_MAP[params.slug] || generateStateContent(params.slug);
+    const data = resolveSlugContent(params.slug);
     if (!data) {
       throw notFound();
     }
@@ -536,7 +937,7 @@ export const Route = createFileRoute("/$slug")({
 });
 
 function SlugLandingPage() {
-  const data = Route.useLoaderData();
+  const data = Route.useLoaderData() as PageContent;
 
   return (
     <div className="bg-background min-h-screen text-foreground">
@@ -556,8 +957,8 @@ function SlugLandingPage() {
             <h1 className="font-heading text-4xl font-black leading-[1.1] text-white sm:text-5xl md:text-7xl">
               {data.headline.split(" ").map((w, idx) => {
                 const highlightWords = [
-                  "Delhi", "Bangalore", "Mumbai", "Pune", "Hyderabad", "Chennai", 
-                  "Kolkata", "Best", "Safest", "Companion", "Offroad", "Central", 
+                  "Delhi", "Bangalore", "Mumbai", "Pune", "Hyderabad", "Chennai",
+                  "Kolkata", "Best", "Safest", "Companion", "Offroad", "Central",
                   "Intercom", "GPS", "Safety", "ECR", "Biker", "India"
                 ];
                 const cleanWord = w.replace(/[^a-zA-Z]/g, "");

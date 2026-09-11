@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ShieldCheck, Users, HeartHandshake, Mountain, Rocket, Compass, Sparkles, Zap } from "lucide-react";
-import aboutImg from "../assets/about-community.jpg";
 import { SectionHeading } from "../components/SectionHeading";
 import { Reveal } from "../components/Reveal";
 import { StoreBadges } from "../components/StoreBadges";
