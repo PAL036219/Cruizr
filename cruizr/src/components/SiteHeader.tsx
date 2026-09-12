@@ -2,7 +2,8 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "@tanstack/react-router";
 import { Menu, X, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "../assets/cruizr-logo.png";
+import logo from "../assets/cruizr-logo.svg";
+import { CruizrWordmark } from "./CruizrWordmark";
 
 const NAV = [
   { to: "/", label: "Home" },
@@ -64,39 +65,29 @@ export function SiteHeader() {
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:px-8">
           {/* ── Logo ── */}
           <Link to="/" className="flex items-center gap-2.5 group" onClick={() => setOpen(false)}>
-            <div className="relative">
+            <div className="relative shrink-0 flex items-center">
               <img
                 src={logo}
                 alt="CRUIZR"
-                width={36}
-                height={36}
-                className="h-9 w-9 rounded-xl bg-white object-contain p-1 shadow-sm transition-transform duration-300 group-hover:scale-110"
+                width={34}
+                height={34}
+                className="h-[34px] w-[34px] rounded-xl object-contain shadow-sm transition-transform duration-300 group-hover:scale-105"
               />
               {/* Subtle glow behind logo on hover */}
               <div className="absolute inset-0 rounded-xl bg-[var(--orange)]/0 transition-all duration-300 group-hover:bg-[var(--orange)]/10 group-hover:blur-md" />
             </div>
-            <span className="flex flex-col leading-none">
+            <div className="flex flex-col justify-center select-none">
+              <CruizrWordmark
+                className="h-[22px] w-auto transition-opacity duration-300"
+                isLight={isTransparent}
+              />
               <span
-                className="font-heading text-lg font-extrabold tracking-tight transition-colors duration-300"
-                style={{ color: isTransparent ? "#fff" : "var(--foreground)" }}
-              >
-                CRU
-                <span className="relative inline-block">
-                  I
-                  <span
-                    className="absolute left-1/2 top-[-2px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[var(--orange)]"
-                    aria-hidden
-                  />
-                </span>
-                ZR
-              </span>
-              <span
-                className="text-[9px] font-semibold uppercase tracking-[0.15em] transition-colors duration-300"
-                style={{ color: isTransparent ? "rgba(255,255,255,0.5)" : "var(--muted-foreground)" }}
+                className="text-[7.5px] font-bold uppercase tracking-[0.24em] transition-colors duration-300 mt-[3px] leading-none"
+                style={{ color: isTransparent ? "rgba(255,255,255,0.6)" : "var(--muted-foreground)" }}
               >
                 never cruise alone
               </span>
-            </span>
+            </div>
           </Link>
 
           {/* ── Desktop Nav — Floating Pill ── */}

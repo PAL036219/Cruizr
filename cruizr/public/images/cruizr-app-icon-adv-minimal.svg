@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Warm Projector Lens Glow -->
+    <radialGradient id="advMinLens" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF8EB" />
+      <stop offset="55%" stop-color="#FF9E3B" />
+      <stop offset="100%" stop-color="#E06D28" />
+    </radialGradient>
+  </defs>
+
+  <!-- Deep Warm Natural Slate Canvas -->
+  <rect width="512" height="512" rx="116" fill="#141517" />
+  
+  <g transform="translate(256, 252)">
+    <!-- Tall ADV Rally Windscreen Outline -->
+    <path d="M -32,-145 L 32,-145 L 45,-55 L -45,-55 Z" 
+          fill="none" 
+          stroke="#88A698" 
+          stroke-width="8" 
+          stroke-linejoin="round" 
+          opacity="0.85" />
+
+    <!-- Dual Angular Adventure Mirrors -->
+    <line x1="-95" y1="-85" x2="-130" y2="-155" stroke="#EDE8E1" stroke-width="8" stroke-linecap="round" />
+    <polygon points="-155,-165 -120,-170 -115,-145 -148,-140" fill="#202226" stroke="#EDE8E1" stroke-width="5" stroke-linejoin="round" />
+    
+    <line x1="95" y1="-85" x2="130" y2="-155" stroke="#EDE8E1" stroke-width="8" stroke-linecap="round" />
+    <polygon points="155,-165 120,-170 115,-145 148,-140" fill="#202226" stroke="#EDE8E1" stroke-width="5" stroke-linejoin="round" />
+
+    <!-- Wide Adventure Handlebar with Crossbar -->
+    <path d="M -155,-75 L -95,-82 L 0,-70 L 95,-82 L 155,-75" 
+          fill="none" 
+          stroke="#EDE8E1" 
+          stroke-width="16" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+
+    <!-- Adventure Crossbar with Sunset Amber Pad -->
+    <line x1="-75" y1="-100" x2="75" y2="-100" stroke="#88A698" stroke-width="8" stroke-linecap="round" />
+    <rect x="-22" y="-106" width="44" height="12" rx="4" fill="#E07A48" />
+
+    <!-- Rugged Handguards / Barkbusters (Sunset Amber Outer Armor) -->
+    <path d="M -95,-82 C -145,-82 -175,-72 -170,-45 C -165,-25 -135,-40 -105,-50" 
+          fill="#1C1E22" 
+          stroke="#E07A48" 
+          stroke-width="8" 
+          stroke-linejoin="round" />
+    <path d="M 95,-82 C 145,-82 175,-72 170,-45 C 165,-25 135,-40 105,-50" 
+          fill="#1C1E22" 
+          stroke="#E07A48" 
+          stroke-width="8" 
+          stroke-linejoin="round" />
+
+    <!-- Round Projector Adventure Headlight -->
+    <circle cx="0" cy="-35" r="46" fill="#1A1C20" stroke="#EDE8E1" stroke-width="10" />
+    <circle cx="0" cy="-35" r="32" fill="url(#advMinLens)" />
+    <!-- Horizontal Lens Slits -->
+    <line x1="-18" y1="-35" x2="18" y2="-35" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" />
+
+    <!-- Iconic Adventure "Beak" (Front High Mudguard / Cowl) -->
+    <polygon points="0,55 -60,18 60,18" fill="#1C1E22" stroke="#E07A48" stroke-width="7" stroke-linejoin="round" />
+
+    <!-- Dual Heavy Inverted USD Forks -->
+    <line x1="-48" y1="20" x2="-48" y2="175" stroke="#EDE8E1" stroke-width="16" stroke-linecap="round" />
+    <line x1="48" y1="20" x2="48" y2="175" stroke="#EDE8E1" stroke-width="16" stroke-linecap="round" />
+
+    <!-- Front Axle Hub -->
+    <circle cx="0" cy="170" r="16" fill="#E07A48" stroke="#EDE8E1" stroke-width="5" />
+  </g>
+</svg>

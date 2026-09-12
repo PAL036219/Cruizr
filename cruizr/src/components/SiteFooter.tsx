@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Mail } from "lucide-react";
-import logo from "../assets/cruizr-logo.png";
+import logo from "../assets/cruizr-logo.svg";
+import { CruizrWordmark } from "./CruizrWordmark";
 
 
 export function SiteFooter() {
@@ -9,11 +10,9 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-4 py-16 md:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-2">
-            <Link to="/" className="flex items-center gap-2.5">
-              <img src={logo} alt="CRUIZR" width={40} height={40} className="h-10 w-10 rounded-lg bg-white object-contain p-1" />
-              <span className="font-heading text-xl font-extrabold tracking-tight text-white">
-                CRU<span className="relative inline-block">I<span className="absolute left-1/2 top-[-2px] h-1.5 w-1.5 -translate-x-1/2 rounded-full bg-[var(--orange)]" aria-hidden /></span>ZR
-              </span>
+            <Link to="/" className="flex items-center gap-3">
+              <img src={logo} alt="CRUIZR" width={40} height={40} className="h-10 w-10 rounded-xl object-contain shadow-md" />
+              <CruizrWordmark className="h-6 w-auto" isLight={true} />
             </Link>
             <p className="mt-4 max-w-sm text-sm text-white/60">
               Never Cruise Alone. Find your perfect riding partner, ride together, and stay connected.

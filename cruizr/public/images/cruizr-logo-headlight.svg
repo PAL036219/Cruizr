@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&amp;display=swap');
+    </style>
+    
+    <!-- Headlight Beam Gradient (Soft natural warm light cone) -->
+    <linearGradient id="headlightBeam" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFB347" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#FFB347" stop-opacity="0.0" />
+    </linearGradient>
+
+    <radialGradient id="headlightLensGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF4E0" />
+      <stop offset="60%" stop-color="#FF9E3B" />
+      <stop offset="100%" stop-color="#E06D28" />
+    </radialGradient>
+  </defs>
+
+  <!-- Clean Deep Slate Canvas -->
+  <rect width="1200" height="480" fill="#141517" rx="20" />
+
+  <!-- ==================== CRUIZR TYPOGRAPHIC LOCKUP ==================== -->
+  
+  <!-- Letter 1: C (Open Sweeping Curve) -->
+  <g transform="translate(140, 205)">
+    <path d="M 65,-60 C 20,-60 -25,-25 -25,30 C -25,85 20,120 65,120" 
+          fill="none" 
+          stroke="#EDE8E1" 
+          stroke-width="18" 
+          stroke-linecap="round" />
+    <circle cx="65" cy="-60" r="7" fill="#E07A48" />
+  </g>
+
+  <!-- Letter 2: R (The Rider Forward Stride) -->
+  <g transform="translate(300, 205)">
+    <line x1="-15" y1="-60" x2="-15" y2="120" stroke="#EDE8E1" stroke-width="18" stroke-linecap="round" />
+    <path d="M -15,-60 C 50,-60 65,-25 45,10 C 25,35 -15,25 -15,25" 
+          fill="none" 
+          stroke="#EDE8E1" 
+          stroke-width="18" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    <line x1="8" y1="20" x2="52" y2="120" stroke="#E07A48" stroke-width="18" stroke-linecap="round" />
+  </g>
+
+  <!-- Letter 3: U (Unity Duo-Channel) -->
+  <g transform="translate(460, 205)">
+    <path d="M -20,-60 L -20,45 C -20,115 65,115 65,45 L 65,-60" 
+          fill="none" 
+          stroke="#EDE8E1" 
+          stroke-width="18" 
+          stroke-linecap="round" />
+    <line x1="-20" y1="0" x2="65" y2="0" stroke="#88A698" stroke-width="6" stroke-linecap="round" opacity="0.8" />
+  </g>
+
+  <!-- ==================== Letter 4: I (BIKE HEADLIGHT & FORK) ==================== -->
+  <g transform="translate(615, 205)">
+    <!-- Headlight Light Beam Cone (Projecting forward onto the road) -->
+    <polygon points="0,-72 -32,120 32,120" fill="url(#headlightBeam)" />
+
+    <!-- Headlight Chrome Housing / Outer Halo Ring (The Dot of the I) -->
+    <circle cx="0" cy="-75" r="20" fill="#222428" stroke="#EDE8E1" stroke-width="4" />
+    <!-- Glowing Round Lens -->
+    <circle cx="0" cy="-75" r="14" fill="url(#headlightLensGlow)" />
+    <!-- Lens Horizontal Grille / Fluted Glass lines -->
+    <line x1="-9" y1="-78" x2="9" y2="-78" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+    <line x1="-12" y1="-75" x2="12" y2="-75" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.95" />
+    <line x1="-9" y1="-72" x2="9" y2="-72" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+
+    <!-- Front Fork & Stem (The Pillar of the I) -->
+    <line x1="0" y1="-42" x2="0" y2="120" stroke="#EDE8E1" stroke-width="18" stroke-linecap="round" />
+    <!-- Center Shock / Suspension Indicator Ring -->
+    <rect x="-11" y="25" width="22" height="10" rx="3" fill="#E07A48" />
+  </g>
+
+  <!-- Letter 5: Z (Mountain Switchback) -->
+  <g transform="translate(715, 205)">
+    <line x1="-20" y1="-60" x2="60" y2="-60" stroke="#EDE8E1" stroke-width="18" stroke-linecap="round" />
+    <line x1="55" y1="-55" x2="-15" y2="115" stroke="#E07A48" stroke-width="18" stroke-linecap="round" />
+    <line x1="-20" y1="120" x2="60" y2="120" stroke="#EDE8E1" stroke-width="18" stroke-linecap="round" />
+  </g>
+
+  <!-- Letter 6: R (Open Horizon Horizon Leg) -->
+  <g transform="translate(875, 205)">
+    <line x1="-15" y1="-60" x2="-15" y2="120" stroke="#EDE8E1" stroke-width="18" stroke-linecap="round" />
+    <path d="M -15,-60 C 50,-60 65,-25 45,10 C 25,35 -15,25 -15,25" 
+          fill="none" 
+          stroke="#EDE8E1" 
+          stroke-width="18" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+    <path d="M 10,22 L 48,95 L 75,95" 
+          fill="none" 
+          stroke="#88A698" 
+          stroke-width="18" 
+          stroke-linecap="round" 
+          stroke-linejoin="round" />
+  </g>
+
+  <!-- ==================== TAGLINE ==================== -->
+  <g transform="translate(600, 400)">
+    <text text-anchor="middle" 
+          font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" 
+          font-size="20" 
+          font-weight="700" 
+          letter-spacing="12" 
+          fill="#EDE8E1">NEVER CRUISE ALONE</text>
+    <text text-anchor="middle" 
+          y="34"
+          font-family="'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif" 
+          font-size="12" 
+          font-weight="500" 
+          letter-spacing="4" 
+          fill="#9E9B95">curve • rider • unity • headlight • switchback • horizon</text>
+  </g>
+</svg>
