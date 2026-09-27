@@ -2,7 +2,7 @@ import { Apple, Play } from "lucide-react";
 import { motion } from "framer-motion";
 
 const APP_STORE = "https://apps.apple.com/app/cruizr";
-const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.cruizr";
+const PLAY_STORE = "https://play.google.com/store/apps/details?id=com.cruizr.app&hl=en";
 
 export function StoreBadges({ dark = false }: { dark?: boolean }) {
   const base =
@@ -29,13 +29,13 @@ export function StoreBadges({ dark = false }: { dark?: boolean }) {
       <motion.a 
         href={PLAY_STORE} 
         className={cls} 
-        aria-label="Get it on Google Play"
+        aria-label="Pre-register on Google Play"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
         <Play size={24} fill="currentColor" />
         <span className="flex flex-col leading-tight text-left">
-          <span className="text-[10px] uppercase opacity-80">Coming soon to</span>
+          <span className="text-[10px] uppercase opacity-80">Pre-register now</span>
           <span className="font-heading text-base font-bold">Google Play</span>
         </span>
       </motion.a>

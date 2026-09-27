@@ -12,6 +12,7 @@ import {
   Video,
   MessageCircle,
   Target,
+  Wrench,
 } from "lucide-react";
 import { StoreBadges } from "../components/StoreBadges";
 import { SectionHeading } from "../components/SectionHeading";
@@ -133,6 +134,11 @@ const ALL = [
     icon: Target,
     title: "Daily Rider Challenges",
     body: "Push your limits and keep the rubber on the road. Complete daily riding challenges, earn badges, and compete with the community."
+  },
+  {
+    icon: Wrench,
+    title: "Personal Garage",
+    body: "Keep track of all your motorcycle's essential data in one place. Monitor PUCC expiry, insurance renewals, service logs, mileage, km driven, and complete maintenance history."
   },
 ];
 

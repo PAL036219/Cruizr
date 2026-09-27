@@ -20,6 +20,8 @@ import {
 } from "lucide-react";
 import heroImg from "../assets/hero-riders.jpg";
 import heroVideo from "../assets/hero-video.mp4";
+import demoVideo from "../assets/Video.mp4";
+import garageSection from "../assets/Garage section.mp4";
 import appMockup from "../assets/app-mockup.jpg";
 import communityGallery from "../assets/commongallery.png";
 import liveRide from "../assets/live.png";
@@ -278,6 +280,32 @@ function Home() {
         </div>
       </section>
 
+      <section className="bg-background py-16 md:py-24 border-b border-border">
+        <div className="mx-auto max-w-5xl px-5 md:px-8">
+          <Reveal>
+            <div className="text-center mb-10">
+              <h2 className="font-heading text-3xl font-black md:text-5xl">
+                See CRUIZR in <span className="text-gradient">Action</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground md:text-lg">
+                Watch how we are redefining the group riding experience.
+              </p>
+            </div>
+          </Reveal>
+          <Reveal delay={150}>
+            <div className="mx-auto max-w-[340px] overflow-hidden rounded-[2.5rem] border-[6px] border-[#1a1a24] bg-black shadow-2xl sm:max-w-[380px]">
+              <video
+                src={demoVideo}
+                controls
+                className="w-full h-auto aspect-[9/16] object-cover"
+                poster={appMockup}
+                preload="metadata"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden bg-background py-20 md:py-32">
         <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[var(--orange)]/40 to-transparent" />
         <div className="mx-auto max-w-7xl px-5 md:px-8">
@@ -350,7 +378,7 @@ function Home() {
               subtitle="From the plan in your pocket to the stories you bring home, CRUIZR is designed to feel alive on the road."
             />
           </Reveal>
-          <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <Reveal>
               <figure className="flex h-full flex-col items-center justify-start text-center">
                 <img src={communityGallery} alt="Motorcycle riders sharing a scenic ride" loading="lazy" className="h-[340px] w-auto max-w-full rounded-[2rem] object-contain shadow-[var(--shadow-elegant)] sm:h-[380px]" />
@@ -379,6 +407,12 @@ function Home() {
               <figure className="flex h-full flex-col items-center justify-start text-center">
                 <img src={liveRide} alt="CRUIZR live ride sharing screen" loading="lazy" className="h-[340px] w-auto max-w-full rounded-2xl object-contain shadow-[var(--shadow-elegant)] sm:h-[380px]" />
                 <figcaption className="mt-4 text-sm font-bold text-[var(--navy)]">Share the moment</figcaption>
+              </figure>
+            </Reveal>
+            <Reveal delay={360}>
+              <figure className="flex h-full flex-col items-center justify-start text-center">
+                <video src={garageSection} autoPlay loop muted playsInline className="h-[340px] w-auto max-w-full rounded-[2.5rem] object-cover shadow-[var(--shadow-elegant)] sm:h-[380px]" />
+                <figcaption className="mt-4 text-sm font-bold text-[var(--navy)]">Your Virtual Garage</figcaption>
               </figure>
             </Reveal>
           </div>
