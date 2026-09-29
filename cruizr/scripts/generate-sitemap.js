@@ -14,6 +14,7 @@ const staticPages = [
   '/roadmap',
   '/privacy',
   '/terms',
+  '/faq',
   // City Pages
   '/motorcycle-app-delhi',
   '/motorcycle-app-bangalore',
@@ -111,6 +112,7 @@ const staticPages = [
   '/bike-club-management-app',
   '/women-biker-safety-riding-app',
   '/motorcycle-trip-cost-calculator'
+  
 ];
 
 async function generateSitemap() {

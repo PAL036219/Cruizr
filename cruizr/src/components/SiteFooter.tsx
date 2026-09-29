@@ -33,6 +33,7 @@ export function SiteFooter() {
               <li><Link to="/features" className="hover:text-[var(--orange)]">Features</Link></li>
               <li><Link to="/pricing" className="hover:text-[var(--orange)]">Pricing</Link></li>
               <li><Link to="/roadmap" className="hover:text-[var(--orange)]">Roadmap</Link></li>
+              <li><Link to="/faq" className="hover:text-[var(--orange)]">FAQ</Link></li>
               <li><Link to="/feedback" className="hover:text-[var(--orange)]">Feedback</Link></li>
               <li><Link to="/about" className="hover:text-[var(--orange)]">About</Link></li>
               <li><Link to="/contact" className="hover:text-[var(--orange)]">Contact</Link></li>

@@ -88,7 +88,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "keywords",
         content:
-          "cruizr, cruisz, cruizer, criozr, crisere, cuizer, cruizzer, cruizers, cruiz, cruister, cruizy, cruzr e bike, scruiser, crusit, motorcycle trip planner, cruzr military discount, cruzr ebike, cruiser site, crossrider, cruzrs, web cruising, best motorcycle app India, group motorcycle ride planner, ebike trip planner, motorcycle riding partner app, free motorcycle intercom app, motorcycle GPS tracker India",
+          "cruizr, cruisz, cruizer, criozr, crisere, cuizer, cruizzer, cruizers, cruiz, cruister, cruizy, cruzr e bike, scruiser, crusit, motorcycle trip planner, cruzr military discount, cruzr ebike, cruiser site, crossrider, cruzrs, web cruising, best motorcycle app India, group motorcycle ride planner, ebike trip planner, motorcycle riding partner app, free motorcycle intercom app, motorcycle GPS tracker India, riding partner, cruiser app, dominar app, motorcycle safety gear, biker sos app, best apps for motorcycle riders india, trail bajaj, free intercom app for bikers, motorcycle trip tracker, motorcycle route planner, how to make a motorcycle club, local rides near me, motorcycle advice, motorcycle rules, bmw india",
       },
       { name: "author", content: "CRUIZR" },
       { name: "theme-color", content: "#1a1a2e" },
@@ -211,7 +211,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "@type": "SoftwareApplication",
               "@id": "https://www.cruizr.in/#app",
               name: "CRUIZR",
-              alternateName: ["Cruizer App", "Cruzr App", "Cruiz App", "Motorcycle Trip Planner CRUIZR", "Cruzr ebike", "Scruiser", "Crossrider"],
+              alternateName: ["Cruizer App", "Cruzr App", "Cruiz App", "Motorcycle Trip Planner CRUIZR", "Cruzr ebike", "Scruiser", "Crossrider", "Dominar App", "Biker SOS App", "Trail Bajaj", "BMW India Motorrad"],
               applicationCategory: "LifestyleApplication",
               operatingSystem: "iOS, Android",
               description: "The best motorcycle companion app & trip planner in India. Find riding partners, join motorbike clubs, track groups live with GPS, communicate hands-free with built-in intercom, and plan motorcycle trips.",

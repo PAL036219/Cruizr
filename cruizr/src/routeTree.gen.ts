@@ -15,6 +15,7 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as FeedbackRouteImport } from './routes/feedback'
 import { Route as FeaturesRouteImport } from './routes/features'
+import { Route as FaqRouteImport } from './routes/faq'
 import { Route as DeleteAccountRouteImport } from './routes/delete-account'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as AboutRouteImport } from './routes/about'
@@ -50,6 +51,11 @@ const FeedbackRoute = FeedbackRouteImport.update({
 const FeaturesRoute = FeaturesRouteImport.update({
   id: '/features',
   path: '/features',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DeleteAccountRoute = DeleteAccountRouteImport.update({
@@ -89,6 +95,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
+  '/faq': typeof FaqRoute
   '/features': typeof FeaturesRoute
   '/feedback': typeof FeedbackRoute
   '/pricing': typeof PricingRoute
@@ -103,6 +110,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
+  '/faq': typeof FaqRoute
   '/features': typeof FeaturesRoute
   '/feedback': typeof FeedbackRoute
   '/pricing': typeof PricingRoute
@@ -118,6 +126,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/contact': typeof ContactRoute
   '/delete-account': typeof DeleteAccountRoute
+  '/faq': typeof FaqRoute
   '/features': typeof FeaturesRoute
   '/feedback': typeof FeedbackRoute
   '/pricing': typeof PricingRoute
@@ -134,6 +143,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/delete-account'
+    | '/faq'
     | '/features'
     | '/feedback'
     | '/pricing'
@@ -148,6 +158,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/delete-account'
+    | '/faq'
     | '/features'
     | '/feedback'
     | '/pricing'
@@ -162,6 +173,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/contact'
     | '/delete-account'
+    | '/faq'
     | '/features'
     | '/feedback'
     | '/pricing'
@@ -177,6 +189,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   ContactRoute: typeof ContactRoute
   DeleteAccountRoute: typeof DeleteAccountRoute
+  FaqRoute: typeof FaqRoute
   FeaturesRoute: typeof FeaturesRoute
   FeedbackRoute: typeof FeedbackRoute
   PricingRoute: typeof PricingRoute
@@ -230,6 +243,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof FeaturesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/delete-account': {
       id: '/delete-account'
       path: '/delete-account'
@@ -281,6 +301,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   ContactRoute: ContactRoute,
   DeleteAccountRoute: DeleteAccountRoute,
+  FaqRoute: FaqRoute,
   FeaturesRoute: FeaturesRoute,
   FeedbackRoute: FeedbackRoute,
   PricingRoute: PricingRoute,
