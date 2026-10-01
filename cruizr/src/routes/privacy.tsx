@@ -100,6 +100,11 @@ function PrivacyPage() {
 
         <p><strong>Social Media Login Data.</strong> We may provide you with the option to register with us using your existing social media account details. If you choose to register in this way, we will collect certain profile information about you from the social media provider.</p>
 
+        <h3>Vehicle & Document Information (Digital Garage Feature)</h3>
+        <p>
+          To provide the "Digital Garage" and automated reminder features, CRUIZR allows users to optionally upload and store information regarding their motorcycles. This data may include vehicle registration details (RC), insurance expiration dates, pollution control (PUC) certificates, and service logs. This information is stored securely on our servers and is used strictly to provide you with timely push notification reminders for renewals and maintenance. We do not sell or share your personal vehicle documents with any third-party advertisers.
+        </p>
+
         <h3>Information automatically collected</h3>
         <p>
           <strong>In Short:</strong> Some information — such as your Internet Protocol (IP) address and/or browser and device characteristics — is collected automatically when you visit our Services.

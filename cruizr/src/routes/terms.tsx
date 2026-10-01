@@ -63,7 +63,12 @@ function TermsPage() {
           from participation in rides.
         </p>
 
-        <h2>5. Content</h2>
+        <h2>5. Digital Garage & Document Storage</h2>
+        <p>
+          The "Digital Garage" feature allows you to upload vehicle details, RC, insurance, and PUC expiration dates for reminder purposes. You are solely responsible for ensuring the accuracy of this data. CRUIZR acts only as a notification tool and is not liable for missed renewals, expired documents, or legal fines resulting from relying on our reminders.
+        </p>
+
+        <h2>6. Content</h2>
         <p>
           You retain ownership of content you post but grant CRUIZR a worldwide, royalty-free license
           to host, display, and distribute that content within the Service. Don't post content you
