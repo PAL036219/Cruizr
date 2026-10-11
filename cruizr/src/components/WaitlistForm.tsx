@@ -15,8 +15,8 @@ export function WaitlistForm() {
         Download now
         <ArrowRight size={18} />
       </motion.a>
-      <p className="mt-4 text-xs text-white/60 text-center">
-        Download now to get started.
+      <p className="mt-3 text-xs text-white/70 text-center font-medium">
+        ⚡ Free PRO Membership automatically unlocked for the first 200 riders.
       </p>
     </div>
   );

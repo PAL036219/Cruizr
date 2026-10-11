@@ -248,11 +248,13 @@ function Home() {
         <div className="relative mx-auto flex min-h-[780px] max-w-7xl items-center px-5 pb-20 pt-28 md:min-h-[820px] md:px-8 md:pt-24">
           <div className="max-w-3xl">
             <div
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.18em] text-white/80 backdrop-blur-md"
+              className="inline-flex flex-wrap items-center gap-2 rounded-full border border-[var(--orange)]/30 bg-[var(--orange)]/15 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.16em] text-[var(--orange)] backdrop-blur-md shadow-[0_0_20px_rgba(224,109,59,0.2)]"
               style={{ animation: "fade-in 0.8s ease-out both" }}
             >
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--orange)]" />
-              Built for Indian riders
+              <span className="flex h-2 w-2 rounded-full bg-[var(--orange)] animate-pulse" />
+              <span>Limited Early Access</span>
+              <span className="text-white/40">•</span>
+              <span className="text-white font-semibold">Free PRO Membership for First 200 Riders</span>
             </div>
             <h1
               className="mt-7 font-heading text-5xl font-black leading-[.95] tracking-[-.06em] text-white sm:text-6xl md:text-8xl lg:text-[6.7rem]"
@@ -267,14 +269,38 @@ function Home() {
             >
               The all-in-one home for rides, real-time maps, and the people who make every kilometre worth it.
             </p>
+
+            {/* EARLY ADOPTER PERK CALLOUT */}
             <div
-              className="mt-10"
-              style={{ animation: "fade-up 0.9s ease-out 0.4s both" }}
+              className="mt-6 flex max-w-md items-center gap-3 rounded-2xl border border-white/10 bg-white/5 p-3.5 backdrop-blur-md"
+              style={{ animation: "fade-up 0.9s ease-out 0.35s both" }}
+            >
+              <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-[var(--orange)] text-white shadow-md font-black text-sm">
+                PRO
+              </div>
+              <div className="text-left text-xs leading-snug">
+                <p className="font-bold text-white text-sm">
+                  🎁 First 200 Riders Get Lifetime PRO Free
+                </p>
+                <p className="text-white/70 mt-0.5">
+                  Unlock unlimited audio intercom, offline mesh channels & group convoy features.
+                </p>
+              </div>
+            </div>
+
+            <div
+              className="mt-8"
+              style={{ animation: "fade-up 0.9s ease-out 0.45s both" }}
             >
               <WaitlistForm />
             </div>
-            <div className="mt-10 flex flex-wrap gap-x-6 gap-y-3 text-xs font-medium text-white/55">
-              {["Ride matching", "Live group tracking", "Free group intercom"].map((item) => <span key={item} className="flex items-center gap-2"><Check size={14} className="text-[var(--orange)]" />{item}</span>)}
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-xs font-medium text-white/65">
+              {["Free Pro for First 200 Riders", "Live group tracking", "Unlimited voice intercom", "Crash SOS alerts"].map((item) => (
+                <span key={item} className="flex items-center gap-2">
+                  <Check size={14} className="text-[var(--orange)]" />
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </div>
