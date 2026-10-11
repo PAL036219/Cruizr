@@ -162,6 +162,12 @@ export function SiteFooter() {
           <div>
             <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Guides & Blogs</h5>
             <div className="flex flex-wrap gap-x-3 gap-y-2">
+              <Link to={"/blog/best-weekend-bike-rides-bangalore" as any} className="hover:text-[var(--orange)]">Bangalore Rides</Link>
+              <span>•</span>
+              <Link to={"/blog/best-weekend-bike-rides-mumbai-pune" as any} className="hover:text-[var(--orange)]">Mumbai & Pune Rides</Link>
+              <span>•</span>
+              <Link to={"/blog/free-motorcycle-intercom-vs-bluetooth-headsets" as any} className="hover:text-[var(--orange)]">Free Intercom vs Cardo</Link>
+              <span>•</span>
               <Link to={"/blog/royal-enfield-himalayan-440" as any} className="hover:text-[var(--orange)]">Himalayan 440</Link>
               <span>•</span>
               <Link to={"/blog/best-monsoon-motorcycle-rides-india" as any} className="hover:text-[var(--orange)]">Monsoon Rides</Link>
@@ -171,8 +177,6 @@ export function SiteFooter() {
               <Link to={"/blog/how-to-start-motorcycle-club-india" as any} className="hover:text-[var(--orange)]">Start a Club</Link>
               <span>•</span>
               <Link to={"/blog/how-to-find-motorcycle-rides-near-me" as any} className="hover:text-[var(--orange)]">Find Rides</Link>
-              <span>•</span>
-              <Link to={"/blog/motorcycle-safety-tips" as any} className="hover:text-[var(--orange)]">Safety Tips</Link>
             </div>
           </div>
         </div>

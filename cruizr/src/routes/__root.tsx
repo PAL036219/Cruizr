@@ -36,7 +36,7 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
+function ErrorComponent({ error, reset }: { error: unknown; reset: () => void }) {
   console.error(error);
   const router = useRouter();
   useEffect(() => {
@@ -79,16 +79,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "CRUIZR — #1 Motorcycle App India | Group Rides, GPS Tracker & Free Intercom" },
+      { title: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Intercom" },
       {
         name: "description",
         content:
-          "CRUIZR is India's #1 motorcycle companion app. Join motorbike clubs, plan offroad & monsoon rides, track groups live with free built-in intercom and crash safety alerts. Trusted by riders in Bangalore, Mumbai, Pune, Delhi NCR & across India.",
+          "CRUIZR is India's dedicated motorcycle companion app. Plan group rides, track your convoy live with GPS, talk via free built-in intercom, and access crash safety alerts across India.",
       },
       {
         name: "keywords",
         content:
-          "cruizr, cruisz, cruizer, criozr, crisere, cuizer, cruizzer, cruizers, cruiz, cruister, cruizy, cruzr e bike, scruiser, crusit, motorcycle trip planner, cruzr military discount, cruzr ebike, cruiser site, crossrider, cruzrs, web cruising, best motorcycle app India, group motorcycle ride planner, ebike trip planner, motorcycle riding partner app, free motorcycle intercom app, motorcycle GPS tracker India, riding partner, cruiser app, dominar app, motorcycle safety gear, biker sos app, best apps for motorcycle riders india, trail bajaj, free intercom app for bikers, motorcycle trip tracker, motorcycle route planner, how to make a motorcycle club, local rides near me, motorcycle advice, motorcycle rules, bmw india",
+          "motorcycle app India, group motorcycle ride planner, motorcycle GPS tracker India, free motorcycle intercom app, bike trip planner, motorcycle club app, biker safety app, motorcycle route planner India",
       },
       { name: "author", content: "CRUIZR" },
       { name: "theme-color", content: "#1a1a2e" },
@@ -97,10 +97,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "geo.placename", content: "India" },
       { name: "geo.position", content: "20.5937;78.9629" },
       { name: "ICBM", content: "20.5937, 78.9629" },
-      { property: "og:title", content: "CRUIZR — #1 Motorcycle App & Trip Planner | Group Rides, GPS & Intercom" },
+      { property: "og:title", content: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Intercom" },
       {
         property: "og:description",
-        content: "India's #1 motorcycle companion app & trip planner. Join motorbike clubs, plan offroad & monsoon rides, use free built-in intercom, live GPS tracking, crash safety alerts, and female-only rides across India.",
+        content: "India's dedicated motorcycle companion app. Join motorbike clubs, plan scenic group rides, use free intercom, live GPS tracking, and crash safety alerts across India.",
       },
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "CRUIZR" },
@@ -108,8 +108,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@cruizrapp" },
       { name: "twitter:creator", content: "@cruizrapp" },
-      { name: "twitter:title", content: "CRUIZR — #1 Motorcycle App & Trip Planner | Group Rides, GPS & Free Intercom" },
-      { name: "twitter:description", content: "India's top motorcycle app & trip planner. Match riders, coordinate group rides, free built-in intercom, live GPS tracking, crash alerts, and club management across India." },
+      { name: "twitter:title", content: "CRUIZR — India's #1 Motorcycle App | Group Rides, GPS & Intercom" },
+      { name: "twitter:description", content: "Coordinate group motorcycle rides, use free hands-free intercom, track live convoy GPS, and ride safer with CRUIZR." },
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp" },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
@@ -142,28 +142,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "@type": "Organization",
               "@id": "https://www.cruizr.in/#organization",
               name: "CRUIZR",
-              alternateName: [
-                "cruisz",
-                "cruizer",
-                "criozr",
-                "crisere",
-                "cuizer",
-                "cruizzer",
-                "cruizers",
-                "cruiz",
-                "cruister",
-                "cruizy",
-                "cruzr e bike",
-                "scruiser",
-                "crusit",
-                "motorcycle trip planner",
-                "cruzr military discount",
-                "cruzr ebike",
-                "cruiser site",
-                "crossrider",
-                "cruzrs",
-                "web cruising"
-              ],
+              alternateName: ["Cruizr App", "Cruizr India"],
               url: "https://www.cruizr.in",
               logo: {
                 "@type": "ImageObject",
@@ -171,7 +150,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
                 width: 512,
                 height: 512,
               },
-              description: "India's #1 motorcycle community, trip planner, and group ride companion app. Live GPS tracking, free intercom, club management, and rider safety tools.",
+              description: "India's dedicated motorcycle companion app and community platform. Group ride planning, live convoy tracking, free intercom, and safety tools.",
               email: "abhishek@cruizr.in",
               areaServed: {
                 "@type": "Country",
@@ -195,8 +174,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "@id": "https://www.cruizr.in/#website",
               url: "https://www.cruizr.in",
               name: "CRUIZR",
-              alternateName: ["Cruizer", "Cruzr", "Cruiz", "Cruisz", "Cruzrs", "Cruiser site", "Web cruising"],
-              description: "India's #1 motorcycle group ride, trip planner, club, and GPS tracking companion app.",
+              alternateName: ["Cruizr", "Cruizr App"],
+              description: "India's motorcycle companion app for group ride planning, GPS tracking, and community connection.",
               publisher: { "@id": "https://www.cruizr.in/#organization" },
               potentialAction: {
                 "@type": "SearchAction",
@@ -211,10 +190,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
               "@type": "SoftwareApplication",
               "@id": "https://www.cruizr.in/#app",
               name: "CRUIZR",
-              alternateName: ["Cruizer App", "Cruzr App", "Cruiz App", "Motorcycle Trip Planner CRUIZR", "Cruzr ebike", "Scruiser", "Crossrider", "Dominar App", "Biker SOS App", "Trail Bajaj", "BMW India Motorrad"],
+              alternateName: ["Cruizr", "Cruizr App"],
               applicationCategory: "LifestyleApplication",
               operatingSystem: "iOS, Android",
-              description: "The best motorcycle companion app & trip planner in India. Find riding partners, join motorbike clubs, track groups live with GPS, communicate hands-free with built-in intercom, and plan motorcycle trips.",
+              description: "The motorcycle companion app for India. Plan group rides, track convoys live with GPS, communicate hands-free via free built-in intercom, and access rider emergency tools.",
               url: "https://www.cruizr.in",
               image: "https://storage.googleapis.com/gpt-engineer-file-uploads/3xuYR1aDiFRPPjvXP3CgYQXGxhr1/social-images/social-1783841341750-Cruizr_Logo.webp",
               featureList: [

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface CruizrWordmarkProps {
   className?: string;
   isLight?: boolean;
@@ -8,7 +6,6 @@ interface CruizrWordmarkProps {
 export function CruizrWordmark({ className = "h-8 w-auto", isLight = false }: CruizrWordmarkProps) {
   // Main letter stroke & text color
   const strokeColor = isLight ? "#FFFFFF" : "#0F172A";
-  const subtextColor = isLight ? "rgba(255,255,255,0.7)" : "#64748B";
   const amberAccent = "#E06D3B";
   const sageAccent = "#88A698";
 

@@ -47,12 +47,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "CRUIZR is India's #1 motorcycle companion app & trip planner. Find riding partners, join motorbike clubs, plan offroad & monsoon group rides, use free built-in intercom, live GPS tracking, and crash SOS alerts. Available across India.",
+          "CRUIZR is India's dedicated motorcycle companion app. Find riding partners, plan group rides, use free intercom, live GPS tracking, and crash SOS alerts across India.",
       },
       {
         name: "keywords",
         content:
-          "cruizr, cruisz, cruizer, criozr, crisere, cuizer, cruizzer, cruizers, cruiz, cruister, cruizy, cruzr e bike, scruiser, crusit, motorcycle trip planner, cruzr military discount, cruzr ebike, cruiser site, crossrider, cruzrs, web cruising, best app for motorbike club, motorcycle ride planning app, free motorcycle intercom app, motorcycle GPS tracker India",
+          "motorcycle app India, group motorcycle rides, motorcycle trip planner app, free motorcycle intercom app, motorcycle GPS tracker India, bike clubs India, rider safety app",
       },
       { property: "og:title", content: "CRUIZR — India's #1 Motorcycle App & Trip Planner | Group Rides, GPS & Free Intercom" },
       {
