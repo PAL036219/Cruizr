@@ -121,6 +121,7 @@ function Roadmap() {
       description: "Compete with other riders locally and globally. The foundation is built, we're just waiting to flip the switch.",
       bullets: [
         "Top Riders: Ranking based on distance covered and rides completed (Daily/Weekly/Monthly).",
+        "Instagram Spotlight: The weekly top rider gets featured & tagged on our official Instagram Reels (@cruizrapp).",
         "Profile Integration: The daily top rider gets their profile picture featured on the main leaderboard button."
       ],
       color: "text-yellow-500",

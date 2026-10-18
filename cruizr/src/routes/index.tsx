@@ -17,6 +17,8 @@ import {
   Volume2,
   WifiOff,
   Sun,
+  Instagram,
+  Flame,
 } from "lucide-react";
 import heroImg from "../assets/hero-riders.jpg";
 import heroVideo from "../assets/hero-video.mp4";
@@ -208,7 +210,7 @@ const FEATURE_GROUPS = [
     features: [
       { icon: Users, title: "Riding Clubs", desc: "Start a public or private motorcycle club, welcome members, organise rides, and keep the chat moving." },
       { icon: MessageCircle, title: "Bike Q&A Forums", desc: "Ask mechanical questions, share gear recommendations, and trade riding knowledge with the community." },
-      { icon: Trophy, title: "Daily & Weekly Leaderboards", desc: "Compete on distance covered and rides completed when leaderboards arrive in Phase 2." },
+      { icon: Trophy, title: "Daily & Weekly Leaderboards", desc: "Compete on distance and rides completed. Weekly champions get featured & tagged on our official Instagram Reels!" },
     ],
   },
   {
@@ -456,6 +458,164 @@ function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-14 px-5 md:px-8 lg:grid-cols-2">
           <Reveal className="order-2 lg:order-1"><div className="grid grid-cols-2 gap-4"><img src={clubs} alt="CRUIZR motorcycle clubs" className="mt-10 rounded-3xl shadow-[var(--shadow-elegant)]" /><img src={women} alt="CRUIZR women-only ride community" className="rounded-3xl shadow-[var(--shadow-elegant)]" /></div></Reveal>
           <Reveal className="order-1 lg:order-2"><SectionHeading center={false} eyebrow="Your kind of community" title={<>Find riders who <span className="text-gradient">get it.</span></>} subtitle="Build a trusted club, join the next open ride, or create a women-only ride. This is a space where every rider belongs." /><Link to="/features" className="mt-9 inline-flex items-center gap-2 rounded-full bg-[var(--navy)] px-6 py-3 text-sm font-bold text-white transition-transform hover:scale-[1.03]">Explore the features <ArrowRight size={16} /></Link></Reveal>
+        </div>
+      </section>
+
+      {/* INSTAGRAM REELS & WEEKLY LEADER SPOTLIGHT */}
+      <section className="relative overflow-hidden bg-gradient-to-b from-dark via-[#0d0f17] to-dark py-20 md:py-32 text-white border-y border-white/5">
+        <div
+          className="absolute -top-32 left-1/2 -translate-x-1/2 h-96 w-[700px] rounded-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-500/15 via-[var(--orange)]/10 to-transparent blur-3xl pointer-events-none"
+          aria-hidden
+        />
+        <div className="relative mx-auto max-w-7xl px-5 md:px-8">
+          <Reveal>
+            <div className="flex flex-col items-center text-center">
+              <div className="inline-flex items-center gap-2.5 rounded-full border border-pink-500/30 bg-pink-500/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-pink-400 backdrop-blur-md">
+                <Instagram size={14} className="text-pink-400" />
+                <span>Instagram Community Spotlight</span>
+              </div>
+              <h2 className="mt-6 font-heading text-3xl font-black leading-tight sm:text-5xl md:text-6xl">
+                Ride Hard. Lead the Pack. <br className="hidden sm:inline" />
+                <span className="bg-gradient-to-r from-pink-400 via-[var(--orange)] to-amber-300 bg-clip-text text-transparent">
+                  Get Featured on Our Reels.
+                </span>
+              </h2>
+              <p className="mt-5 max-w-2xl text-base text-white/70 md:text-lg">
+                We celebrate our riders! Every week, our #1 leaderboard champion gets honored with a dedicated Instagram Reel and tagged directly on our page.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-14 grid gap-8 lg:grid-cols-12 lg:items-stretch">
+            {/* Left Card: Weekly Leader Spotlight */}
+            <div className="lg:col-span-5">
+              <Reveal delay={100} className="h-full">
+                <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-7 md:p-9 backdrop-blur-xl shadow-2xl transition-all duration-300 hover:border-pink-500/40">
+                  <div className="absolute top-0 right-0 h-40 w-40 rounded-full bg-pink-500/10 blur-2xl pointer-events-none" />
+
+                  <div>
+                    <div className="flex items-center justify-between">
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 px-3 py-1 text-xs font-bold text-amber-300">
+                        <Trophy size={14} className="text-amber-400" /> Weekly Leaderboard
+                      </span>
+                      <span className="flex items-center gap-1 text-xs font-semibold text-white/50">
+                        <Flame size={14} className="text-[var(--orange)]" /> Updated Weekly
+                      </span>
+                    </div>
+
+                    <h3 className="mt-6 font-heading text-2xl font-bold text-white md:text-3xl">
+                      Weekly Rider Spotlight 👑
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/70">
+                      Rack up kilometers on solo rides, club tours, and weekend breakfast runs. Top the weekly mileage leaderboard in CRUIZR and we will showcase your journey, your bike, and tag your personal Instagram handle in front of our entire community.
+                    </p>
+
+                    <div className="mt-6 space-y-3 rounded-2xl border border-white/10 bg-black/30 p-4 text-xs sm:text-sm">
+                      <div className="flex items-center gap-3 text-white/90">
+                        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-pink-500/20 text-pink-400">
+                          <Check size={13} />
+                        </span>
+                        <span>Weekly distance & ride leader crown</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-white/90">
+                        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-pink-500/20 text-pink-400">
+                          <Check size={13} />
+                        </span>
+                        <span>Personal handle tagged in our Instagram Reel</span>
+                      </div>
+                      <div className="flex items-center gap-3 text-white/90">
+                        <span className="grid h-6 w-6 shrink-0 place-items-center rounded-full bg-pink-500/20 text-pink-400">
+                          <Check size={13} />
+                        </span>
+                        <span>Profile banner featured in the CRUIZR app</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4">
+                    <div>
+                      <p className="text-xs uppercase tracking-wider text-white/50 font-semibold">Official Handle</p>
+                      <a
+                        href="https://www.instagram.com/cruizrapp?igsh=d2ttMDRjbmU1YWhk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-1 inline-flex items-center gap-2 text-base font-bold text-white hover:text-pink-400 transition-colors"
+                      >
+                        <Instagram size={18} className="text-pink-400" /> @cruizrapp
+                      </a>
+                    </div>
+                    <a
+                      href="https://www.instagram.com/cruizrapp?igsh=d2ttMDRjbmU1YWhk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-pink-500 to-[var(--orange)] px-5 py-2.5 text-xs font-bold text-white shadow-lg transition-transform hover:scale-105"
+                    >
+                      Follow for Reels <ArrowRight size={14} />
+                    </a>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+
+            {/* Right Card: Reels & Community Gallery Feature */}
+            <div className="lg:col-span-7">
+              <Reveal delay={200} className="h-full">
+                <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-7 md:p-9 backdrop-blur-xl shadow-2xl transition-all duration-300 hover:border-[var(--orange)]/40">
+                  <div className="absolute -bottom-10 -right-10 h-48 w-48 rounded-full bg-[var(--orange)]/15 blur-3xl pointer-events-none" />
+
+                  <div>
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <span className="inline-flex items-center gap-1.5 rounded-full bg-pink-500/10 border border-pink-500/25 px-3 py-1 text-xs font-bold text-pink-300">
+                        🎬 Daily & Weekly Reels
+                      </span>
+                      <span className="text-xs text-white/50">Tag <span className="font-semibold text-white">#CRUIZR</span> to get featured</span>
+                    </div>
+
+                    <h3 className="mt-6 font-heading text-2xl font-bold text-white md:text-3xl">
+                      Catch The Craziest Rides & Route Recaps
+                    </h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/70">
+                      From cinematic ghat tour edits and trail adventures to group intercom bloopers and weekly leader celebrations — all the raw riding action goes live on our Instagram page first.
+                    </p>
+
+                    <div className="mt-7 grid grid-cols-1 sm:grid-cols-3 gap-3.5">
+                      <div className="group rounded-2xl border border-white/10 bg-black/40 p-4 transition-colors hover:border-pink-500/40">
+                        <div className="text-2xl font-black text-pink-400">01</div>
+                        <h4 className="mt-2 text-sm font-bold text-white">Ride & Log</h4>
+                        <p className="mt-1 text-xs text-white/60">Log your rides with live group tracking on CRUIZR.</p>
+                      </div>
+
+                      <div className="group rounded-2xl border border-white/10 bg-black/40 p-4 transition-colors hover:border-amber-500/40">
+                        <div className="text-2xl font-black text-amber-400">02</div>
+                        <h4 className="mt-2 text-sm font-bold text-white">Hit #1 Rank</h4>
+                        <p className="mt-1 text-xs text-white/60">Climb to the top of the weekly rider leaderboard.</p>
+                      </div>
+
+                      <div className="group rounded-2xl border border-white/10 bg-black/40 p-4 transition-colors hover:border-[var(--orange)]/40">
+                        <div className="text-2xl font-black text-[var(--orange)]">03</div>
+                        <h4 className="mt-2 text-sm font-bold text-white">Get Tagged</h4>
+                        <p className="mt-1 text-xs text-white/60">We shout you out in our weekly reel and tag your handle.</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <p className="text-xs text-white/60">
+                      Want your bike, tour footage, or riding group featured? Tag <span className="text-pink-400 font-semibold">@cruizrapp</span> on your Instagram posts!
+                    </p>
+                    <a
+                      href="https://www.instagram.com/cruizrapp?igsh=d2ttMDRjbmU1YWhk"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--orange)] hover:text-white transition-colors shrink-0"
+                    >
+                      View Latest Reels <ArrowRight size={14} />
+                    </a>
+                  </div>
+                </div>
+              </Reveal>
+            </div>
+          </div>
         </div>
       </section>
 
