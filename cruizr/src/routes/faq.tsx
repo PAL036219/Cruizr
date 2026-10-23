@@ -342,6 +342,7 @@ export const Route = createFileRoute("/faq")({
           "Got questions about CRUIZR? Learn how to find riding partners, use the free intercom, track motorcycle trips, and more on India's #1 motorcycle app.",
       },
     ],
+    links: [{ rel: "canonical", href: "https://www.cruizr.in/faq" }],
     scripts: [
       {
         type: "application/ld+json",

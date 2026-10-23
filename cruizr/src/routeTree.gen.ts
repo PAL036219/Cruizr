@@ -21,6 +21,7 @@ import { Route as PricingRouteImport } from './routes/pricing'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as RoadmapRouteImport } from './routes/roadmap'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as BlogIndexRouteImport } from './routes/blog.index'
 import { Route as BlogPostSlugRouteImport } from './routes/blog.$postSlug'
 
 const IndexRoute = IndexRouteImport.update({
@@ -83,6 +84,11 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogPostSlugRoute = BlogPostSlugRouteImport.update({
   id: '/blog/$postSlug',
   path: '/blog/$postSlug',
@@ -103,6 +109,7 @@ export interface FileRoutesByFullPath {
   '/roadmap': typeof RoadmapRoute
   '/terms': typeof TermsRoute
   '/blog/$postSlug': typeof BlogPostSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -118,6 +125,7 @@ export interface FileRoutesByTo {
   '/roadmap': typeof RoadmapRoute
   '/terms': typeof TermsRoute
   '/blog/$postSlug': typeof BlogPostSlugRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -134,6 +142,7 @@ export interface FileRoutesById {
   '/roadmap': typeof RoadmapRoute
   '/terms': typeof TermsRoute
   '/blog/$postSlug': typeof BlogPostSlugRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -151,6 +160,7 @@ export interface FileRouteTypes {
     | '/roadmap'
     | '/terms'
     | '/blog/$postSlug'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -166,6 +176,7 @@ export interface FileRouteTypes {
     | '/roadmap'
     | '/terms'
     | '/blog/$postSlug'
+    | '/blog'
   id:
     | '__root__'
     | '/'
@@ -181,6 +192,7 @@ export interface FileRouteTypes {
     | '/roadmap'
     | '/terms'
     | '/blog/$postSlug'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -197,6 +209,7 @@ export interface RootRouteChildren {
   RoadmapRoute: typeof RoadmapRoute
   TermsRoute: typeof TermsRoute
   BlogPostSlugRoute: typeof BlogPostSlugRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -285,6 +298,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/$postSlug': {
       id: '/blog/$postSlug'
       path: '/blog/$postSlug'
@@ -309,6 +329,7 @@ const rootRouteChildren: RootRouteChildren = {
   RoadmapRoute: RoadmapRoute,
   TermsRoute: TermsRoute,
   BlogPostSlugRoute: BlogPostSlugRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

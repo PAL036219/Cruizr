@@ -118,9 +118,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image:alt", content: "CRUIZR — India's #1 Motorcycle Group Ride App & Trip Planner" },
     ],
     links: [
-      { rel: "canonical", href: "https://www.cruizr.in" },
-      { rel: "alternate", hrefLang: "en-IN", href: "https://www.cruizr.in" },
-      { rel: "alternate", hrefLang: "en", href: "https://www.cruizr.in" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
       { rel: "icon", href: "/favicon.png", type: "image/png" },

@@ -32,6 +32,7 @@ export function SiteFooter() {
             <ul className="space-y-3 text-sm text-white/60">
               <li><Link to="/features" className="hover:text-[var(--orange)]">Features</Link></li>
               <li><Link to="/pricing" className="hover:text-[var(--orange)]">Pricing</Link></li>
+              <li><Link to="/blog" className="hover:text-[var(--orange)]">Blog & Guides</Link></li>
               <li><Link to="/roadmap" className="hover:text-[var(--orange)]">Roadmap</Link></li>
               <li><Link to="/faq" className="hover:text-[var(--orange)]">FAQ</Link></li>
               <li><Link to="/feedback" className="hover:text-[var(--orange)]">Feedback</Link></li>
@@ -162,6 +163,8 @@ export function SiteFooter() {
           <div>
             <h5 className="font-semibold text-white/80 mb-3 uppercase tracking-wider">Guides & Blogs</h5>
             <div className="flex flex-wrap gap-x-3 gap-y-2">
+              <Link to="/blog" className="text-[var(--orange)] font-semibold hover:underline">All Articles →</Link>
+              <span>•</span>
               <Link to={"/blog/best-weekend-bike-rides-bangalore" as any} className="hover:text-[var(--orange)]">Bangalore Rides</Link>
               <span>•</span>
               <Link to={"/blog/best-weekend-bike-rides-mumbai-pune" as any} className="hover:text-[var(--orange)]">Mumbai & Pune Rides</Link>

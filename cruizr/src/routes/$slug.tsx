@@ -924,9 +924,32 @@ export const Route = createFileRoute("/$slug")({
     };
   },
   loader: ({ params }): PageContent => {
-    if (params.slug === "royal-enfield-himalayan-440") {
-      throw redirect({ to: "/blog/$postSlug", params: { postSlug: "royal-enfield-himalayan-440" } });
+    const KNOWN_BLOG_SLUGS = [
+      "royal-enfield-himalayan-440",
+      "best-weekend-bike-rides-bangalore",
+      "best-weekend-bike-rides-mumbai-pune",
+      "best-monsoon-motorcycle-rides-india",
+      "best-motorcycle-club-apps-india",
+      "bike-and-its-utility",
+      "free-motorcycle-intercom-vs-bluetooth-headsets",
+      "how-to-find-motorcycle-rides-near-me",
+      "how-to-start-motorcycle-club-india",
+      "motorcycle-safety-tips",
+      "motorcycle-trip-planner-app",
+    ];
+
+    if (params.slug === "blog") {
+      throw redirect({ to: "/blog", statusCode: 301 });
     }
+
+    if (KNOWN_BLOG_SLUGS.includes(params.slug)) {
+      throw redirect({
+        to: "/blog/$postSlug",
+        params: { postSlug: params.slug },
+        statusCode: 301,
+      });
+    }
+
     const data = resolveSlugContent(params.slug);
     if (!data) {
       throw notFound();

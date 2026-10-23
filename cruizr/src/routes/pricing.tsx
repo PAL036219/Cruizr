@@ -138,7 +138,53 @@ function PricingPage() {
           />
         </Reveal>
 
-                {/* Hardware Comparison Section */}
+                {/* COMING SOON BANNER */}
+        <Reveal delay={200} className="mt-14 max-w-3xl mx-auto text-center">
+          <div className="relative rounded-3xl border border-[var(--orange)]/30 bg-gradient-to-b from-[var(--orange)]/10 via-card/50 to-background/80 p-8 md:p-14 shadow-2xl backdrop-blur-xl overflow-hidden">
+            <div className="absolute -top-24 left-1/2 -translate-x-1/2 h-48 w-96 rounded-full bg-[var(--orange)]/20 blur-3xl pointer-events-none" />
+            
+            <div className="inline-flex items-center gap-2 rounded-full border border-[var(--orange)]/40 bg-[var(--orange)]/15 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-[var(--orange)] mb-6">
+              <span className="h-2 w-2 rounded-full bg-[var(--orange)] animate-ping" />
+              <span>Plans Launching Soon</span>
+            </div>
+
+            <h3 className="font-heading text-3xl md:text-5xl font-black text-foreground tracking-tight">
+              CRUIZR is Currently <span className="text-gradient">100% Free</span>
+            </h3>
+
+            <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto">
+              We are offering all rider tools, live convoy GPS tracking, and hands-free group intercom completely free for riders and motorcycle clubs across India during our community launch phase.
+            </p>
+
+            <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
+              <div className="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
+                <Crown className="h-6 w-6 text-[var(--orange)] mb-2" />
+                <h4 className="font-semibold text-sm text-foreground">PRO Features</h4>
+                <p className="text-xs text-muted-foreground mt-1">Advanced mesh intercom & convoy unlock coming soon.</p>
+              </div>
+              <div className="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
+                <Globe className="h-6 w-6 text-blue-400 mb-2" />
+                <h4 className="font-semibold text-sm text-foreground">Offline Mesh</h4>
+                <p className="text-xs text-muted-foreground mt-1">Zero-signal P2P radio for high-altitude passes.</p>
+              </div>
+              <div className="rounded-2xl border border-white/5 bg-white/5 p-4 backdrop-blur">
+                <Rocket className="h-6 w-6 text-purple-400 mb-2" />
+                <h4 className="font-semibold text-sm text-foreground">Expedition Tier</h4>
+                <p className="text-xs text-muted-foreground mt-1">Dedicated long-haul touring tools & priority rank.</p>
+              </div>
+            </div>
+
+            <div className="mt-10 pt-6 border-t border-border/40 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <span className="text-sm font-medium text-foreground">Get started on the road today:</span>
+              <StoreBadges />
+            </div>
+          </div>
+        </Reveal>
+
+        {/* =========================================================================
+            PRICING PLANS & COMPARISON (COMMENTED OUT - PRESERVED FOR LAUNCH)
+           ========================================================================= */}
+        {/*
         <Reveal delay={250} className="mt-20 max-w-5xl mx-auto">
           <div className="rounded-3xl border border-[var(--orange)]/30 bg-gradient-to-br from-[var(--orange)]/5 to-transparent p-8 md:p-12 shadow-2xl backdrop-blur-xl">
             <h3 className="text-2xl md:text-3xl font-bold text-center text-foreground mb-10">
@@ -146,7 +192,6 @@ function PricingPage() {
             </h3>
             
             <div className="grid md:grid-cols-2 gap-8">
-              {/* Hardware Intercom */}
               <div className="bg-card/40 rounded-2xl p-6 md:p-8 border border-border/50">
                 <h4 className="text-xl font-bold text-muted-foreground mb-4 flex items-center gap-2">
                   <X size={24} className="text-rose-500" /> Physical Intercoms
@@ -172,7 +217,6 @@ function PricingPage() {
                 </ul>
               </div>
 
-              {/* Cruizr Pro */}
               <div className="bg-[var(--orange)]/10 rounded-2xl p-6 md:p-8 border border-[var(--orange)]/40 relative overflow-hidden shadow-[0_0_40px_rgba(255,100,0,0.1)]">
                 <div className="absolute inset-0 bg-gradient-to-br from-[var(--orange)]/20 to-transparent pointer-events-none" />
                 <h4 className="relative z-10 text-xl font-bold text-[var(--orange)] mb-4 flex items-center gap-2">
@@ -201,7 +245,6 @@ function PricingPage() {
             </div>
           </div>
         </Reveal>
-
 
         <Reveal delay={150}>
           <div className="mt-16 rounded-3xl border border-border/50 bg-card/40 shadow-2xl backdrop-blur-xl overflow-hidden">
@@ -292,14 +335,12 @@ function PricingPage() {
           </div>
         </Reveal>
 
-        
-
-        {/* FUP Disclaimer */}
         <Reveal delay={200} className="mt-6 text-center px-4">
           <p className="text-xs text-muted-foreground max-w-3xl mx-auto italic opacity-80">
             *Fair Usage Policy (FUP): To ensure crystal clear audio quality on 4G Cellular networks, the Free plan is capped at 5 active hours, Cruizr Pro is capped at 25 active hours, and the Expedition plan is capped at 65 active hours per month. Offline P2P Mesh usage is completely unlimited and does not count toward your FUP.
           </p>
         </Reveal>
+        */}
 
         
 

@@ -10,6 +10,7 @@ const staticPages = [
   '/about',
   '/contact',
   '/pricing',
+  '/blog',
   '/feedback',
   '/roadmap',
   '/privacy',
@@ -124,11 +125,13 @@ async function generateSitemap() {
 
   // Add static pages
   for (const page of staticPages) {
+    const isHome = page === '/';
+    const isBlog = page === '/blog';
     xml += `  <url>
     <loc>${SITE_URL}${page}</loc>
     <lastmod>${today}</lastmod>
-    <changefreq>${page === '/' ? 'weekly' : 'monthly'}</changefreq>
-    <priority>${page === '/' ? '1.0' : '0.8'}</priority>
+    <changefreq>${isHome || isBlog ? 'weekly' : 'monthly'}</changefreq>
+    <priority>${isHome ? '1.0' : isBlog ? '0.9' : '0.8'}</priority>
   </url>\n`;
   }
 

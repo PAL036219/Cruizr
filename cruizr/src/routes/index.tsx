@@ -327,7 +327,7 @@ function Home() {
                 controls
                 className="w-full h-auto aspect-[9/16] object-cover"
                 poster={appMockup}
-                preload="metadata"
+                preload="none"
               />
             </div>
           </Reveal>
